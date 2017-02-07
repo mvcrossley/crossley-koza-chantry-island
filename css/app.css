@@ -1,0 +1,109 @@
+/*------------------------------------------------------------------------------------------NAV STARTS HERE-----*/
+
+#navbar
+{
+    background-color: white;
+}
+
+#topbarlogo
+{
+    width: 60%;
+    margin-left: 20%;
+}
+
+@media (min-width: 750px){
+    #topbarlogo
+    {
+        width: 200px;
+        position: fixed;
+        margin-left: 10px;
+    }
+
+    #desknav
+    {
+        background-color: white;
+        margin-right: 7%;
+        margin-top: 50px;
+    }
+
+    #desknav ul
+    {
+        background-color: white;
+    }
+
+    #desknav ul li 
+    {
+        background-color: white;
+        display: inline;
+        margin-right: 40px;
+    }
+
+    #desknav ul li a
+    {
+        font-family: 'sumanaregular';
+        color: #475a84;
+        font-size: 18px;
+    }
+
+    #desknav ul li a:hover
+    {
+        font-family: 'sumanaregular';
+        color: #b10004;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------MAIN BANNER STARTS HERE-----*/
+
+#mainbanner
+{
+    background-image: url("../images/island2.jpg");
+    background-repeat: no-repeat;
+
+}
+
+#bannertext h2
+{
+    font-family: 'sumanabold';
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+@media (min-width: 750px){
+    #mainbanner
+    {
+        height: 650px;
+        background-size: 100%;
+    }
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------FONTS START HERE-----*/
+@font-face {
+    font-family: 'latolight';
+    src: url('lato-light-webfont.woff2') format('woff2'),
+         url('lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sumanabold';
+    src: url('sumana-bold-webfont.woff2') format('woff2'),
+         url('sumana-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sumanaregular';
+    src: url('sumana-regular-webfont.woff2') format('woff2'),
+         url('sumana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
