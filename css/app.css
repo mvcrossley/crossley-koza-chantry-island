@@ -1,129 +1,232 @@
+/*-----------------------------------------------------------------------------------------FONTS START HERE-----*/
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'sumanabold';
+    src: url('../fonts/sumana-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sumana-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sumanaregular';
+    src: url('../fonts/sumana-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sumana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*-----------------------------------CSS RESET------------------*/
+
+body, html{
+    font-size: 100%
+    margin: 0 auto;
+    padding: 0;
+}
+
+p, li{
+    font-family: 'latolight', sans-serif;
+    font-weight: 300;
+    color: #808080;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+h1{
+    font-family: 'sumanabold', serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2,h3{
+    font-family: 'sumanaregular', serif;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+span{
+    font-style: : italic;
+}
+
 /*------------------------------------------------------------------------------------------NAV STARTS HERE-----*/
 
-#navbar
-{
+#navbar {
+    background-color: #fff;
+}
+
+#topbarlogo {
+    width: 60%;
+    margin-left: 20%;
+    width: 200px;
+    position: fixed;
+    margin-left: 10px;
+}
+
+#menuIcon{
+    height: 50px;
+    text-align: right;
+    background-color: white;
+    width: 100%;
+}
+
+#mainNav {
+
+    padding: 10px;
     background-color: white;
 }
 
-#topbarlogo
-{
-    width: 60%;
-    margin-left: 20%;
+#mainNav ul {
+    border: solid #ddd 1px;
+    background-color: white;
+    margin: 0;
 }
 
-@media (min-width: 750px){
-    #topbarlogo
-    {
-        width: 200px;
-        position: fixed;
-        margin-left: 10px;
-    }
-
-    #desknav
-    {
-        background-color: white;
-        margin-right: 7%;
-        margin-top: 50px;
-    }
-
-    #desknav ul
-    {
-        background-color: white;
-    }
-
-    #desknav ul li 
-    {
-        background-color: white;
-        display: inline;
-        margin-right: 40px;
-    }
-
-    #desknav ul li a
-    {
-        font-family: 'sumanaregular';
-        color: #475a84;
-        font-size: 18px;
-    }
-
-    #desknav ul li a:hover
-    {
-        font-family: 'sumanaregular';
-        color: #b10004;
-    }
+#mainNav ul li {
+    border: solid #eee 1px;
+    background-color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
 }
 
 
-/*----------------------------------------------------------------------------------MAIN BANNER STARTS HERE-----*/
-
-#mainbanner
-{
-    background-image: url("../images/island2.jpg");
-    background-repeat: no-repeat;
-
+#mainNav ul li:hover {
+    background-color: #d4e1f7;
 }
 
-#bannertext h2
-{
+#mainNav ul li a {
+    font-family: 'sumanaregular';
+    color: #475a84;
+    font-size: 1.2em;
+}
+
+
+
+
+
+/*--------------------------------------------------HOME BANNER STARTS HERE-----*/
+
+#homebanner {
+    background: url("../images/island2.jpg") center no-repeat;
+    height: 700px;
+}
+
+#bannertext {
+    padding: 70px 10px;
+}
+
+#bannertext h2 {
     font-family: 'sumanabold';
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 3em;
 }
 
-#bannertext h3
-{
+#bannertext h3 {
     font-family: 'sumanaregular';
     text-align: center;
     color: white;
     font-size: 40px;
 }
 
-#bannertext p
-{
-    font-family: 'latolight';
+#bannertext p {
     color: white;
-    font-size: 20px;
+    font-size: 1em;
 }
 
-@media (min-width: 750px){
-    #mainbanner
-    {
+
+/* ----------Small to Medium Screen Transition*//*640/16*/
+@media screen and (min-width: 40em){
+/*---------------RESET---------------*/
+
+
+    /*----------Main Navigation----------*/
+
+    #mainNav {
+    background-color: white;
+    }
+
+    #topbarlogo {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+
+    #topbarlogo {
+        width: 200px;
+        position: fixed;
+        margin-left: 10px;
+    }
+
+    #mainNav {
+        height: 40px;
+        background-color: white;
+        margin-right: 7%;
+        margin-top: 50px;
+    }
+
+    #mainNav ul {
+        background-color: white;
+    }
+
+    #mainNav ul li {
+        background-color: white;
+        display: inline;
+        margin-right: 40px;
+    }
+
+    #mainNav ul li a {
+        font-family: 'sumanaregular';
+        color: #475a84;
+        font-size: 1.2em;
+    }
+
+    #mainNav ul li a:hover {
+        font-family: 'sumanaregular';
+        color: #b10004;
+    }
+
+    
+/*------------------------------BANNER-------------------*/
+    #mainbanner {
         background-size: 100%;
     }
 
-    #bannertext
-    {
+    #bannertext {
         margin-top: 250px;
         margin-bottom: 200px;
     }
 }
 
+/*Medium to Large Screen Transition*//*1024/16*/
+@media screen and (min-width: 64em)  {
+/*---------------RESET---------------*/
+
+/*---------------HEADER---------------*/
+/*---------------FOOTER---------------*/
+
+/*---------------ABOUT---------------*/
+
+/*---------------DESIGN---------------*/
 
 
+/*---------------CONTACT---------------*/
 
 
-/*-----------------------------------------------------------------------------------------FONTS START HERE-----*/
-@font-face {
-    font-family: 'latolight';
-    src: url('lato-light-webfont.woff2') format('woff2'),
-         url('lato-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/*---------------PORTFOLIO PAGE---------------*/
 
-}
-@font-face {
-    font-family: 'sumanabold';
-    src: url('sumana-bold-webfont.woff2') format('woff2'),
-         url('sumana-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'sumanaregular';
-    src: url('sumana-regular-webfont.woff2') format('woff2'),
-         url('sumana-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
 }
