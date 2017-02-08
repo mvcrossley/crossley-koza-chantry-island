@@ -78,7 +78,7 @@ span{
     min-width: 60px
 }
 
-#hamburger{
+#hamburger {
     display: block;
     width: 50px;
     float: right;
@@ -154,43 +154,44 @@ span{
 
     /*----------Main Navigation----------*/
 
-    #mainNav {
-    background-color: white;
-    }
-
     #desklogo {
-    width: 60%;
-    max-width: 200px;
+    width: 200px;
     margin-left: 10%;
     position: fixed;
     }
 
-    #mainNav {
-        height: 40px;
-        background-color: white;
-        margin-right: 7%;
-        margin-top: 50px;
+    #mainNav
+    {
+        height: 100px;
+        margin-right: 10%;
     }
 
     #mainNav ul {
         background-color: white;
+        border:none;
+        margin-top: 50px;
     }
 
     #mainNav ul li {
-        background-color: white;
         display: inline;
-        margin-right: 40px;
+        margin-left: 30px;
+        border: none;
+    }
+
+    #mainNav ul li:hover {
+        background-color: #FFF;
     }
 
     #mainNav ul li a {
         font-family: 'sumanaregular';
         color: #475a84;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     #mainNav ul li a:hover {
         font-family: 'sumanaregular';
         color: #b10004;
+        background-color: none;
     }
 
     
