@@ -28,7 +28,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/*-----------------------------------CSS RESET------------------*/
+/*---------------------------------------------------------------------------------CSS RESET------------------*/
 
 body, html{
     font-size: 100%
@@ -61,25 +61,30 @@ span{
     font-style: : italic;
 }
 
-/*------------------------------------------------------------------------------------------NAV STARTS HERE-----*/
+/*-------------------------------------------------------------------------------------MAIN NAV STARTS HERE-----*/
 
-#navbar {
+.top-bar {
     background-color: #fff;
 }
 
-#topbarlogo {
+.title-bar {
+    background-color: white;
+}
+
+#desklogo {
     width: 60%;
     margin-left: 20%;
     width: 200px;
     position: fixed;
     margin-left: 10px;
+    background-color: #fff;
 }
 
-#menuIcon{
-    height: 50px;
-    text-align: right;
+#hamburger{
+    display: block;
+    width: 50px;
+    float: right;
     background-color: white;
-    width: 100%;
 }
 
 #mainNav {
@@ -102,7 +107,6 @@ span{
     padding: 10px;
 }
 
-
 #mainNav ul li:hover {
     background-color: #d4e1f7;
 }
@@ -112,9 +116,6 @@ span{
     color: #475a84;
     font-size: 1.2em;
 }
-
-
-
 
 
 /*--------------------------------------------------HOME BANNER STARTS HERE-----*/
@@ -159,11 +160,19 @@ span{
     background-color: white;
     }
 
-    #topbarlogo {
-        width: 60%;
-        margin-left: 20%;
+    #desklogo {
+    width: 60%;
+    margin-left: 20%;
+    position: fixed;
     }
 
+    #hamburger{
+    height: 50px;
+    width: 50px;
+    display: block;
+    text-align: right;
+    background-color: white;
+    }
 
     #topbarlogo {
         width: 200px;
