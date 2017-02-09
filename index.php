@@ -47,7 +47,6 @@
             <h2 class="red center">The Marine Heritage Society</h2>
             <p>Get to know us and what we do! Stay up to date on news, events, volunteers, and important dates!</p>
             <div class="center"><a href="about.php" class="blueBut white center">Learn More</a></div>
-          </div>
         </div>
     </section>
 

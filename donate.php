@@ -20,7 +20,7 @@
 
         <div class="small-12 medium-6 large-5 float-right columns">
             <h2 class="white center">Donate Today</h2>
-            <p class="white">Since 1997 we have had a tremendous amount of support by donations. </br></br>We are currently engaged in Fund Raising to support our New Boat, Dock Improvements, and Marine Heritage Projects.</p>
+            <p class="white">Since 1997 we have had a tremendous amount of support by donations. <br><br>We are currently engaged in Fund Raising to support our New Boat, Dock Improvements, and Marine Heritage Projects.</p>
             <div class="center show-for-small-only"><a href="#bluehelp"><img class="downarrow" src="images/whitearrow.svg" alt="An arrow to go down a section"></a></div>
         </div>
     </section>
@@ -36,10 +36,10 @@
         <h2 class="paytitle center">Send a cheque or money order to:</h2>
         <p class="center">
           Mailing Address:
-          </br>Marine Heritage Society
-          </br>86 Saugeen Street
-          </br>Southampton, Ontario
-          </br>Canada, N0H 2L0
+          <br>Marine Heritage Society
+          <br>86 Saugeen Street
+          <br>Southampton, Ontario
+          <br>Canada, N0H 2L0
         </p>
       </div>
 

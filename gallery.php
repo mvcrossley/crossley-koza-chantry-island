@@ -20,12 +20,13 @@
 
         <div class="small-12 medium-6 large-5 float-right columns">
             <h2 class="white center">Photo Gallery</h2>
-            <p class="white">Welcome to our photo gallery. This section includes pictures of Chantry Island and the area of Lake Huron surrounding the Island. It also includes pictures of the lighthouse and keeper's cottage inside and out, as well as photos of some of the birds and flowers native to the island.</br>If you have photos of Chantry Island that you would like to share with us, connect with our Facebook page.</p>
+            <p class="white">Welcome to our photo gallery. This section includes pictures of Chantry Island and the area of Lake Huron surrounding the Island. It also includes pictures of the lighthouse and keeper's cottage inside and out, as well as photos of some of the birds and flowers native to the island.<br>If you have photos of Chantry Island that you would like to share with us, connect with our Facebook page.</p>
             <div class="center show-for-small-only"><a href="#bluehelp"><img class="downarrow" src="images/whitearrow.svg" alt="An arrow to go down a section"></a></div>
         </div>
     </section>
 
     <section id="galleryPics" class="row">
+    <h2 class="hide">Thumbnails for future gallery</h2>
       <div id="thumbs" class="small-12 medium-8 medium-centered columns">
         <div class="small-6 medium-2 column">
           <img src="images/thumbs/thumb1.png" alt="thumb1"></div>

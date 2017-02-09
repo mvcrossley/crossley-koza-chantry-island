@@ -23,7 +23,7 @@
             <div class="center show-for-small-only"><a href="#bluehelp"><img class="downarrow" src="images/whitearrow.svg" alt="An arrow to go down a section"></a></div>
         </div>
     </section>
-    
+
     <section id="ourVolunteers" class="row">
     <h2 class="hide">Our Volunteers Sections</h2>
       <div class="small-12 medium-12 large-8 large-centered columns">
@@ -33,6 +33,7 @@
     </section>
 
     <section class="row">
+    <h2 class="hide">A list of all of our volunteers</h2>
       <div class="volunteers center small-8 medium-4 large-3 columns">
           <p>Don Nicholson - Chairman</p>
       </div>
@@ -80,17 +81,17 @@
       <h2 class="center red">Volunteer Interviews</h2>
 
         <div class="volVid medium-12 large-4 column">
-            <iframe src="https://www.youtube.com/embed/MJpCTSwqCHE" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/MJpCTSwqCHE" allowfullscreen></iframe>
             <h3>Jane Kramer</h3>
             <p>The Marine Heritage Society present Jane Kramer speaking about her involvement with the volunteer restoration of the Chantry Island Lighthouse and Keeper's Cottage.</p>
         </div>
         <div class="volVid medium-12 large-4 column">
-            <iframe src="https://www.youtube.com/embed/N27M4OmubxI" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/N27M4OmubxI" allowfullscreen></iframe>
             <h3>Mike Sterling</h3>
             <p>Mike Sterling speaks about his contribution towards the Marine Heritage Society.</p>
         </div>
         <div class="volVid medium-12 large-4 column">
-            <iframe src="https://www.youtube.com/embed/hbGffSYF5LU" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/hbGffSYF5LU" allowfullscreen></iframe>
             <h3>Bob Trelford</h3>
             <p>Bob Trelford Speaks about the restoration of Chantry Island and the Marine Heritage Society.</p>
         </div>
@@ -112,7 +113,7 @@
             <div class="nArticle small-12 column">
                 <div class="articletext small-12 large-6 column">
                     <h3>Boat House Southampton</h3>
-                    <p id="datePosted">Date Posted: Feb 3rd, 2017</p>
+                    <p><span>Date Posted: Feb 3rd, 2017</span></p>
                     <p>Work on the Tilbury continues as the winter slowly approaches conclusion</p>
                 </div>
                 <div class="articleimg small-12 large-6 column">
@@ -123,8 +124,8 @@
             <div class="nArticle small-12 column">
                 <div class="articletext small-12 large-6 column">
                     <h3>Doug Johnson Proudly Displays the Famous Saying.</h3>
-                    <p id="datePosted">Date Posted: Jan 18th, 2017</p>
-                    <p>Work on the Tilbury continues as the winter slowly approaches conclusion</p>
+                    <p><span>Date Posted: Jan 18th, 2017</span></p>
+                    <p></p>
                 </div>
                 <div class="articleimg small-12 large-6 column">
                     <img src="images/news2.jpg" alt="News Pic">

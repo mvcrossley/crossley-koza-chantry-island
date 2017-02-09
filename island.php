@@ -24,7 +24,7 @@
                   Ontario. Overlooking the island is a majestic Imperial Lighthouse built in the mid 1800s, accompanied by the Keeper’s 
                   Cottage, and boat house. In 1822, during a hydrographic survey, Captain Henry Bayfield of the Royal Navy, christened the island 
                   and named it after his friend and British Sculptor, Sir Francis Chantry.</p>
-              <div class="center show-for-small-only"><a href="#geography"><img class="downarrow" src="images/whitearrow.svg"></a></div>
+              <div class="center show-for-small-only"><a href="#geography"><img class="downarrow" src="images/whitearrow.svg" alt="Go to next section"></a></div>
           </div>
       </section>
 
@@ -57,7 +57,7 @@
 
           <div class="small-12 medium-6 large-5 float-left columns">
               <h2 class="blue center">Light Keeper’s Cottage Before Restoration</h2>
-              <p>In 1997 the local Marine Heritage Society established specific goals for the island's restoration. The project was to be funded by donations and fundraising efforts, and the majority of the work was to be done by volunteers. </br>With permission from 5 levels of government, the group of volunteers began to rebuild the light keeper’s cottage, using the original structure plans
+              <p>In 1997 the local Marine Heritage Society established specific goals for the island's restoration. The project was to be funded by donations and fundraising efforts, and the majority of the work was to be done by volunteers. <br>With permission from 5 levels of government, the group of volunteers began to rebuild the light keeper’s cottage, using the original structure plans
               </p>
           </div>
       </section>
@@ -69,7 +69,7 @@
 
           <div class="small-12 medium-6 large-5 float-right columns">
               <h2 class="red center">Light Keeper’s Cottage and Grounds After Restoration</h2>
-              <p>The Light Keeper's Cottage restoration was completed in 2001. Over 250 volunteers put in more than 300,000 hours of labor to finish the restoration and ready the boat for tours. Since 2001 volunteers have restored the staircase of the lighthouse, built a boathouse on the island, constructed a replica of the original boat (which sits in the boathouse) and reconstructed the privy.</br>Today the tour is operated with over 125 volunteers, whose jobs include island housekeepers, gardeners, tour boat captains, crew and tour guides, and gift shop sales and service personnel. Volunteers also install the portable walkways and docks every spring and remove them every fall. To date, there have been over 20,538 visitors to the island.</p>
+              <p>The Light Keeper's Cottage restoration was completed in 2001. Over 250 volunteers put in more than 300,000 hours of labor to finish the restoration and ready the boat for tours. Since 2001 volunteers have restored the staircase of the lighthouse, built a boathouse on the island, constructed a replica of the original boat (which sits in the boathouse) and reconstructed the privy.<br>Today the tour is operated with over 125 volunteers, whose jobs include island housekeepers, gardeners, tour boat captains, crew and tour guides, and gift shop sales and service personnel. Volunteers also install the portable walkways and docks every spring and remove them every fall. To date, there have been over 20,538 visitors to the island.</p>
               </div>
       </section>
 
@@ -80,7 +80,7 @@
 
           <div class="small-12 medium-6 large-5 float-left columns">
               <h2 class="blue center">Federal Bird Sanctuary</h2>
-              <p>In 1957 the Canadian Wildlife Service declared Chantry Island a Federal Migratory Bird Sanctuary to protect the migratory and nesting birds of the island. It is the largest Federal Migratory Bird Sanctuary between James Bay and Point Pelee. There are approximately fifty thousand birds (including chicks) on the island during the breeding season. </br>Because the island is a migratory bird sanctuary, the number of people on the island on any given day is strictly limited and tours must be booked through the Chantry Island Tour Base.</p>
+              <p>In 1957 the Canadian Wildlife Service declared Chantry Island a Federal Migratory Bird Sanctuary to protect the migratory and nesting birds of the island. It is the largest Federal Migratory Bird Sanctuary between James Bay and Point Pelee. There are approximately fifty thousand birds (including chicks) on the island during the breeding season. <br>Because the island is a migratory bird sanctuary, the number of people on the island on any given day is strictly limited and tours must be booked through the Chantry Island Tour Base.</p>
           </div>
       </section>
 
