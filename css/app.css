@@ -237,6 +237,7 @@ a{
     height: 650px;
     background-position: center;
     background-size: cover;
+    margin-bottom: 30px;
 }
 
 #bannertext {
@@ -260,6 +261,25 @@ a{
     font-size: .8em;
     margin-top: 10px;
     padding-bottom: 20px;
+}
+
+/*--------------------------------------------------ISLAND STARTS HERE-----*/
+
+#islandBanner {
+    background-color: #a1202f;
+    margin-bottom: 30px;
+}
+
+#islandBanner h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+#islandBanner p {
+    margin-top: 30px;
+}
+
+#islandBanner .downarrow {
+    width: 80px;
 }
 
 /*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
@@ -431,6 +451,12 @@ a{
         margin-bottom: 200px;
     }
 
+    #bannertext h2
+    {
+        font-size: 2em;
+        padding-top: 20px;
+    }
+
     .sameLook p {
         font-size: .8em;
         width: 70%;
@@ -559,7 +585,7 @@ a{
         color: #b10004;
         background-color: none;
     }
-/*---------------HOME BANNER---------------*/
+/*---------------HOME---------------*/
 
     #mainbanner
     {
@@ -579,6 +605,12 @@ a{
     #donation h2
     {
         margin-top: 85px;
+    }
+
+/*---------------ISLAND---------------*/
+
+    #islandBanner h2 {
+        margin-top: 60px;
     }
 
 /*---------------CONTACT---------------*/
