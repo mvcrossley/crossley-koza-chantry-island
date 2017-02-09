@@ -284,6 +284,30 @@ a{
     width: 80px;
 }
 
+/*--------------------------------------------------GALLERY STARTS HERE-----*/
+
+#gallerybanner {
+    background-color: #475A84;
+    margin-bottom: 30px;
+}
+
+#gallerybanner h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+}
+#gallerybanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#gallerybanner .downarrow {
+    width: 80px;
+}
+
+#thumbs1
+{
+    height: 600px;
+}
 
 /*-------------------------------------------------TOUR STARTS HERE------*/
 
