@@ -23,7 +23,7 @@
       </div>
     </section>
 
-    <section id="islandIntro" class="sameLook row expanded">
+    <section id="islandIntro" class="sameLook row">
     <h2 class="hide">An Intro to The Island</h2>
         <div class="sideImage small-12 medium-6 large-7 columns" data-interchange="[images/mobshore.jpg, small], [images/tabshore.jpg, medium], [images/deskshore.jpg, large]">
         </div>
@@ -35,20 +35,21 @@
         </div>
     </section>
 
-    <section id="aboutIntro" class="sameLook row expanded">
+    <section id="aboutIntro" class="sameLook row">
     <h2 class="hide">An Intro to The Society</h2>
         <div id="heritage" class="small-12 medium-6 large-5 columns">
             <h2 class="red center">The Marine Heritage Society</h2>
             <p>Get to know us and what we do! Stay up to date on news, events, volunteers, and important dates!</p>
             <div class="center"><a href="island.php"><button class="blueBut white center">Learn More</button></a></div>
-            <div class="center hide-for-medium"><a href="#donateIntro"><img class="downarrow" src="images/blackarrow.svg"></a></div>
+            <div class="center hide-for-medium"><a href="#donateIntro"><img class="downarrow" src="images/blackarrow.svg"></a>
+          </div>
         </div>
 
         <div class="sideImage small-12 medium-6 large-7 columns" data-interchange="[images/mobbase.jpg, small], [images/tabbase.jpg, medium], [images/deskbase.jpg, large]">
         </div>
     </section>
 
-    <section id="donateIntro" class="sameLook row expanded">
+    <section id="donateIntro" class="sameLook row">
     <h2 class="hide">An Into to Donation</h2>
         <div class="sideImage small-12 medium-6 large-7 columns" data-interchange="[images/mobdonate.jpg, small], [images/tabdonate.jpg, medium], [images/deskdonate.jpg, large]">
         </div>
@@ -59,6 +60,6 @@
         </div>
     </section>
       
-    </section>
+
 
     <?php include("includes/footer.html");?>

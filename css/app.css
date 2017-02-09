@@ -167,23 +167,24 @@ span {
     padding: 0;
 }
 
-#hamburg{
-    width: 25px;
+#moblogo #hamburg{
+    width: 40px;
+    margin: 20px;
 }
 
-#moblogo {
-    position: block;
+#moblogo{
+    display: inline-block;
     text-align: center;
-    width: 70px;
-    margin-bottom: 15px;
 }
 
-#hamburger {
-    display: block;
-    width: 50px;
-    float: right;
-    background-color: white;
+#moblogo #mobmhs {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    margin: 15px 20px;
+    margin-left: 60px;
 }
+
 
 #mainNav {
 
@@ -221,6 +222,7 @@ span {
 #homebanner {
     height: 550px;
     background-position: center;
+    background-size: cover;
 }
 
 #bannertext {
@@ -432,6 +434,7 @@ span {
 
     .sideImage {
         height: 400px;
+        background-size: cover;
     }
 
     #heritage h2{
