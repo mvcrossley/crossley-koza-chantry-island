@@ -25,24 +25,40 @@
         </div>
     </section>
 
-    <section id="thumbs1" class"row">
-      <div class="small-12 medium-8 medium-centered columns">
-        <img src="images/thumbs/thumb1.png" alt="thumb1">
-        <img src="images/thumbs/thumb2.png" alt="thumb1">
-        <img src="images/thumbs/thumb3.png" alt="thumb1">
-        <img src="images/thumbs/thumb4.png" alt="thumb1">
-        <img src="images/thumbs/thumb5.png" alt="thumb1">
-        <img src="images/thumbs/thumb6.png" alt="thumb1">
-        <img src="images/thumbs/thumb7.png" alt="thumb1">
-        <img src="images/thumbs/thumb8.png" alt="thumb1">
-        <img src="images/thumbs/thumb9.png" alt="thumb1">
-        <img src="images/thumbs/thumb10.png" alt="thumb1">
-        <img src="images/thumbs/thumb12.png" alt="thumb1">
-        <img src="images/thumbs/thumb13.png" alt="thumb1">
-        <img src="images/thumbs/thumb14.png" alt="thumb1">
-        <img src="images/thumbs/thumb15.png" alt="thumb1">
-        <img src="images/thumbs/thumb16.png" alt="thumb1">
-        <img src="images/thumbs/thumb17.png" alt="thumb1">
+    <section id="galleryPics" class="row">
+      <div id="thumbs" class="small-12 medium-8 medium-centered columns">
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb1.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb2.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb3.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb4.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb5.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb6.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb7.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb8.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb9.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb10.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb12.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb13.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb14.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb15.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column">
+          <img src="images/thumbs/thumb16.png" alt="thumb1"></div>
+        <div class="small-6 medium-2 column end">
+          <img src="images/thumbs/thumb17.png" alt="thumb1"></div>
       </div>
     </section>
 

@@ -63,12 +63,12 @@
       </section>
 
       <section id="grounds" class="sameLook row">
-      <h2 class="hide">Lighthouse Grounds Before Restoration</h2>
+      <h2 class="hide">Lighthouse Grounds After Restoration</h2>
           <div class="sideImage small-12 medium-6 large-7 float-left columns" data-interchange="[images/mobgrounds.jpg, small], [images/tabgrounds.jpg, medium], [images/deskgrounds.jpg, large]">
           </div>
 
           <div class="small-12 medium-6 large-5 float-right columns">
-              <h2 class="red center">Light Keeper’s Cottage and Grounds Before Restoration</h2>
+              <h2 class="red center">Light Keeper’s Cottage and Grounds After Restoration</h2>
               <p>The Light Keeper's Cottage restoration was completed in 2001. Over 250 volunteers put in more than 300,000 hours of labor to finish the restoration and ready the boat for tours. Since 2001 volunteers have restored the staircase of the lighthouse, built a boathouse on the island, constructed a replica of the original boat (which sits in the boathouse) and reconstructed the privy.</br>Today the tour is operated with over 125 volunteers, whose jobs include island housekeepers, gardeners, tour boat captains, crew and tour guides, and gift shop sales and service personnel. Volunteers also install the portable walkways and docks every spring and remove them every fall. To date, there have been over 20,538 visitors to the island.</p>
               </div>
       </section>

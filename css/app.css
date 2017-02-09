@@ -264,6 +264,37 @@ a{
     padding-bottom: 20px;
 }
 
+/*--------------------------------------------------ABOUT STARTS HERE-----*/
+#aboutbanner {
+    background-color: #475A84;
+    margin-bottom: 30px;
+}
+
+#aboutbanner h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+}
+#aboutbanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#aboutbanner .downarrow {
+    width: 80px;
+}
+
+/*MORAGH START*/
+
+/*MORAGH END*/
+
+
+
+
+/*LAUREN START*/
+
+/*LAUREN END*/
+
+
 /*--------------------------------------------------ISLAND STARTS HERE-----*/
 
 #islandBanner {
@@ -304,9 +335,13 @@ a{
     width: 80px;
 }
 
-#thumbs1
-{
-    height: 600px;
+#galleryPics{
+    margin-bottom: 50px;
+}
+
+#thumbs div{
+    padding: 5px;  
+    text-align: center;
 }
 
 /*-------------------------------------------------TOUR STARTS HERE------*/
@@ -441,6 +476,7 @@ a{
 #donateBanner {
   background-color: #a1202F;
   margin-bottom: 30px;
+}
   
 #donateBanner h2 {
     font-size: 1.8em;
