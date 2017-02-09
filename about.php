@@ -73,6 +73,74 @@
           <p>Peter Williamson - Observer</p>
       </div>
     </section>
+    
+      <section id="volVids" class="row">
+      <div id="vidList">
+      <h2 class="center red">Volunteer Interviews</h2>
+
+        <div class="volVid medium-12 large-4 column">
+            <iframe src="https://www.youtube.com/embed/MJpCTSwqCHE" frameborder="0" allowfullscreen></iframe>
+            <h3>Jane Kramer</h3>
+            <p>The Marine Heritage Society present Jane Kramer speaking about her involvement with the volunteer restoration of the Chantry Island Lighthouse and Keeper's Cottage.</p>
+        </div>
+        <div class="volVid medium-12 large-4 column">
+            <iframe src="https://www.youtube.com/embed/N27M4OmubxI" frameborder="0" allowfullscreen></iframe>
+            <h3>Mike Sterling</h3>
+            <p>Mike Sterling speaks about his contribution towards the Marine Heritage Society.</p>
+        </div>
+        <div class="volVid medium-12 large-4 column">
+            <iframe src="https://www.youtube.com/embed/hbGffSYF5LU" frameborder="0" allowfullscreen></iframe>
+            <h3>Bob Trelford</h3>
+            <p>Bob Trelford Speaks about the restoration of Chantry Island and the Marine Heritage Society.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsIntro" class="row">
+        <div id="nIntro" class="sameLook">
+          <h2 class="center white">News &amp; Events</h2>
+            <p class="white">Welcome to our News &amp; Events page. Here we'll cover our projects, upcoming events and things you don't want to miss. Don't forget to connect to our Facebook page as well to find out more.
+
+            Check back soon for more updates about the island and Heritage Society. Expect to see more frequent updating during our operating season end of May to mid-September. View schedules for exact dates.</p>
+      </div>
+    </section>
+
+    <section id="newsList" class="row">
+        <div id="nList">
+          <h2 class="hide">News List</h2>
+            <div class="nArticle small-12 column">
+                <div class="articletext small-12 medium-6 column">
+                    <h3>Boat House Southampton</h3>
+                    <p id="datePosted">Date Posted: Feb 3rd, 2017</p>
+                    <p>Work on the Tilbury continues as the winter slowly approaches conclusion</p>
+                </div>
+                <div>
+                    <img src="images/news1.jpg" alt="News Pic">
+                </div>
+            </div>
+
+            <div class="nArticle small-12 column">
+                <div class="articletext small-12 medium-6 column">
+                    <h3>Doug Johnson Proudly Displays the Famous Saying.</h3>
+                    <p id="datePosted">Date Posted: Jan 18th, 2017</p>
+                    <p>Work on the Tilbury continues as the winter slowly approaches conclusion</p>
+                </div>
+                <div>
+                    <img src="images/news2.jpg" alt="News Pic">
+                </div>
+            </div>
+            <div class="nArticle small-12 column">
+                <div class="articletext small-12 medium-6 column">
+                    <h3>Boat House Southampton</h3>
+                    <p><span>Date Posted: Dec 2nd, 2016</span></p>
+                    <p>The Peerless II outside the Boathouse in southampton. Photo courtesy Eric Rogers.</p>
+                </div>
+                <div>
+                    <img src="images/news3.jpg" alt="News Pic">
+                </div>
+            </div>
+      </div>
+    </section>
 
     <?php include("includes/footer.html");?>
 
