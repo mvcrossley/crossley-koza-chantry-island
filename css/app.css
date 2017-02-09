@@ -137,12 +137,14 @@ span {
 }
 
 .sameLook{
-    height: 250px;
+    height: auto;
 }
 
 .sameLook p {
     font-size: .8em;
     margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .sameLook h2 {
@@ -167,23 +169,24 @@ span {
     padding: 0;
 }
 
-#hamburg{
-    width: 25px;
+#moblogo #hamburg{
+    width: 40px;
+    margin: 20px;
 }
 
-#moblogo {
-    position: block;
+#moblogo{
+    display: inline-block;
     text-align: center;
-    width: 70px;
-    margin-bottom: 15px;
 }
 
-#hamburger {
-    display: block;
-    width: 50px;
-    float: right;
-    background-color: white;
+#moblogo #mobmhs {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    margin: 15px 20px;
+    margin-left: 60px;
 }
+
 
 #mainNav {
 
@@ -221,6 +224,7 @@ span {
 #homebanner {
     height: 550px;
     background-position: center;
+    background-size: cover;
 }
 
 #bannertext {
@@ -432,6 +436,7 @@ span {
 
     .sideImage {
         height: 400px;
+        background-size: cover;
     }
 
     #heritage h2{
@@ -441,6 +446,38 @@ span {
     #donation h2{
         margin-top: 115px;
     }
+/*------------------------------CONTACT-------------------*/
+    #contactInfo {
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    #contactInfo p {
+        text-align: left;
+        
+    }
+
+    #contactMap iframe {
+        height: 400px;
+    }
+
+    #contactUs {
+        padding-top: 50px;
+    }
+
+    
+    #submitButton {
+        padding: 20px;
+    }
+
+    .formRows {
+        padding: 0 15px;
+    }
+
+    .formRows label {
+        text-align: left;
+        margin-left: 10px;
+    }
 }
 
 /*Medium to Large Screen Transition*//*1024/16*/
@@ -449,7 +486,7 @@ span {
 
 /*---------------HEADER---------------*/
 
-    .sameLook{
+    .sameLook {
         height: 400px;
     }
 
@@ -457,14 +494,14 @@ span {
         margin-top: 30px;
     }
 
-    .sameLook p{
+    .sameLook p {
         font-size: 0.9em;
         width: 70%;
         margin-left: 15%;
         text-align: left;
     }
 
-    .sideImage{
+    .sideImage {
         height: 400px;
     }
 
@@ -520,55 +557,10 @@ span {
         margin-top: 95px;
     }
 
-/*------------------------------CONTACT-------------------*/
-    #contactInfo {
-        padding: 0;
-        padding-left: 20px;
-    }
-
-    #contactInfo p {
-        text-align: left;
-        
-    }
-
-    #contactMap iframe {
-        height: 400px;
-    }
-
-    #contactUs {
-        padding-top: 50px;
-    }
-
-    
-    #submitButton {
-        padding: 20px;
-    }
-
-    .formRows {
-        padding: 0 15px;
-    }
-
-    .formRows label {
-        text-align: left;
-        margin-left: 10px;
-    }
-
-    /*-------------------- FOOTER----------------*/
-}
-
     #donation h2
     {
         margin-top: 85px;
     }
-
-/*---------------FOOTER---------------*/
-
-    
-
-/*---------------ABOUT---------------*/
-
-/*---------------DESIGN---------------*/
-
 
 /*---------------CONTACT---------------*/
     #contactMap iframe{
