@@ -75,6 +75,10 @@ span {
     font-style: : italic;
 }
 
+a{
+    font-family: 'latolight', sans-serif;
+}
+
 
 .center {
     text-align: center;
@@ -92,12 +96,17 @@ span {
     color: white;
 }
 
+.white a {
+    color: white;
+}
+
 .redBut {
     background: #a1202f;
     padding: 8px 25px 8px 25px;
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
+    width: 170px;
 }
 
 .blueBut {
@@ -106,6 +115,7 @@ span {
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
+    width: 170px;
 }
 
 .whiteBut {
@@ -115,6 +125,7 @@ span {
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
+    width: 170px;
 }
 
 .sideImage {
@@ -131,13 +142,13 @@ span {
     margin-top: 20px;
 }
 
-.downarrow {
+#bannertext .downarrow {
     width: 80px;
-    margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .sameLook{
-    height: auto;
+    padding-bottom: 60px;
 }
 
 .sameLook p {
@@ -145,6 +156,7 @@ span {
     margin-top: 30px;
     width: 80%;
     margin-left: 10%;
+    padding-bottom: 20px;
 }
 
 .sameLook h2 {
@@ -222,18 +234,20 @@ span {
 /*--------------------------------------------------HOME STARTS HERE-----*/
 
 #homebanner {
-    height: 550px;
+    height: 650px;
     background-position: center;
     background-size: cover;
+    margin-bottom: 30px;
 }
 
 #bannertext {
-    margin-top: 220px;
+    margin-top: 260px;
 }
 
 #bannertext h2 {
     font-family: 'sumanabold';
     font-size: 1.5em;
+    margin-top: 30px;
 }
 
 #bannertext h3 {
@@ -246,6 +260,26 @@ span {
     color: white;
     font-size: .8em;
     margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*--------------------------------------------------ISLAND STARTS HERE-----*/
+
+#islandBanner {
+    background-color: #a1202f;
+    margin-bottom: 30px;
+}
+
+#islandBanner h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+#islandBanner p {
+    margin-top: 30px;
+}
+
+#islandBanner .downarrow {
+    width: 80px;
 }
 
 /*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
@@ -417,6 +451,12 @@ span {
         margin-bottom: 200px;
     }
 
+    #bannertext h2
+    {
+        font-size: 2em;
+        padding-top: 20px;
+    }
+
     .sameLook p {
         font-size: .8em;
         width: 70%;
@@ -545,11 +585,16 @@ span {
         color: #b10004;
         background-color: none;
     }
-/*---------------HOME BANNER---------------*/
+/*---------------HOME---------------*/
 
     #mainbanner
     {
         height: 700px;
+    }
+
+    #bannertext .downarrow {
+    width: 80px;
+    margin-top: 150px;
     }
 
     #heritage h2
@@ -560,6 +605,12 @@ span {
     #donation h2
     {
         margin-top: 85px;
+    }
+
+/*---------------ISLAND---------------*/
+
+    #islandBanner h2 {
+        margin-top: 60px;
     }
 
 /*---------------CONTACT---------------*/
