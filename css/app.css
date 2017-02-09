@@ -390,9 +390,10 @@ a{
     text-align: center;
 }
 
-.nArticle img{
-    float: right;
+.articleimg{
+    text-align: center;
 }
+
 
 
 /*LAUREN END*/
@@ -1003,6 +1004,11 @@ a{
     {
         margin-top: 85px;
     }
+
+    /*-------------ABOUT-----------*/
+    .articleimg{
+    text-align: right;
+}
 
 /*---------------ISLAND---------------*/
 
