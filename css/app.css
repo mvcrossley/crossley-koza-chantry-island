@@ -283,6 +283,7 @@ a{
 }
 
 /*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
+
 #contactFooter{
     background-color: #475A84;
     padding: 100px 20px;
@@ -329,9 +330,20 @@ a{
     font-family: 'latobold';
 }
 
+#contactInfo img{
+    width: 35px;
+}
+
 #tourStip{
     font-family: 'latolight';
     font-style: italic;
+}
+
+#contactUs p{
+    color: white;
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 0 20px;
 }
 
 #contactForm{
@@ -350,7 +362,7 @@ a{
     font-family: 'sumanaregular', serif;
     font-size: 1.5em;
     background-color: #a1202f;
-    border: 2px #fff solid;
+    border: 1px #fff solid;
     padding: 15px 70px;
     border-radius: 50px;
 }
@@ -377,10 +389,9 @@ a{
 }
 
 .formRows input, .formRows textarea{
-    background-color: #c8e6ff;
+    background-color: #fff;
     font-family: 'latoregular', sans-serif;
     border-radius: 10px;
-    border: 2px solid #fff;
     font-size: 1.3em;
 }
 
@@ -408,6 +419,7 @@ a{
 #bigNav{
     display:none;
 }
+
 
 /* ----------Small to Medium Screen Transition*//*640/16*/
 @media screen and (min-width: 40em){
@@ -486,7 +498,14 @@ a{
     #donation h2{
         margin-top: 115px;
     }
-/*------------------------------CONTACT-------------------*/
+/*----------------------CONTACT---------------*/
+ 
+
+    #contactUs{
+        padding: 0;
+
+    }
+
     #contactInfo {
         padding: 0;
         padding-left: 20px;
@@ -494,7 +513,6 @@ a{
 
     #contactInfo p {
         text-align: left;
-        
     }
 
     #contactMap iframe {
@@ -510,14 +528,20 @@ a{
         padding: 20px;
     }
 
-    .formRows {
-        padding: 0 15px;
-    }
 
     .formRows label {
         text-align: left;
         margin-left: 10px;
     }
+
+   .formRows {
+        padding: 0 15px;
+    }
+
+    .formRows input{
+        height: 40px;
+    }
+
 }
 
 /*Medium to Large Screen Transition*//*1024/16*/
@@ -613,6 +637,7 @@ a{
         margin-top: 60px;
     }
 
+
 /*---------------CONTACT---------------*/
     #contactMap iframe{
         height: 450px;
@@ -623,15 +648,13 @@ a{
 
     }
 
-    .formRows input{
-        height: 40px;
-    }
+
 
     .formRows label{
         text-align: left;
         margin-left: 10px;
+        font-size: 1.1em;
     }
-
 /*-------------------- FOOTER----------------*/
 
     #toTop{
@@ -676,5 +699,4 @@ a{
         background-color: #eee; 
         color: #a1202f;
     }
-
 }
