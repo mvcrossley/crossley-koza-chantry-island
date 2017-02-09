@@ -1,0 +1,813 @@
+/*-----------------------------------------------------------------------------------------FONTS START HERE-----*/
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sumanabold';
+    src: url('../fonts/sumana-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sumana-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sumanaregular';
+    src: url('../fonts/sumana-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sumana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*---------------------------------------------------------------------------------CSS RESET------------------*/
+
+body, html {
+    font-size: 100%
+    margin: 0 auto;
+    padding: 0;
+}
+
+p, li {
+    font-family: 'latolight', sans-serif;
+    font-weight: 300;
+    color: #808080;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: 'sumanabold', serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2,h3 {
+    font-family: 'sumanaregular', serif;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+span {
+    font-style: : italic;
+}
+
+a{
+    font-family: 'latolight', sans-serif;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.red {
+    color: #a1202f;
+}
+
+.blue {
+    color: #475a84;
+}
+
+.white {
+    color: white;
+}
+
+.white a {
+    color: white;
+}
+
+.redBut {
+    background: #a1202f;
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 170px;
+}
+
+.blueBut {
+    background: #475a84;
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 170px;
+}
+
+.whiteBut {
+    background: rgba(175, 175, 175, 0.4);
+    border: solid 1px rgba(175, 175, 175, 0.9);
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 170px;
+}
+
+.sideImage {
+    height: 250px;
+    background-position: center;
+}
+
+.whiteBut {
+    background: rgba(175, 175, 175, 0.4);
+    border: solid 1px rgba(175, 175, 175, 0.9);
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#bannertext .downarrow {
+    width: 80px;
+    margin-top: 100px;
+}
+
+.sameLook{
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.sameLook p {
+    font-size: .8em;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 20px;
+}
+
+.sameLook h2 {
+    font-family: 'sumanabold';
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.column, .columns{
+    padding: 0;
+}
+
+/*-------------------------------------------------------------------------------------MAIN NAV STARTS HERE-----*/
+
+.top-bar {
+    background-color: #fff;
+    padding: 0;
+}
+
+.title-bar {
+    background-color: white;
+    padding: 0;
+}
+
+#moblogo #hamburg{
+    width: 40px;
+    margin: 20px;
+}
+
+#moblogo{
+    display: inline-block;
+    text-align: center;
+}
+
+#moblogo #mobmhs {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    margin: 15px 20px;
+    margin-left: 60px;
+}
+
+
+#mainNav {
+
+    padding: 10px;
+    background-color: white;
+}
+
+#mainNav ul {
+    border: solid #ddd 1px;
+    background-color: white;
+    margin: 0;
+}
+
+#mainNav ul li {
+    border: solid #eee 1px;
+    background-color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#mainNav ul li:hover {
+    background-color: #d4e1f7;
+}
+
+#mainNav ul li a {
+    font-family: 'sumanaregular';
+    color: #475a84;
+    font-size: 1.2em;
+}
+
+
+/*--------------------------------------------------HOME STARTS HERE-----*/
+
+#homebanner {
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+#bannertext {
+    margin-top: 260px;
+}
+
+#bannertext h2 {
+    font-family: 'sumanabold';
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+#bannertext h3 {
+    font-family: 'sumanaregular';
+    font-size: 1.3em;
+    margin-top: -10px;
+}
+
+#bannertext p {
+    color: white;
+    font-size: .8em;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*--------------------------------------------------ISLAND STARTS HERE-----*/
+
+#islandBanner {
+    background-color: #a1202f;
+    margin-bottom: 30px;
+}
+
+#islandBanner h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+#islandBanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#islandBanner .downarrow {
+    width: 80px;
+}
+
+#history h2
+{
+    margin-top: 20px;
+}
+
+/*--------------------------------------------------DONATE STARTS HERE-----*/
+#donateBanner {
+    background-color: #a1202f;
+    margin-bottom: 30px;
+}
+
+#donateBanner h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+}
+#donateBanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#donateBanner .downarrow {
+    width: 80px;
+}
+
+#bluehelp {
+    background-color: #c8e6ff;
+}
+
+#howtohelp {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#howtohelp h2 {
+    margin-top: 50px;
+}
+
+.paytitle {
+    font-size: 1em;
+}
+
+#paypal {
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(175, 175, 175, 0.4);
+    border: solid 1px rgba(175, 175, 175, 0.9);
+}
+
+#categories
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#donorranks h2
+{
+    margin-top: 50px;
+}
+
+#donorchart
+{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+/*--------------------------------------------------GALLERY STARTS HERE-----*/
+
+#gallerybanner {
+    background-color: #475A84;
+    margin-bottom: 30px;
+}
+
+#gallerybanner h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+}
+#gallerybanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#gallerybanner .downarrow {
+    width: 80px;
+}
+
+#thumbs1
+{
+    height: 600px;
+}
+
+/*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
+
+#contactFooter{
+    background-color: #475A84;
+    padding: 100px 20px;
+
+}
+
+#locationSec{
+    padding: 0;
+}
+
+#contactFooter h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contactMap iframe{
+    width: 100%;
+    height: 300px;
+}
+
+#contactInfo{
+    padding: 60px 0;
+}
+
+#contactInfo p {
+    margin-bottom: 25px;
+}
+
+#contactInfo p, #contactInfo a {
+    text-align: center;
+    color: #fff;
+}
+
+#contactInfo a{
+    font-family: 'latoregular', sans-serif;
+}
+
+#contactInfo a:hover{
+    color: #c8e6ff;
+}
+
+#contactInfo p span{
+    font-family: 'latobold';
+}
+
+#contactInfo img{
+    width: 35px;
+}
+
+#tourStip{
+    font-family: 'latolight';
+    font-style: italic;
+}
+
+#contactUs p{
+    color: white;
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 0 20px;
+}
+
+#contactForm{
+    padding: 0;
+    margin: 0;
+}
+
+#submitButton {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#submitButton input {
+    color: #fff;
+    font-family: 'sumanaregular', serif;
+    font-size: 1.5em;
+    background-color: #a1202f;
+    border: 1px #fff solid;
+    padding: 15px 70px;
+    border-radius: 50px;
+}
+
+#submitButton input:hover{
+    background-color: #8e1b1b;
+}
+
+.formRows label{
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'latoregular', sans-serif;
+    text-align: center;
+}
+
+.formRows input{
+    color: #000;
+    text-align: center;
+    height: 50px;
+}
+
+.formRows textarea{
+    height: 200px;
+}
+
+.formRows input, .formRows textarea{
+    background-color: #fff;
+    font-family: 'latoregular', sans-serif;
+    border-radius: 10px;
+    font-size: 1.3em;
+}
+
+/*-------------------- FOOTER----------------*/
+
+#toTop{
+    background-color: #fff;
+}
+
+#toTop p{
+    font-family: 'latobold';
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 80px;
+}
+
+#toTop object{
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+    padding: 50px 0;
+
+}
+
+#bigNav{
+    display:none;
+}
+
+
+/* ----------Small to Medium Screen Transition*//*640/16*/
+@media screen and (min-width: 40em){
+/*---------------RESET---------------*/
+
+
+/*----------Main Navigation----------*/
+
+    #mainNav ul {
+        border: none;
+        background-color: white;
+        margin: 0;
+    }
+
+    #mainNav ul li {
+        border: none;
+        background-color: white;
+        display: inline;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #mainNav ul li:hover {
+        background-color: none;
+    }
+
+    #mainNav ul li a {
+        font-family: 'sumanaregular';
+        color: #475a84;
+        font-size: 1em;
+    }
+    
+/*------------------------------HOME-------------------*/
+
+    #mainbanner h2 {
+        font-size: 3em;
+    }
+
+    #bannertext {
+        margin-top: 250px;
+        margin-bottom: 200px;
+    }
+
+    #bannertext h2
+    {
+        font-size: 2em;
+        padding-top: 20px;
+    }
+
+    .sameLook p {
+        font-size: .8em;
+        width: 70%;
+        margin-left: 15%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .sameLook {
+        height: 400px;
+    }
+
+    .sameLook h2 {
+        margin-top: 50px;
+        font-size: 1.2em;
+    }
+
+    .sideImage {
+        height: 400px;
+        background-size: cover;
+    }
+
+    #heritage h2{
+        margin-top: 115px;
+    }
+
+    #donation h2{
+        margin-top: 115px;
+    }
+
+/*----------------------CONTACT---------------*/
+    #geography h2{
+        margin-top: 0;
+    }
+
+
+/*----------------------CONTACT---------------*/
+ 
+
+    #contactUs{
+        padding: 0;
+
+    }
+
+    #contactInfo {
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    #contactInfo p {
+        text-align: left;
+    }
+
+    #contactMap iframe {
+        height: 400px;
+    }
+
+    #contactUs {
+        padding-top: 50px;
+    }
+
+    
+    #submitButton {
+        padding: 20px;
+    }
+
+
+    .formRows label {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+   .formRows {
+        padding: 0 15px;
+    }
+
+    .formRows input{
+        height: 40px;
+    }
+
+}
+
+/*Medium to Large Screen Transition*//*1024/16*/
+@media screen and (min-width: 64em)  {
+/*---------------RESET---------------*/
+
+/*---------------HEADER---------------*/
+
+    .sameLook {
+        height: 400px;
+    }
+
+    .sameLook h2 {
+        margin-top: 30px;
+    }
+
+    .sameLook p {
+        font-size: 0.9em;
+        width: 70%;
+        margin-left: 15%;
+        text-align: left;
+    }
+
+    .sideImage {
+        height: 400px;
+    }
+
+    #desklogo {
+
+        width: 200px;
+        margin-left: 10%;
+        position: absolute;
+    }
+
+    #mainNav
+    {
+        height: 100px;
+        margin-right: 10%;
+    }
+
+    #mainNav ul {
+        background-color: white;
+        border:none;
+        margin-top: 50px;
+    }
+
+    #mainNav ul li {
+        display: inline;
+        margin-left: 20px;
+        border: none;
+    }
+
+    #mainNav ul li:hover {
+        background-color: #FFF;
+    }
+
+    #mainNav ul li a {
+        font-family: 'sumanaregular';
+        color: #475a84;
+        font-size: .9em;
+    }
+
+    #mainNav ul li a:hover {
+        font-family: 'sumanaregular';
+        color: #b10004;
+        background-color: none;
+    }
+/*---------------HOME---------------*/
+
+    #mainbanner
+    {
+        height: 700px;
+    }
+
+    #bannertext .downarrow {
+    width: 80px;
+    margin-top: 150px;
+    }
+
+    #heritage h2
+    {
+        margin-top: 95px;
+    }
+
+    #donation h2
+    {
+        margin-top: 85px;
+    }
+
+/*---------------ISLAND---------------*/
+
+    #islandBanner h2 {
+        margin-top: 60px;
+    }
+
+    #history h2 {
+        margin-top: 60px;
+    }
+
+    #restoration h2 {
+        margin-top: 80px;
+    }
+
+
+/*---------------CONTACT---------------*/
+    #contactMap iframe{
+        height: 450px;
+    }
+
+    #contactUs{
+        padding: 0;
+
+    }
+
+
+
+    .formRows label{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 1.1em;
+    }
+/*-------------------- FOOTER----------------*/
+
+    #toTop{
+        display:none;
+    }
+
+    #bigNav object{
+        display: inline-block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        height: 80px;
+    }
+
+    #bigNav{
+        display: inline-block;
+        padding-top:4px;
+        width: 100%;
+        height: 80px;
+    }
+
+    #bigNav ul{
+        float: right;
+        display: inline-block;
+        height: 80px;
+        margin: 0;
+        
+    }
+
+    #bigNav ul li{
+        display: inline-block;
+    }
+
+    #bigNav ul li a{
+        text-align: center;
+        color: #000;
+        display: block;
+        padding: 25px 30px;
+    }
+
+    #bigNav ul li a:hover{
+        background-color: #eee; 
+        color: #a1202f;
+    }
+}
