@@ -15,6 +15,20 @@
     font-style: italic;
 }
 @font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'sumanabold';
     src: url('../fonts/sumana-bold-webfont.woff2') format('woff2'),
          url('../fonts/sumana-bold-webfont.woff') format('woff');
@@ -60,6 +74,11 @@ h2,h3{
 span{
     font-style: : italic;
 }
+
+.column, .columns{
+    padding: 0;
+}
+
 
 /*-------------------------------------------------------------------------------------MAIN NAV STARTS HERE-----*/
 
@@ -146,6 +165,132 @@ span{
     font-size: 1em;
 }
 
+/*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
+#contactFooter{
+    background-color: #475A84;
+    padding: 100px 20px;
+
+}
+
+#locationSec{
+    padding: 0;
+}
+
+#contactFooter h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contactMap iframe{
+    width: 100%;
+    height: 300px;
+}
+
+#contactInfo{
+    padding: 60px 0;
+}
+
+#contactInfo p {
+    margin-bottom: 25px;
+}
+
+#contactInfo p, #contactInfo a {
+    text-align: center;
+    color: #fff;
+}
+
+#contactInfo a{
+    font-family: 'latoregular', sans-serif;
+}
+
+#contactInfo a:hover{
+    color: #c8e6ff;
+}
+
+#contactInfo p span{
+    font-family: 'latobold';
+}
+
+#tourStip{
+    font-family: 'latolight';
+    font-style: italic;
+}
+
+#contactForm{
+    padding: 0;
+    margin: 0;
+}
+
+#submitButton {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#submitButton input {
+    color: #fff;
+    font-family: 'sumanaregular', serif;
+    font-size: 1.5em;
+    background-color: #a1202f;
+    border: 2px #fff solid;
+    padding: 15px 70px;
+    border-radius: 50px;
+}
+
+#submitButton input:hover{
+    background-color: #8e1b1b;
+}
+
+.formRows label{
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'latoregular', sans-serif;
+    text-align: center;
+}
+
+.formRows input{
+    color: #000;
+    text-align: center;
+    height: 50px;
+}
+
+.formRows textarea{
+    height: 200px;
+}
+
+.formRows input, .formRows textarea{
+    background-color: #c8e6ff;
+    font-family: 'latoregular', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 1.3em;
+}
+
+/*-------------------- FOOTER----------------*/
+
+#toTop{
+    background-color: #fff;
+}
+
+#toTop p{
+    font-family: 'latobold';
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 80px;
+}
+
+#toTop object{
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+    padding: 50px 0;
+
+}
+
+#bigNav{
+    display:none;
+}
 
 /* ----------Small to Medium Screen Transition*//*640/16*/
 @media screen and (min-width: 40em){
@@ -157,7 +302,7 @@ span{
     #desklogo {
     width: 200px;
     margin-left: 10%;
-    position: fixed;
+    position: absolute;
     }
 
     #mainNav
@@ -204,6 +349,43 @@ span{
         margin-top: 250px;
         margin-bottom: 200px;
     }
+/*------------------------------CONTACT-------------------*/
+    #contactInfo{
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    #contactInfo p{
+        text-align: left;
+        
+    }
+
+    #contactMap iframe{
+        height: 400px;
+    }
+
+    #contactUs{
+        padding-top: 50px;
+    }
+
+    
+    #submitButton{
+        padding: 20px;
+    }
+
+    .formRows{
+        padding: 0 15px;
+    }
+
+    .formRows label{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    /*-------------------- FOOTER----------------*/
+
+    
+
 }
 
 /*Medium to Large Screen Transition*//*1024/16*/
@@ -213,15 +395,75 @@ span{
 /*---------------HEADER---------------*/
 /*---------------FOOTER---------------*/
 
+    
+
 /*---------------ABOUT---------------*/
 
 /*---------------DESIGN---------------*/
 
 
 /*---------------CONTACT---------------*/
+    #contactMap iframe{
+        height: 450px;
+    }
 
+    #contactUs{
+        padding: 0;
 
-/*---------------PORTFOLIO PAGE---------------*/
+    }
 
+    .formRows input{
+        height: 40px;
+    }
+
+    .formRows label{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+/*-------------------- FOOTER----------------*/
+
+    #toTop{
+        display:none;
+    }
+
+    #bigNav object{
+        display: inline-block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        height: 80px;
+    }
+
+    #bigNav{
+        display: inline-block;
+        padding-top:4px;
+        width: 100%;
+        height: 80px;
+    }
+
+    #bigNav ul{
+        float: right;
+        display: inline-block;
+        height: 80px;
+        margin: 0;
+        
+    }
+
+    #bigNav ul li{
+        display: inline-block;
+    }
+
+    #bigNav ul li a{
+        text-align: center;
+        color: #000;
+        display: block;
+        padding: 25px 30px;
+    }
+
+    #bigNav ul li a:hover{
+        background-color: #eee; 
+        color: #a1202f;
+    }
 
 }
