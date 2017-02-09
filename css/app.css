@@ -59,13 +59,13 @@ p, li {
     line-height: 1.4;
 }
 
-h1 {
+h1, h2 {
     font-family: 'sumanabold', serif;
     font-size: 2em;
     text-align: center;
 }
 
-h2,h3 {
+h3 {
     font-family: 'sumanaregular', serif;
     font-size: 1.6em;
     text-align: left;
@@ -137,7 +137,7 @@ span {
 }
 
 .sameLook{
-    height: 250px;
+    height: auto;
 }
 
 .sameLook p {
@@ -293,9 +293,20 @@ span {
     font-family: 'latobold';
 }
 
+#contactInfo img{
+    width: 35px;
+}
+
 #tourStip{
     font-family: 'latolight';
     font-style: italic;
+}
+
+#contactUs p{
+    color: white;
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 0 20px;
 }
 
 #contactForm{
@@ -314,7 +325,7 @@ span {
     font-family: 'sumanaregular', serif;
     font-size: 1.5em;
     background-color: #a1202f;
-    border: 2px #fff solid;
+    border: 1px #fff solid;
     padding: 15px 70px;
     border-radius: 50px;
 }
@@ -341,10 +352,9 @@ span {
 }
 
 .formRows input, .formRows textarea{
-    background-color: #c8e6ff;
+    background-color: #fff;
     font-family: 'latoregular', sans-serif;
     border-radius: 10px;
-    border: 2px solid #fff;
     font-size: 1.3em;
 }
 
@@ -444,6 +454,50 @@ span {
     #donation h2{
         margin-top: 115px;
     }
+/*----------------------CONTACT---------------*/
+ 
+
+    #contactUs{
+        padding: 0;
+
+    }
+
+    #contactInfo {
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    #contactInfo p {
+        text-align: left;
+    }
+
+    #contactMap iframe {
+        height: 400px;
+    }
+
+    #contactUs {
+        padding-top: 50px;
+    }
+
+    
+    #submitButton {
+        padding: 20px;
+    }
+
+
+    .formRows label {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+   .formRows {
+        padding: 0 15px;
+    }
+
+    .formRows input{
+        height: 40px;
+    }
+
 }
 
 /*Medium to Large Screen Transition*//*1024/16*/
@@ -523,54 +577,11 @@ span {
         margin-top: 95px;
     }
 
-/*------------------------------CONTACT-------------------*/
-    #contactInfo {
-        padding: 0;
-        padding-left: 20px;
-    }
-
-    #contactInfo p {
-        text-align: left;
-        
-    }
-
-    #contactMap iframe {
-        height: 400px;
-    }
-
-    #contactUs {
-        padding-top: 50px;
-    }
-
-    
-    #submitButton {
-        padding: 20px;
-    }
-
-    .formRows {
-        padding: 0 15px;
-    }
-
-    .formRows label {
-        text-align: left;
-        margin-left: 10px;
-    }
-
-    /*-------------------- FOOTER----------------*/
-}
-
     #donation h2
     {
         margin-top: 85px;
-    }
+    }    
 
-/*---------------FOOTER---------------*/
-
-    
-
-/*---------------ABOUT---------------*/
-
-/*---------------DESIGN---------------*/
 
 
 /*---------------CONTACT---------------*/
@@ -583,15 +594,13 @@ span {
 
     }
 
-    .formRows input{
-        height: 40px;
-    }
+
 
     .formRows label{
         text-align: left;
         margin-left: 10px;
+        font-size: 1.1em;
     }
-
 /*-------------------- FOOTER----------------*/
 
     #toTop{
