@@ -75,6 +75,10 @@ span {
     font-style: : italic;
 }
 
+a{
+    font-family: 'latolight', sans-serif;
+}
+
 
 .center {
     text-align: center;
@@ -92,12 +96,17 @@ span {
     color: white;
 }
 
+.white a {
+    color: white;
+}
+
 .redBut {
     background: #a1202f;
     padding: 8px 25px 8px 25px;
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
+    width: 170px;
 }
 
 .blueBut {
@@ -106,6 +115,7 @@ span {
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
+    width: 170px;
 }
 
 .whiteBut {
@@ -115,6 +125,7 @@ span {
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: 20px;
+    width: 170px;
 }
 
 .sideImage {
@@ -131,13 +142,13 @@ span {
     margin-top: 20px;
 }
 
-.downarrow {
+#bannertext .downarrow {
     width: 80px;
-    margin-bottom: 20px;
+    margin-top: 150px;
 }
 
 .sameLook{
-    height: auto;
+    padding-bottom: 60px;
 }
 
 .sameLook p {
@@ -145,6 +156,7 @@ span {
     margin-top: 30px;
     width: 80%;
     margin-left: 10%;
+    padding-bottom: 20px;
 }
 
 .sameLook h2 {
@@ -222,18 +234,19 @@ span {
 /*--------------------------------------------------HOME STARTS HERE-----*/
 
 #homebanner {
-    height: 550px;
+    height: 650px;
     background-position: center;
     background-size: cover;
 }
 
 #bannertext {
-    margin-top: 220px;
+    margin-top: 260px;
 }
 
 #bannertext h2 {
     font-family: 'sumanabold';
     font-size: 1.5em;
+    margin-top: 30px;
 }
 
 #bannertext h3 {
@@ -246,6 +259,7 @@ span {
     color: white;
     font-size: .8em;
     margin-top: 10px;
+    padding-bottom: 20px;
 }
 
 /*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
