@@ -12,7 +12,7 @@
   
   <body>
     <?php include("includes/header.html");?>
-
+<h1 class="hide">Donation Page</h1>
     <section id="donateBanner" class="sameLook row expanded">
     <h2 class="hide">Donation Page Banner</h2>
         <div class="sideImage small-12 medium-6 large-7 float-left columns" data-interchange="[images/mobdonbanner.jpg, small], [images/tabdonbanner.jpg, medium], [images/deskdonbanner.jpg, large]">

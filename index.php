@@ -11,7 +11,7 @@
   
   <body>
     <?php include("includes/header.html");?>
-
+    <h1 class="hide">Home Page</h1>
     <section id="homebanner" class="row expanded" data-interchange="[images/mobisland2.jpg, small], [images/tabisland2.jpg, medium], [images/island2.jpg, large]">
     <h2 class="hide">Welcome Banner</h2>
       <div id="bannertext" class="small-11 medium-8 large-6 small-centered columns">

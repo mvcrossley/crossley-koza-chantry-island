@@ -12,7 +12,7 @@
   
   <body>
     <?php include("includes/header.html");?>
-
+<h1 class="hide">About the Island Page</h1>
      <section id="islandBanner" class="sameLook row expanded">
       <h2 class="hide">An Intro to The Island</h2>
           <div class="sideImage small-12 medium-6 large-7 float-left columns" data-interchange="[images/mobaerial.jpg, small], [images/tabaerial.jpg, medium], [images/deskaerial.jpg, large]">

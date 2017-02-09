@@ -12,7 +12,7 @@
   
   <body>
     <?php include("includes/header.html");?>
-
+<h1 class="hide">Gallery Page</h1>
     <section id="gallerybanner" class="sameLook row expanded">
     <h2 class="hide">Gallery Page Banner</h2>
         <div class="sideImage small-12 medium-6 large-7 float-left columns" data-interchange="[images/mobgalbanner.jpg, small], [images/tabgalbanner.jpg, medium], [images/deskgalbanner.jpg, large]">
