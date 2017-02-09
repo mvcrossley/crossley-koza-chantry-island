@@ -264,6 +264,51 @@ a{
     padding-bottom: 20px;
 }
 
+/*--------------------------------------------------ABOUT STARTS HERE-----*/
+#aboutbanner {
+    background-color: #475A84;
+    margin-bottom: 30px;
+}
+
+#aboutbanner h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+}
+#aboutbanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#aboutbanner .downarrow {
+    width: 80px;
+}
+
+/*MORAGH START*/
+
+#ourvolunteers
+{
+    padding-bottom: 30px;
+}
+
+.volunteers p {
+    width: 250px;
+    height: 55px;
+    margin-left: 30%;
+    padding: 10px;
+    background-color: #c8e6ff;
+    text-align: center;
+}
+
+/*MORAGH END*/
+
+
+
+
+/*LAUREN START*/
+
+/*LAUREN END*/
+
+
 /*--------------------------------------------------ISLAND STARTS HERE-----*/
 
 #islandBanner {
@@ -284,6 +329,34 @@ a{
     width: 80px;
 }
 
+/*--------------------------------------------------GALLERY STARTS HERE-----*/
+
+#gallerybanner {
+    background-color: #475A84;
+    margin-bottom: 30px;
+}
+
+#gallerybanner h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+}
+#gallerybanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#gallerybanner .downarrow {
+    width: 80px;
+}
+
+#galleryPics{
+    margin-bottom: 50px;
+}
+
+#thumbs div{
+    padding: 5px;  
+    text-align: center;
+}
 
 /*-------------------------------------------------TOUR STARTS HERE------*/
 
@@ -417,6 +490,7 @@ a{
 #donateBanner {
   background-color: #a1202F;
   margin-bottom: 30px;
+}
   
 #donateBanner h2 {
     font-size: 1.8em;
@@ -694,10 +768,12 @@ a{
     }
 
     
-/*----------------------TOUR---------------*/
+/*----------------------ABOUT---------------*/
 
-    
-
+.volunteers p
+{
+    margin-left: 0px;
+}
 
 
 /*----------------------CONTACT---------------*/
