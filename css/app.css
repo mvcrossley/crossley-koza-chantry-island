@@ -307,6 +307,94 @@ a{
 
 /*LAUREN START*/
 
+#volVids{
+    margin: 100px auto;
+}
+
+#volVids h2{
+    font-family: 'sumanabold';
+    margin-bottom: 50px;
+}
+
+.volVid{
+    padding: 20px;
+    text-align: center;
+}
+
+.volVid h3{
+    font-family: 'latobold', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #475a84;
+}
+
+.volVid p{
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.volVid iframe{
+    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#newsIntro{
+    background-color: #a1202f;
+}
+
+#newsIntro h2{
+    font-size: 1.7em;
+}
+
+#newsIntro p{
+    font-size: 1em;
+}
+
+#nIntro {
+    height: auto;
+}
+
+#nIntro h2{
+    margin-top: 70px;
+}
+
+
+.nArticle{
+    margin: 50px 0px;
+    border: 1px #ddd solid;
+}
+
+.articletext{
+    padding: 50px;
+}
+
+.nArticle h3{
+    font-family: 'latobold';
+    color: #475a84;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.nArticle p span{
+    font-family: 'latolight';
+    font-style: italic;
+    color: #475a84;
+}
+
+.nArticle p{
+    text-align: center;
+}
+
+.nArticle img{
+    float: right;
+}
+
+
 /*LAUREN END*/
 
 
