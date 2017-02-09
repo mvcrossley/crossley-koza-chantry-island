@@ -19,7 +19,7 @@
         <h3 class="white center">Book your tour today!</h3>
         <p class="white">Stroll back in time with a visit to the Keeper’s Cottage, restored to it’s original 1800s condition, and decorated with period furnishing from privatedonors, and the Bruce County Museum and Cultural Center. Marvel at the wonders of nature with a walk through the protected bird sanctuary, and surrounding gardens.</p>
         <div class="center"><a class="whiteBut white center" href="tours.php">Learn More</a></div>
-        <div class="center"><a href="#islandIntro"><img class="downarrow" src="images/whitearrow.svg"></a></div>
+        <div class="center"><a href="#islandIntro"><img class="downarrow" src="images/whitearrow.svg" alt="And arrow to take you down a section"></a></div>
       </div>
     </section>
 
@@ -46,7 +46,7 @@
         <div id="heritage" class="small-12 medium-6 float-left large-5 columns">
             <h2 class="red center">The Marine Heritage Society</h2>
             <p>Get to know us and what we do! Stay up to date on news, events, volunteers, and important dates!</p>
-            <div class="center"><a href="island.php" class="blueBut white center">Learn More</a></div>
+            <div class="center"><a href="about.php" class="blueBut white center">Learn More</a></div>
           </div>
         </div>
     </section>
@@ -59,7 +59,7 @@
         <div id="donation" class="small-12 medium-6 large-5 float-right columns">
             <h2 class="blue center">Every Bit Counts.</h2>
             <p>When it comes to donations, every little bit counts. Here at the Marine Heritage Society, we are determined to make our one-of-a-kind tours the very best, Click the link below to learn how you can support Chantry Island.</p>
-            <div class="center"><a href="island.php" class="redBut white center">Learn More</a></div>
+            <div class="center"><a href="donate.php" class="redBut white center">Learn More</a></div>
         </div>
     </section>
       

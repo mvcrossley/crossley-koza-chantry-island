@@ -149,6 +149,7 @@ a{
 
 .sameLook{
     padding-bottom: 60px;
+    overflow: hidden;
 }
 
 .sameLook p {
@@ -276,17 +277,25 @@ a{
 }
 #islandBanner p {
     margin-top: 30px;
+    font-size: 1em;
 }
 
 #islandBanner .downarrow {
     width: 80px;
 }
 
+
 /*-------------------------------------------------TOUR STARTS HERE------*/
 
+
+#history h2
+{
+    margin-top: 20px;
+}
+
 #tourHeader {
-    background-color: #a1202f;
-    margin-bottom: 30px;
+  background-color: #a1202f;
+  margin-bottom: 30px;
 }
 
 #tourHeader h2, #tourRates h2, #tourSchedule h2 {
@@ -400,6 +409,71 @@ a{
 #tSchedule {
     margin-bottom: 50px;
     height: auto;
+}
+
+
+
+/*--------------------------------------------------DONATE STARTS HERE-----*/
+#donateBanner {
+  background-color: #a1202F;
+  margin-bottom: 30px;
+  
+#donateBanner h2 {
+    font-size: 1.8em;
+    margin-top: 60px;
+}
+#donateBanner p {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+#donateBanner .downarrow {
+    width: 80px;
+}
+
+#bluehelp {
+    background-color: #c8e6ff;
+}
+
+#howtohelp {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#howtohelp h2 {
+    margin-top: 50px;
+}
+
+.paytitle {
+    font-size: 1em;
+}
+
+#paypal {
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(175, 175, 175, 0.4);
+    border: solid 1px rgba(175, 175, 175, 0.9);
+}
+
+#categories
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#donorranks h2
+{
+    margin-top: 50px;
+}
+
+#donorchart
+{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 500px;
 }
 
 
@@ -618,10 +692,18 @@ a{
     #donation h2{
         margin-top: 115px;
     }
+
     
 /*----------------------TOUR---------------*/
 
     
+
+
+
+/*----------------------CONTACT---------------*/
+    #geography h2{
+        margin-top: 0;
+    }
 
 
 /*----------------------CONTACT---------------*/
@@ -763,6 +845,13 @@ a{
         margin-top: 60px;
     }
 
+    #history h2 {
+        margin-top: 60px;
+    }
+
+    #restoration h2 {
+        margin-top: 80px;
+    }
 
 /*---------------CONTACT---------------*/
     #contactMap iframe{
