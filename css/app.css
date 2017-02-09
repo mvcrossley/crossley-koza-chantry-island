@@ -54,7 +54,7 @@ p, li {
     font-family: 'latolight', sans-serif;
     font-weight: 300;
     color: #808080;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: justify;
     line-height: 1.4;
 }
@@ -575,7 +575,6 @@ a{
         margin-top: 0;
     }
 
-
 /*----------------------CONTACT---------------*/
  
 
@@ -722,7 +721,6 @@ a{
     #restoration h2 {
         margin-top: 80px;
     }
-
 
 /*---------------CONTACT---------------*/
     #contactMap iframe{
