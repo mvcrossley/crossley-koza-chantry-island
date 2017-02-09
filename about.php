@@ -24,57 +24,8 @@
         </div>
     </section>
 
-    <section id="ourVolunteers" class="row">
-    <h2 class="hide">Our Volunteers Sections</h2>
-      <div class="small-12 medium-12 large-8 large-centered columns">
-        <h2 class="red center">Our Volunteers</h2>
-        <p class="center">Since so many people volunteer their time and energy to help our organization function, we have dedicated this section to our wonderful volunteers. Thank you all very much, this would not be possible without your time and donations.</p>
-      </div>
-    </section>
 
-    <section class="row">
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Don Nicholson - Chairman</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Pat O'Connor - Vice Chairman</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>John Rigby - Treasurer</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Stan Young - Secretary</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Rick Smith - Past Chairman</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Ali Kelly</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Jane Kramer</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Vicki Tomori</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Dan Holmes</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Dave Wenn</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Ed Braun</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>John Willetts</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 end columns">
-          <p>Peter Williamson - Observer</p>
-      </div>
-    </section>
-    
-      <section id="volVids" class="row">
+    <section id="volVids" class="row">
       <div id="vidList">
       <h2 class="center red">Volunteer Interviews</h2>
 
@@ -109,38 +60,39 @@
         <div id="nList">
           <h2 class="hide">News List</h2>
             <div class="nArticle small-12 column">
-                <div class="articletext small-12 medium-6 column">
+                <div class="articletext small-12 large-6 column">
                     <h3>Boat House Southampton</h3>
                     <p id="datePosted">Date Posted: Feb 3rd, 2017</p>
                     <p>Work on the Tilbury continues as the winter slowly approaches conclusion</p>
                 </div>
-                <div>
+                <div class="articleimg small-12 large-6 column">
                     <img src="images/news1.jpg" alt="News Pic">
                 </div>
             </div>
 
             <div class="nArticle small-12 column">
-                <div class="articletext small-12 medium-6 column">
+                <div class="articletext small-12 large-6 column">
                     <h3>Doug Johnson Proudly Displays the Famous Saying.</h3>
                     <p id="datePosted">Date Posted: Jan 18th, 2017</p>
                     <p>Work on the Tilbury continues as the winter slowly approaches conclusion</p>
                 </div>
-                <div>
+                <div class="articleimg small-12 large-6 column">
                     <img src="images/news2.jpg" alt="News Pic">
                 </div>
             </div>
             <div class="nArticle small-12 column">
-                <div class="articletext small-12 medium-6 column">
+                <div class="articletext small-12 large-6 column">
                     <h3>Boat House Southampton</h3>
                     <p><span>Date Posted: Dec 2nd, 2016</span></p>
                     <p>The Peerless II outside the Boathouse in southampton. Photo courtesy Eric Rogers.</p>
                 </div>
-                <div>
+                <div class="articleimg small-12 large-6 column">
                     <img src="images/news3.jpg" alt="News Pic">
                 </div>
             </div>
       </div>
     </section>
+
 
     <?php include("includes/footer.html");?>
 
