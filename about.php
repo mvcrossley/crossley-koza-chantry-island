@@ -74,7 +74,6 @@
       </div>
     </section>
 
-
     <?php include("includes/footer.html");?>
 
 

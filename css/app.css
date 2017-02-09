@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------------------------------------------------FONTS START HERE-----*/
 @font-face {
     font-family: 'latolight';
@@ -989,5 +990,5 @@ a{
     #bigNav ul li a:hover{
         background-color: #eee; 
         color: #a1202f;
-    }
+  }
 }
