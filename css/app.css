@@ -45,7 +45,7 @@
 /*---------------------------------------------------------------------------------CSS RESET------------------*/
 
 body, html {
-    font-size: 100%
+    font-size: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -54,7 +54,7 @@ p, li {
     font-family: 'latolight', sans-serif;
     font-weight: 300;
     color: #808080;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: justify;
     line-height: 1.4;
 }
@@ -284,17 +284,140 @@ a{
     width: 80px;
 }
 
+
+/*-------------------------------------------------TOUR STARTS HERE------*/
+
+
 #history h2
 {
     margin-top: 20px;
 }
 
-/*--------------------------------------------------DONATE STARTS HERE-----*/
-#donateBanner {
-    background-color: #a1202f;
-    margin-bottom: 30px;
+#tourHeader {
+  background-color: #a1202f;
+  margin-bottom: 30px;
 }
 
+#tourHeader h2, #tourRates h2, #tourSchedule h2 {
+    text-align: center;
+    font-family: 'sumanabold';
+    font-size: 1.8em;
+    margin-top: 100px;
+}
+
+#tourHeader h2 {
+    margin-top: 50px;
+}
+
+#tourHeader p, #tourRates p, #tourSchedule p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#tourHeader .downarrow {
+    width: 80px;
+}
+
+#tourInfo{
+    background-color: #475a84;
+}
+
+#tInfo{
+    padding-top: 50px;
+    height: auto;
+}
+
+#tInfo h2{
+    font-size: 1.7em;
+}
+
+#tInfo p{
+    font-size: 1em;
+}
+
+#tourDetails{
+    margin: 100px auto;
+}
+
+.tourDetail{
+    padding: 40px;
+    text-align: center;
+}
+
+.tourDetail h3{
+    font-family: 'latobold', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #a1202f;
+}
+
+.tourDetail p{
+    font-size: 1em;
+}
+.tourDetail p a{
+    font-family: 'latobold', sans-serif;
+}
+
+.tourDetail img{
+    height: 150px;
+    margin: 40px 20px;
+}
+
+#tourRates{
+    background-color: #c8e6ff;
+}
+
+#tourRates h2{
+    margin-top: 80px;
+}
+
+#tourRates p{
+    font-size: 1em;
+    font-family: 'latoregular', sans-serif;
+}
+#tourRates p span{
+    font-family: 'latobold';
+}
+
+#tourTable{
+    padding: 30px 10px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+#tourTable table, #tourTable tr, #tourTable td{
+    border: 3px solid #475a84;
+    border-collapse: collapse;
+}
+
+#tourTable th{
+    background-color: #475a84;
+    color: white;
+}
+
+#tourTable tr{
+    font-family: 'latoregular';
+    color: #475a84;
+}
+
+#tSchedule p span{
+    font-family: 'latobold';
+    font-size: 1.3em;
+}
+
+#tSchedule {
+    margin-bottom: 50px;
+    height: auto;
+}
+
+
+
+/*--------------------------------------------------DONATE STARTS HERE-----*/
+#donateBanner {
+  background-color: #a1202F;
+  margin-bottom: 30px;
+  
 #donateBanner h2 {
     font-size: 1.8em;
     margin-top: 60px;
@@ -353,12 +476,12 @@ a{
     width: 500px;
 }
 
+
 /*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
 
 #contactFooter{
     background-color: #475A84;
     padding: 100px 20px;
-
 }
 
 #locationSec{
@@ -570,17 +693,24 @@ a{
         margin-top: 115px;
     }
 
+    
+/*----------------------TOUR---------------*/
+
+    
+
+
+
 /*----------------------CONTACT---------------*/
     #geography h2{
         margin-top: 0;
     }
+
 
 /*----------------------CONTACT---------------*/
  
 
     #contactUs{
         padding: 0;
-
     }
 
     #contactInfo {
@@ -590,6 +720,7 @@ a{
 
     #contactInfo p {
         text-align: left;
+        font-size: 1em;
     }
 
     #contactMap iframe {
