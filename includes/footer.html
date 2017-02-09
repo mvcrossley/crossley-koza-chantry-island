@@ -1,4 +1,98 @@
-    <section id="contactFooter">
-    <h2>Contact Us</h2>
+    <section id="contactFooter" class="row expanded">
+    <h2 class="hide">Contact</h2>
+	    <div id="findUs" class="column small-12 large-7">
+	    	<h3 class="center">Find us</h3>
+		    <div id="contactMap" class="column small-12 medium-7">
+		    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20483.485958391586!2d-81.40941953936849!3d44.48531083965202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8829ce5f8c20f7df%3A0x1401a4a7bb9f19b6!2sChantry+Island!5e0!3m2!1sen!2sca!4v1486589594754" frameborder="0" style="border:0" allowfullscreen></iframe>
+		    </div>
+
+	    
+		    <div id="contactInfo" class="column small-12 medium-5">
+		    		<p>
+						Call: <a href="tel:519-797-5862">+519-797-5862 </a><br>
+		    			Toll Free: <a href="tel:1-866-797-5862">+1-866-797-5862 </a>
+		    		</p>
+
+		    		<p>
+						<span>Mailing Address:</span><br>
+						Marine Heritage Society<br>
+						Box 421<br>
+						Southampton, Ontario<br>
+						Canada, N0H 2L0
+					</p>
+					<p>					
+						<span>Tour Location:*</span><br>
+						86 Saugeen St.<br>
+						Southampton, Ontario<br>
+						Canada, N0H 2L0<br>
+					</p>
+					<p id="tourStip">
+						*Tours must be booked and paid in advance. Visit our <a href="tours.html">Tour Page</a> for more information.
+					</p>			
+		    </div>
+		</div>
+
+		<div id="contactUs" class="small-12 large-5 column ">
+			<h3 class="white center">Email Us</h3>
+		    <div id="contactForm" >
+		    	
+			    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+					<div class="column small-12 medium-6 formRows">
+						<label>Name:</label>
+						<input type="text" name="name"> 
+					</div>
+
+					<label class="hide">Address:</label>
+					<input class="hide" type="text" name="address">
+
+					<div class="column small-12 medium-6 formRows">
+						<label>Email:</label>
+						<input type="email" name="email">
+					</div>
+					
+					<div class="column small-12 formRows">
+						<label>Subject:</label>
+						<input type="text" name="subject">
+					</div>
+					
+					<div class="column small-12 formRows">
+						<label>Message:</label>
+						<textarea name="msg" ></textarea>
+					</div>
+					
+					<div id="submitButton" class="column small-12 small-centered">
+						<input type="submit" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
       
     </section>
+
+    <footer id="mainFooter" class="row">
+    	<div id="toTop" class="blue">
+    		<p><a href="#">Back To Top</a></p>
+    		<object id="moblogo" data="images/mobnavlogo.svg" type="image/svg+xml"></object>
+    	</div>
+
+	    <div id="bigNav">
+	    	<object id="moblogo" data="images/logo.svg" type="image/svg+xml"></object>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">The Island</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Tours</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#contact">Donate</a></li>
+	        </ul>
+        </div>
+    </footer>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>    
+  </body>
+</html>
