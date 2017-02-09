@@ -73,7 +73,7 @@ h2,h3 {
 }
 
 span {
-    font-style: : italic;
+    font-style: italic;
 }
 
 a{
@@ -801,7 +801,7 @@ a{
     }
 
     #mainNav ul li:hover {
-        background-color: none;
+        background-color: white;
     }
 
     #mainNav ul li a {
@@ -981,7 +981,7 @@ a{
     #mainNav ul li a:hover {
         font-family: 'sumanaregular';
         color: #b10004;
-        background-color: none;
+        background-color: white;
     }
 /*---------------HOME---------------*/
 
