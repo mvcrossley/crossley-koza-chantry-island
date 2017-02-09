@@ -44,13 +44,13 @@
 }
 /*---------------------------------------------------------------------------------CSS RESET------------------*/
 
-body, html{
+body, html {
     font-size: 100%
     margin: 0 auto;
     padding: 0;
 }
 
-p, li{
+p, li {
     font-family: 'latolight', sans-serif;
     font-weight: 300;
     color: #808080;
@@ -59,42 +59,123 @@ p, li{
     line-height: 1.4;
 }
 
-h1{
+h1 {
     font-family: 'sumanabold', serif;
     font-size: 2em;
     text-align: center;
 }
 
-h2,h3{
+h2,h3 {
     font-family: 'sumanaregular', serif;
     font-size: 1.6em;
     text-align: left;
 }
 
-span{
+span {
     font-style: : italic;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.red {
+    color: #a1202f;
+}
+
+.blue {
+    color: #475a84;
+}
+
+.white {
+    color: white;
+}
+
+.redBut {
+    background: #a1202f;
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.blueBut {
+    background: #475a84;
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.whiteBut {
+    background: rgba(175, 175, 175, 0.4);
+    border: solid 1px rgba(175, 175, 175, 0.9);
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.sideImage {
+    height: 250px;
+    background-position: center;
+}
+
+.whiteBut {
+    background: rgba(175, 175, 175, 0.4);
+    border: solid 1px rgba(175, 175, 175, 0.9);
+    padding: 8px 25px 8px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.downarrow {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.sameLook{
+    height: 250px;
+}
+
+.sameLook p {
+    font-size: .8em;
+    margin-top: 30px;
+}
+
+.sameLook h2 {
+    font-family: 'sumanabold';
+    font-size: 1.5em;
+    margin-top: 40px;
 }
 
 .column, .columns{
     padding: 0;
 }
 
-
 /*-------------------------------------------------------------------------------------MAIN NAV STARTS HERE-----*/
 
 .top-bar {
     background-color: #fff;
+    padding: 0;
 }
 
 .title-bar {
     background-color: white;
+    padding: 0;
+}
+
+#hamburg{
+    width: 25px;
 }
 
 #moblogo {
-    width: 20%;
-    margin-left: 40%;
-    max-width: 120px;
-    min-width: 60px
+    position: block;
+    text-align: center;
+    width: 70px;
+    margin-bottom: 15px;
 }
 
 #hamburger {
@@ -135,34 +216,32 @@ span{
 }
 
 
-/*--------------------------------------------------HOME BANNER STARTS HERE-----*/
+/*--------------------------------------------------HOME STARTS HERE-----*/
 
 #homebanner {
-    background: url("../images/island2.jpg") center no-repeat;
-    height: 700px;
+    height: 550px;
+    background-position: center;
 }
 
 #bannertext {
-    padding: 70px 10px;
+    margin-top: 220px;
 }
 
 #bannertext h2 {
     font-family: 'sumanabold';
-    text-align: center;
-    color: white;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 #bannertext h3 {
     font-family: 'sumanaregular';
-    text-align: center;
-    color: white;
-    font-size: 40px;
+    font-size: 1.3em;
+    margin-top: -10px;
 }
 
 #bannertext p {
     color: white;
-    font-size: 1em;
+    font-size: .8em;
+    margin-top: 10px;
 }
 
 /*--------------------------------------------------CONTACT FOOTER STARTS HERE-----*/
@@ -297,12 +376,103 @@ span{
 /*---------------RESET---------------*/
 
 
-    /*----------Main Navigation----------*/
+/*----------Main Navigation----------*/
+
+    #mainNav ul {
+        border: none;
+        background-color: white;
+        margin: 0;
+    }
+
+    #mainNav ul li {
+        border: none;
+        background-color: white;
+        display: inline;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #mainNav ul li:hover {
+        background-color: none;
+    }
+
+    #mainNav ul li a {
+        font-family: 'sumanaregular';
+        color: #475a84;
+        font-size: 1em;
+    }
+    
+/*------------------------------HOME-------------------*/
+
+    #mainbanner h2 {
+        font-size: 3em;
+    }
+
+    #bannertext {
+        margin-top: 250px;
+        margin-bottom: 200px;
+    }
+
+    .sameLook p {
+        font-size: .8em;
+        width: 70%;
+        margin-left: 15%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .sameLook {
+        height: 400px;
+    }
+
+    .sameLook h2 {
+        margin-top: 50px;
+        font-size: 1.2em;
+    }
+
+    .sideImage {
+        height: 400px;
+    }
+
+    #heritage h2{
+        margin-top: 115px;
+    }
+
+    #donation h2{
+        margin-top: 115px;
+    }
+}
+
+/*Medium to Large Screen Transition*//*1024/16*/
+@media screen and (min-width: 64em)  {
+/*---------------RESET---------------*/
+
+/*---------------HEADER---------------*/
+
+    .sameLook{
+        height: 400px;
+    }
+
+    .sameLook h2 {
+        margin-top: 30px;
+    }
+
+    .sameLook p{
+        font-size: 0.9em;
+        width: 70%;
+        margin-left: 15%;
+        text-align: left;
+    }
+
+    .sideImage{
+        height: 400px;
+    }
 
     #desklogo {
-    width: 200px;
-    margin-left: 10%;
-    position: absolute;
+
+        width: 200px;
+        margin-left: 10%;
+        position: absolute;
     }
 
     #mainNav
@@ -319,7 +489,7 @@ span{
 
     #mainNav ul li {
         display: inline;
-        margin-left: 30px;
+        margin-left: 20px;
         border: none;
     }
 
@@ -330,7 +500,7 @@ span{
     #mainNav ul li a {
         font-family: 'sumanaregular';
         color: #475a84;
-        font-size: 1em;
+        font-size: .9em;
     }
 
     #mainNav ul li a:hover {
@@ -338,61 +508,59 @@ span{
         color: #b10004;
         background-color: none;
     }
+/*---------------HOME BANNER---------------*/
 
-    
-/*------------------------------BANNER-------------------*/
-    #mainbanner {
-        background-size: 100%;
+    #mainbanner
+    {
+        height: 700px;
     }
 
-    #bannertext {
-        margin-top: 250px;
-        margin-bottom: 200px;
+    #heritage h2
+    {
+        margin-top: 95px;
     }
+
 /*------------------------------CONTACT-------------------*/
-    #contactInfo{
+    #contactInfo {
         padding: 0;
         padding-left: 20px;
     }
 
-    #contactInfo p{
+    #contactInfo p {
         text-align: left;
         
     }
 
-    #contactMap iframe{
+    #contactMap iframe {
         height: 400px;
     }
 
-    #contactUs{
+    #contactUs {
         padding-top: 50px;
     }
 
     
-    #submitButton{
+    #submitButton {
         padding: 20px;
     }
 
-    .formRows{
+    .formRows {
         padding: 0 15px;
     }
 
-    .formRows label{
+    .formRows label {
         text-align: left;
         margin-left: 10px;
     }
 
     /*-------------------- FOOTER----------------*/
-
-    
-
 }
 
-/*Medium to Large Screen Transition*//*1024/16*/
-@media screen and (min-width: 64em)  {
-/*---------------RESET---------------*/
+    #donation h2
+    {
+        margin-top: 85px;
+    }
 
-/*---------------HEADER---------------*/
 /*---------------FOOTER---------------*/
 
     
