@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------------------------------------------------FONTS START HERE-----*/
 @font-face {
     font-family: 'latolight';
@@ -284,6 +285,20 @@ a{
 }
 
 /*MORAGH START*/
+
+#ourvolunteers
+{
+    padding-bottom: 30px;
+}
+
+.volunteers p {
+    width: 250px;
+    height: 55px;
+    margin-left: 30%;
+    padding: 10px;
+    background-color: #c8e6ff;
+    text-align: center;
+}
 
 /*MORAGH END*/
 
@@ -754,10 +769,12 @@ a{
     }
 
     
-/*----------------------TOUR---------------*/
+/*----------------------ABOUT---------------*/
 
-    
-
+.volunteers p
+{
+    margin-left: 0px;
+}
 
 
 /*----------------------CONTACT---------------*/
@@ -973,5 +990,5 @@ a{
     #bigNav ul li a:hover{
         background-color: #eee; 
         color: #a1202f;
-    }
+  }
 }
