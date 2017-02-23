@@ -11,7 +11,7 @@
   
   <body>
     <?php include("includes/header.html");?>
-
+    <h1 class="hide">Home Page</h1>
     <section id="homebanner" class="row expanded" data-interchange="[images/mobisland2.jpg, small], [images/tabisland2.jpg, medium], [images/island2.jpg, large]">
     <h2 class="hide">Welcome Banner</h2>
       <div id="bannertext" class="small-11 medium-8 large-6 small-centered columns">
@@ -47,7 +47,6 @@
             <h2 class="red center">The Marine Heritage Society</h2>
             <p>Get to know us and what we do! Stay up to date on news, events, volunteers, and important dates!</p>
             <div class="center"><a href="about.php" class="blueBut white center">Learn More</a></div>
-          </div>
         </div>
     </section>
 

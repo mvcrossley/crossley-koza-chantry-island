@@ -12,7 +12,7 @@
   
   <body>
     <?php include("includes/header.html");?>
-
+<h1 class="hide">Tours Page</h1>
     <section id="tourHeader" class="sameLook row expanded">
     <h2 class="hide">Tour with Us</h2>
 
@@ -21,7 +21,7 @@
         <div class="small-12 medium-6 large-5 float-right columns">
           <h2 class="white center">Join us on a Tour...</h2>
             <p class="white">As you take the 15 minute boat ride to the island you will enjoy the outstanding views of the sandy beach shoreline and the deep blue waters of Lake Huron. During your two hour guided visit on Chantry Island, you have the opportunity to climb to the top of the Imperial Lighthouse for extraordinary views of the island.</p>
-          <div class="center show-for-small-only"><a href="#islandIntro"><img class="downarrow" src="images/whitearrow.svg"></a></div>
+          <div class="center show-for-small-only"><a href="#islandIntro"><img class="downarrow" src="images/whitearrow.svg" alt="Go to the next section"></a></div>
         </div>
     </section>
 
