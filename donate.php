@@ -35,7 +35,6 @@
         <p class="center"><img id="paypal" src="images/paypal_button.png" alt="pay using paypal"></p>
         <h2 class="paytitle center">Send a cheque or money order to:</h2>
         <p class="center">
-          Mailing Address:
           <br>Marine Heritage Society
           <br>86 Saugeen Street
           <br>Southampton, Ontario
