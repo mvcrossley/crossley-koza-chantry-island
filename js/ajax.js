@@ -4,19 +4,21 @@
 	photoThumb = document.querySelectorAll('.galThumb'),
 	nextPhoto = document.querySelector('#galnext'),
 	prevPhoto = document.querySelector('#galprev'),
+	bigPhoto = document.querySelector('#lightboxImg img'),
 	i;
 
 		for(i=0; i<photoThumb.length; i++){
 			
 			photoThumb[i].addEventListener('click', clickedButton, false);
-			photoThumb[i].addEventListener('click', function(e) {makeRequest('gallery_image_'+e.currentTarget.id+'.html');}, false);
+			photoThumb[i].addEventListener('click', makeRequest, false);
 
 			function clickedButton(e){
 				//console.log("clicked!");
 				console.log(e.currentTarget.id);
+				//bigPhoto.src = "images/gallery/base3.jpg";
 			}
 			
-			function makeRequest(url,e){
+			function makeRequest(){
 				httpRequest = new XMLHttpRequest();
 				//var buttonID = url.currentTarget.id;
 
@@ -26,16 +28,40 @@
 				}
 
 				httpRequest.onreadystatechange = switchPhoto;				
-				httpRequest.open('GET', 'admin/galleryAJAX.php?picID='+3, true); //Passing in a url through a get protocol, in this case, the "text.txt" file
+				httpRequest.open('GET', 'admin/phpscripts/galleryAJAX.php?gallery_image='+this.id); //Passing in a url through a get protocol
 				httpRequest.send();
+				console.log(url);
 
 			}
 
 			function switchPhoto(e){
 
+				if(httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200){
+					console.log("triggeredwew");
+
+					var picData = JSON.parse(httpRequest.responseText);
+
+					bigPhoto.src = "images/gallery/base3.jpg";
+
+					
+
+
+				/*}else{
+					console.log('There was a problem with your request.');*/
+					
+				}
+			}
+			//window.addEventListener('load', function() {makeRequest('gallery.php');}, false);
+	}
+
+})();
+
+/*			function switchPhoto(e){
+
 				if(httpRequest.readyState === XMLHttpRequest.DONE) {
+					console.log("triggered");
 					if(httpRequest.status === 200) {
-						console.log("triggered");
+						
 						var response =  JSON.parse(httpRequest.responseText);
 						//var jsondoc = JSON.parse(request.responseText);
 						console.log(" request working");
@@ -64,4 +90,4 @@
 			//window.addEventListener('load', function() {makeRequest('gallery.php');}, false);
 	}
 
-})();
+})();*/
