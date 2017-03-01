@@ -58,22 +58,7 @@
             <p><a id="galprev"><< Prev </a> | <a id="galnext"> Next >></a></p>
         </div>
     </div>
-<!--         <div class="small-3 medium-2 large-1 column end">
-            <a><img src="images/thumbs/aerial_TH.jpg" alt="This is the photo desc"></a>
-        </div>
-        <div class="small-3 medium-2 large-1 column end">
-            <img src="images/thumbs/aerial_TH.jpg" alt="This is the photo desc">
-        </div>
-        <div class="small-3 medium-2 large-1 column end">
-            <img src="images/thumbs/aerial_TH.jpg" alt="This is the photo desc">
-        </div>
-        <div class="small-3 medium-2 large-1 column end">
-            <img src="images/thumbs/aerial_TH.jpg" alt="This is the photo desc">
-        </div>
-        <div class="small-3 medium-2 large-1 column end">
-            <img src="images/thumbs/aerial_TH.jpg" alt="This is the photo desc">
-        </div>
--->
+
     <div id="galleryThumbs" class="row">
        <?php
             if(!is_string($getPhotos)){

@@ -4,8 +4,8 @@
 		include('connect.php');
 		$queryAll = "SELECT * FROM {$tbl}";
 		$runAll = mysqli_query($link, $queryAll);
-		$row = mysqli_fetch_assoc($runAll);	
-		echo json_encode($row);
+		//$row = mysqli_fetch_assoc($runAll);	
+		//echo json_encode($row);
 
 		if($runAll){
 			return $runAll;
@@ -15,13 +15,13 @@
 		}
 	}
 
-	function getPic($tbl) { //get specific gallery pic
+/*	function getPic($tbl) { //get specific gallery pic
 		include('connect.php');
 		$picID = $_GET["gallery_id"];
 		$queryAll = "SELECT * FROM {$tbl} WHERE {$id} = '$picID'";
 		$runAll = mysqli_query($link, $queryAll);
 		$row = mysqli_fetch_assoc($runAll);	
-		echo json_encode($row);
+		//echo json_encode($row);
 
 		if($runAll){
 			return $runAll;
@@ -31,5 +31,5 @@
 		}
 
 	}	
-
+*/
 ?>
