@@ -84,4 +84,18 @@
           </div>
       </section>
 
+      <section class="credits row expanded">
+      <h1 class="hide">Photographers</h1>
+          <div class="small-12 columns">
+              <p class="center">
+                  Banner Photo: James Swartz, 
+                  Island Geography: James Swartz, 
+                  Lighthouse History: Terry Thomas, 
+                  Before Rest.: Vicki Tomori, 
+                  After Rest.: Vicki Tomori and James Swartz, 
+                  Sanctuary: Carol Walberg
+              </p>
+          </div>
+      </section>
+
     <?php include("includes/footer.html");?>

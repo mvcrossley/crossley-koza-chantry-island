@@ -1,66 +1,66 @@
 (function(){
 
 	var httpRequest,
-	pageSwitch = document.querySelector('#switchSection'),
-	navButton = document.querySelectorAll('.navButton'),
-	homePage = document.querySelector('#home'),
+	photoThumb = document.querySelectorAll('.galThumb'),
+	lightbox = document.querySelector('#galLightbox'),
+	nextbutton = document.querySelector('#galnext'),
+	prevbutton = document.querySelector('#galprev'),
+	bigPhoto = document.querySelector('#lightboxImg img'),
+	bigCreds = document.querySelector('#lphotoCreds'),
+	bigDesc = document.querySelector('#lphotoDesc'),
+	exitbutton = document.querySelector('#lightboxExit p'),
 	i;
 
-		for(i=0; i<navButton.length; i++){
-			navButton[i].addEventListener('click', clickedButton, false);
-			navButton[i].addEventListener('click', function(e) {makeRequest(e.currentTarget.id+'.html');}, false);
-
-
-			function clickedButton(e){
-				console.log("clicked!");
-				console.log(e.currentTarget.id);
-			}
-
-			function makeRequest(url){
-				httpRequest = new XMLHttpRequest();
-				//var buttonID = url.currentTarget.id;
-
-				if(!httpRequest){ // Checking to make sur ethe browser isn't too old	
-					alert('Giving up, your browser is too old!');
-					return false; // This exits out of a function, will execute the next line after function is closed
-				}
-
-				httpRequest.onreadystatechange = showResult;				
-				httpRequest.open('GET', url); //Passing in a url through a get protocol, in this case, the "text.txt" file
-				httpRequest.send(); 
-			}
-
-			function showResult(e)
-			{
-				if(httpRequest.readyState === XMLHttpRequest.DONE) {
-					if(httpRequest.status === 200) {
-						var response =  httpRequest.responseText;
-						pageSwitch.innerHTML = response;
-
-						var tmnlCon = document.querySelector("#tmnlCon");
-
-						if(e.currentTarget.id == "home")
-						{
-							tmnlContent();
-						}
-						else
-						{
-							console.log("Nope!");
-						}
-
-						function tmnlContent(){
-							for (var i in tmnlObject){
-								tmnlCon.innerHTML = '<div class=\'testimonial small-12 medium-4 large-4 columns\'>'+tmnlObject[i].pic+tmnlObject[i].name+tmnlObject[i].case+tmnlObject[i].testimonial+'</div>';
-							}
-						}
-
-					}else{
-						console.log('There was a problem with your request.');
-					}
-				}
-			}
-			
-			window.addEventListener('load', function() {makeRequest('home.html');}, false);
+	
+//CHANGE TO NEXT PHOTO
+	function nextPhoto(e){
+		console.log(photoThumb.length);
 	}
+
+
+
+//OPEN NEW PHOTO IN LIGHTBOX
+	for(i=0; i<photoThumb.length; i++){
+		photoThumb[i].addEventListener('click', makeRequest, false);
+		
+		function makeRequest(url,e){
+			httpRequest = new XMLHttpRequest();
+
+			if(!httpRequest){ // Checking to make sure the browser isn't too old	
+				alert('Sorry, your browser is too old to access this content.');
+				return false; // This exits out of a function, will execute the next line after function is closed
+			}
+
+			bigPhoto.id = 'photo'+this.id;
+			console.log(bigPhoto.id);
+
+			httpRequest.onreadystatechange = switchPhoto;				
+			httpRequest.open('POST', 'admin/phpscripts/galleryAJAX.php?gallery_image='+this.id); //Passing in a url through a get protocol
+			httpRequest.send();
+		}
+
+		function switchPhoto(url,e){
+			if(httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200){
+				var picData = JSON.parse(httpRequest.responseText);
+				console.log(url);
+
+				bigPhoto.src = "images/gallery/"+picData.gallery_name;
+				
+				bigCreds.innerHTML = picData.gallery_att;
+				bigDesc.innerHTML = picData.gallery_desc;
+			}
+		lightbox.classList.remove('hide');
+		}
+
+	}
+
+//EXIT THE LIGHTBOX
+	function exitPhoto(e){
+		console.log(photoThumb.length);
+		lightbox.classList.add('hide');
+	}
+
+	nextbutton.addEventListener('click', nextPhoto, false);
+	exitbutton.addEventListener('click', exitPhoto, false);
 
 })();

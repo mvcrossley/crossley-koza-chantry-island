@@ -28,7 +28,9 @@
     <section id="tourInfo" class="row">
     <div id="tInfo" class="sameLook">
       <h2 class="center white">Tour Information</h2>
-        <p class="white">Since our tours are limited to a few people per trip,  and require a short boatride and hike, please take the time to consider our tour requirements before booking. The tour is much like a medium hike and requires a degree of agility and fitness. You can enjoy the tour without climbing the 106 steps in the Lighthouse tower. However, when you do reach the light room, you will always remember the view.</p>
+        <p class="white">Since our tours are limited to a few people per trip,  and require a short boatride and hike, please take the time to consider our tour requirements before booking. The tour is much like a medium hike and requires a degree of agility and fitness. You can enjoy the tour without climbing the 106 steps in the Lighthouse tower. However, when you do reach the light room, you will always remember the view.
+          <br><br><span class="bold">NOTE:</span> Tours must be booked by calling the Chantry Island Tour base, and only after May 1st. Online bookings are not available. <a href="#contactFooter">Click Here</a> for contact information.
+        </p>
       </div>
     </section>
 
@@ -116,6 +118,15 @@
           July 1 - Sept. 4 (7 Days a Week)   9:00 - 5:30
         </p>
       </div>
+    </section>
+
+    <section class="credits row expanded">
+    <h1 class="hide">Photographers</h1>
+        <div class="small-12 columns">
+            <p class="center">
+                Banner Photo: James Swartz
+            </p>
+        </div>
     </section>
 
 

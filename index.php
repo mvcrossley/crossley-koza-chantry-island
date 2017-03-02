@@ -62,6 +62,16 @@
         </div>
     </section>
       
-
+    <section class="credits row expanded">
+    <h1 class="hide">Photographers</h1>
+        <div class="small-12 columns">
+            <p class="center">
+                Banner Photo: James Swartz,
+                Learn More: George Plant,
+                The MHS: Vicki Tomori,
+                Every Bit Counts: Wayne MacDonald
+            </p>
+        </div>
+    </section>
 
     <?php include("includes/footer.html");?>

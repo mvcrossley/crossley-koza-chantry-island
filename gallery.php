@@ -1,3 +1,17 @@
+<?php
+    ini_set('display_errors',1);
+    error_reporting(E_ALL);
+    
+    require_once('admin/phpscripts/init.php');
+
+        $tbl = "tbl_gallery";
+        $id = "gallery_id";
+        $desc = "gallery_desc";
+        $att = "gallery_att";
+        $getPhotos = getAll($tbl);
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -7,12 +21,13 @@
     <title>Chantry Island | Gallery</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-
+    <link rel="stylesheet" href="css/gallery.css">
   </head>
   
   <body>
     <?php include("includes/header.html");?>
-<h1 class="hide">Gallery Page</h1>
+
+    <h1 class="hide">Gallery Page</h1>
     <section id="gallerybanner" class="sameLook row expanded">
     <h2 class="hide">Gallery Page Banner</h2>
         <div class="sideImage small-12 medium-6 large-7 float-left columns" data-interchange="[images/mobgalbanner.jpg, small], [images/tabgalbanner.jpg, medium], [images/deskgalbanner.jpg, large]">
@@ -25,8 +40,46 @@
         </div>
     </section>
 
-    <section id="galleryPics" class="row">
+
+    <section id="galleryPics" class="row expanded">
+    <div id="galLightbox">
+        <div id="lightboxExit">
+            <a><p>x</p></a>
+        </div>
+        <div id="lightboxImg">
+            <img src="images/gallery/base.jpg" alt="this is the base image">
+        </div>
+        <div id="lightboxDesc">
+            <p>Photo by: <span id="lphotoCreds"><span></p>
+            <p><span id="lphotoDesc">This is the photo description</span></p>
+        </div>
+        <div id="lightboxCtrls">
+            <p><a id="galprev"><< Prev </a> | <a id="galnext"> Next >></a></p>
+        </div>
+    </div>
+
+    <div id="galleryThumbs" class="row">
+       <?php
+            if(!is_string($getPhotos)){
+                while($row = mysqli_fetch_array($getPhotos)){
+                    echo    "<div  class=\"small-3 medium-2 large-1 column end\">
+                                <a><img id=\"{$row['gallery_id']}\" class=\"galThumb\" src=\"images/thumbs/{$row['gallery_thumb']}\" alt=\"{$row['gallery_desc']}\"></a>
+                             </div>";
+                }
+            } 
+        ?>
+    </div>
+
+
     </section>
 
+    <section class="credits row expanded">
+    <h1 class="hide">Photographers</h1>
+        <div class="small-12 columns">
+            <p class="center">
+                Banner Photo: Nancy Calder
+            </p>
+        </div>
+    </section>
 
     <?php include("includes/footer.html");?>

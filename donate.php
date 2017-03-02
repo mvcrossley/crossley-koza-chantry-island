@@ -29,16 +29,14 @@
     <h2 class="hide">How to Help</h2>
       <div id="howtohelp" class="small-12 columns">
         <h2 class="blue center">How to Help</h2>
-        <p class="center"> If you would like to help the Marine Heritage Society by donating, you may do through one of the options below. We will send a tax receipt for all donations $20 and more.</p>
+        <p class="center"> If you would like to help the Marine Heritage Society by donating, you may send a cheque to the address below. We will send a tax receipt for all donations $20 and more.</p>
         
-        <h2 class="paytitle center">Pay with Paypal:</h2>
-        <p class="center"><img id="paypal" src="images/paypal_button.png" alt="pay using paypal"></p>
         <h2 class="paytitle center">Send a cheque or money order to:</h2>
         <p class="center">
           <br>Marine Heritage Society
           <br>86 Saugeen Street
           <br>Southampton, Ontario
-          <br>Canada, N0H 2L0
+          <br>Canada, N0H 2L0<br>
         </p>
       </div>
 
@@ -52,5 +50,13 @@
       </div>
     </section>
 
+    <section class="credits row expanded">
+    <h1 class="hide">Photographers</h1>
+        <div class="small-12 columns">
+            <p class="center">
+                Banner Photo: Wayne MacDonald
+            </p>
+        </div>
+    </section>
 
     <?php include("includes/footer.html");?>
