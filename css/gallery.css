@@ -31,8 +31,12 @@
 	color: #fff;
 }
 
-#lightboxDesc span{
+#lightboxDesc p{
 	font-style: italic;
+}
+
+#lphotoDesc{
+	font-style: normal;
 }
 
 #lightboxCtrls p{

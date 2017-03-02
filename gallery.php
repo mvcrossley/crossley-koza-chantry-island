@@ -51,8 +51,8 @@
             <img src="images/gallery/base.jpg" alt="this is the base image">
         </div>
         <div id="lightboxDesc">
-            <p>Photo by:</p>
-            <p><span>This is the photo description</span></p>
+            <p>Photo by: <span id="lphotoCreds"><span></p>
+            <p><span id="lphotoDesc">This is the photo description</span></p>
         </div>
         <div id="lightboxCtrls">
             <p><a id="galprev"><< Prev </a> | <a id="galnext"> Next >></a></p>

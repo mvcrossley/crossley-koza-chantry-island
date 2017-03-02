@@ -1,3 +1,23 @@
+/*(function(){
+
+
+	$('.galThumb').on('click', function(){
+		$.getJSON('admin/phpscripts/galleryAJAX.php',{gallery_image:this.id}, function(data){
+			console.log(data.gallery_name);
+
+			$('#lightboxImg img').attr(data.gallery_name);
+			//$('.hidden').removeClass('hidden');
+
+			//$('pokemon-large').attr('src','images/'+data.pokeImage+'.png');
+			//$('content-section p').text(data.pokeDesc);
+			//$('habitat-header').text(data.pokeName+'lives here!');
+			//$('habitat').attr('src','images/'+data.bgImage+'.png');
+
+		});
+	});
+
+})();
+*/
 (function(){
 
 	var httpRequest,
@@ -5,20 +25,30 @@
 	nextPhoto = document.querySelector('#galnext'),
 	prevPhoto = document.querySelector('#galprev'),
 	bigPhoto = document.querySelector('#lightboxImg img'),
+	bigCreds = document.querySelector('#lphotoCreds'),
+	bigDesc = document.querySelector('#lphotoDesc'),
 	i;
+
+
+console.log(photoThumb.length);
+		function nextPhoto(e){
+
+		}
+
 
 		for(i=0; i<photoThumb.length; i++){
 			
 			photoThumb[i].addEventListener('click', clickedButton, false);
 			photoThumb[i].addEventListener('click', makeRequest, false);
 
+
 			function clickedButton(e){
 				//console.log("clicked!");
-				console.log(e.currentTarget.id);
+				//console.log(e.currentTarget.id);
 				//bigPhoto.src = "images/gallery/base3.jpg";
 			}
 			
-			function makeRequest(){
+			function makeRequest(url,e){
 				httpRequest = new XMLHttpRequest();
 				//var buttonID = url.currentTarget.id;
 
@@ -28,31 +58,33 @@
 				}
 
 				httpRequest.onreadystatechange = switchPhoto;				
-				httpRequest.open('GET', 'admin/phpscripts/galleryAJAX.php?gallery_image='+this.id); //Passing in a url through a get protocol
+				httpRequest.open('POST', 'admin/phpscripts/galleryAJAX.php?gallery_image='+this.id); //Passing in a url through a get protocol
 				httpRequest.send();
-				console.log(url);
+				console.log(this.id);
 
 			}
 
 			function switchPhoto(e){
 
 				if(httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200){
-					console.log("triggeredwew");
 
 					var picData = JSON.parse(httpRequest.responseText);
 
-					bigPhoto.src = "images/gallery/base3.jpg";
+					bigPhoto.src = "images/gallery/"+picData.gallery_name;
+					bigCreds.innerHTML = picData.gallery_att;
+					bigDesc.innerHTML = picData.gallery_desc;
 
-					
 
 
 				/*}else{
-					console.log('There was a problem with your request.');*/
-					
+					console.log('There was a problem with your request.');
+					*/
 				}
 			}
 			//window.addEventListener('load', function() {makeRequest('gallery.php');}, false);
 	}
+
+	nextPhoto.addEventListener('click', nextPhoto, false);
 
 })();
 
