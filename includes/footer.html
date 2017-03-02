@@ -47,7 +47,12 @@
 			    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 					<div class="column small-12 medium-6 formRows">
 						<label>Name:</label>
-						<input type="text" name="name"> 
+						<input type="text" name="name" required> 
+					</div>
+
+					<div class="column small-12 medium-6 formRows">
+						<label>Phone Number:</label>
+						<input type="text" name="phone" required> 
 					</div>
 
 					<label class="hide">Address:</label>
@@ -55,17 +60,17 @@
 
 					<div class="column small-12 medium-6 formRows">
 						<label>Email:</label>
-						<input type="email" name="email">
+						<input type="email" name="email" required>
 					</div>
 					
 					<div class="column small-12 formRows">
 						<label>Subject:</label>
-						<input type="text" name="subject">
+						<input type="text" name="subject" required>
 					</div>
 					
 					<div class="column small-12 formRows">
 						<label>Message:</label>
-						<textarea name="msg" ></textarea>
+						<textarea name="msg" required></textarea>
 					</div>
 					
 					<div id="submitButton" class="column small-12 small-centered">

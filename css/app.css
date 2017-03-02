@@ -85,6 +85,11 @@ a{
     text-align: center;
 }
 
+.bold{
+    font-family: 'latoregular';
+    font-style: normal;
+}
+
 .red {
     color: #a1202f;
 }
@@ -178,6 +183,11 @@ a{
     font-family: 'sumanabold';
     font-size: 1.5em;
     margin-top: 40px;
+}
+
+.credits {
+    margin-top: 15px;
+    font-size: 1em;
 }
 
 .column, .columns{
