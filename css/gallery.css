@@ -19,14 +19,13 @@
 #lightboxImg{
 	display: inline-block;
 	text-align: center;
-	width: 100%;
+	
 }
 
 #lightboxImg img{
-	margin: 50px auto;
-
-	height: 100%;
+	margin: 15px auto;
 	max-height: 500px;
+	min-width: 200px;
 }
 
 #lightboxDesc p{
@@ -51,4 +50,20 @@
 #lightboxCtrls a{
 	color: #fff;
 	font-family: 
+}
+
+/* ----------Small to Medium Screen Transition*//*640/16*/
+@media screen and (min-width: 45em){
+
+	#lightboxImg{
+		width: 100%;
+	}
+
+	#lightboxImg img{
+		height: 100%;
+	}
+
+	#lightboxExit{
+		margin-right: 20px;
+	}
 }
