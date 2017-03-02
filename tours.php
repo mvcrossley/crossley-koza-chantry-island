@@ -79,35 +79,41 @@
             </tr>
             <tr>
               <td>May</td>
-              <td>27, 28</td>
-              <td>1:00 3:00</td>
+              <td>27-28</td>
+              <td>1:00pm, 3:00pm</td>
             </tr>
             <tr>
               <td>June</td>
-              <td>3, 4, 10, 11, 17, 18, 24, 25</td>
-              <td>1:00  3:00</td>        
+              <td>3-4, 10-11, 17-18, 24-25</td>
+              <td>1:00pm, 3:00pm</td>        
             </tr>
             <tr>
-              <td>July 1 - Sept 4</td>
-              <td>Monday to Sunday - 7 Days a Week</td>
-              <td>1:00  3:00</td>        
+              <td>July (Weekdays Only)</td>
+              <td>3-7, 10-14, 17-21, 24-28, 31</td>
+              <td>1:00pm, 3:00pm</td>        
             </tr>
             <tr>
-              <td>July (Weekends)</td>
-              <td>Sat &#38; Sun - Additional Weekend Tour</td>
-              <td>9:30</td>        
+              <td>July (Weekends Only)</td>
+              <td>1-2. 8-9, 15-16, 22-23, 29-30</td>
+              <td>9:30am, 1:00pm, 3:00pm</td>        
             </tr>
             <tr>
               <td>August</td>
-              <td>1 - 31</td>
-              <td>9:30</td>
+              <td>1-31</td>
+              <td>9:30am, 1:00pm, 3:00pm</td>
+            </tr>
+            <tr>
+              <td>September</td>
+              <td>1-4</td>
+              <td>1:00pm, 3:00pm</td>
             </tr>
           </table>
         </div>
 
         <p><span>Tour Base Hours:</span><br>
-          May/June weekends 12:00 - 5:30<br>
-          July 1 - Sept. 4 every day 9:00 - 5:30
+          May 27-28   12:00pm - 5:30pm<br>
+          June (Weekends)   12:00pm - 5:30pm<br>
+          July 1 - Sept. 4 (7 Days a Week)   9:00 - 5:30
         </p>
       </div>
     </section>
