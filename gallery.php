@@ -54,7 +54,7 @@
             <p><span id="lphotoDesc">This is the photo description</span></p>
         </div>
         <div id="lightboxCtrls">
-            <p><a id="galprev"><< Prev </a> | <a id="galnext"> Next >></a></p>
+            <p><a class="ctrl-btn" id="galprev"><< Prev </a> | <a class="ctrl-btn" id="galnext"> Next >></a></p>
         </div>
     </div>
 
