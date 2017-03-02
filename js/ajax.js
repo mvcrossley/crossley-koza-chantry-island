@@ -14,7 +14,40 @@
 	
 //CHANGE TO NEXT PHOTO
 	function nextPhoto(e){
-		console.log(photoThumb.length);
+		//console.log(photoThumb.length);
+		var n = bigPhoto.id.slice(5,10);
+		var newID = "photo"+(Number.parseInt(n,[10])+1);
+		console.log(newID);
+
+		/*function makeRequest(url,e){
+			httpRequest = new XMLHttpRequest();
+
+			if(!httpRequest){ // Checking to make sure the browser isn't too old	
+				alert('Sorry, your browser is too old to access this content.');
+				return false; // This exits out of a function, will execute the next line after function is closed
+			}
+
+			
+			console.log(bigPhoto.id);
+
+			httpRequest.onreadystatechange = switchPhoto;				
+			httpRequest.open('POST', 'admin/phpscripts/galleryAJAX.php?gallery_image='+this.id); //Passing in a url through a get protocol
+			httpRequest.send();
+		}
+
+		function switchPhoto(url,e){
+			if(httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200){
+				var picData = JSON.parse(httpRequest.responseText);
+				console.log(url);
+
+				bigPhoto.src = "images/gallery/"+picData.gallery_name;
+				
+				bigCreds.innerHTML = picData.gallery_att;
+				bigDesc.innerHTML = picData.gallery_desc;
+			}
+		lightbox.classList.remove('hide');
+		}*/
+
 	}
 
 
@@ -42,10 +75,8 @@
 		function switchPhoto(url,e){
 			if(httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200){
 				var picData = JSON.parse(httpRequest.responseText);
-				console.log(url);
 
-				bigPhoto.src = "images/gallery/"+picData.gallery_name;
-				
+				bigPhoto.src = "images/gallery/"+picData.gallery_name;				
 				bigCreds.innerHTML = picData.gallery_att;
 				bigDesc.innerHTML = picData.gallery_desc;
 			}
