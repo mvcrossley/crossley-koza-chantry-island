@@ -825,7 +825,6 @@ a{
         border: none;
         background-color: white;
         display: inline;
-        text-align: center;
         padding: 10px;
     }
 
@@ -993,7 +992,7 @@ a{
 
     #mainNav ul li {
         display: inline;
-        margin-left: 20px;
+        margin-left: 15px;
         border: none;
     }
 
@@ -1004,7 +1003,7 @@ a{
     #mainNav ul li a {
         font-family: 'sumanaregular';
         color: #475a84;
-        font-size: .9em;
+        font-size: 1em;
     }
 
     #mainNav ul li a:hover {
