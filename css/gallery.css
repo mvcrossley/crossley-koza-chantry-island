@@ -9,7 +9,8 @@
 }
 
 #lightboxExit p{
-	text-align: right;
+	display: inline-block;
+	float: right;
 	font-size: 1.5em;
 	font-family: 'latobold';
 	color: #fff;
