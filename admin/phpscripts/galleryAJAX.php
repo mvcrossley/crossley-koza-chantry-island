@@ -3,7 +3,7 @@
 
 	$picID = $_GET['gallery_image'];
 	//echo $picID;
-	$queryAll = "SELECT FROM tbl_gallery WHERE gallery_id = '$picID'";
+	$queryAll = "SELECT * FROM tbl_gallery WHERE gallery_id = '$picID'";
 	//echo $queryAll;
 	$runAll = mysqli_query($link, $queryAll);
 	$row = mysqli_fetch_assoc($runAll);	
