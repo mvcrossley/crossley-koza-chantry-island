@@ -1,11 +1,20 @@
 (function(){
 
-	console.log("Hi, I'm the maps JS!");
 
-	//Next up: creating the styles for the map using google's documentation
+var map;
+var contactMap = document.querySelector('#contactMap');
 
+
+    function initMap() {
+        map = new google.maps.Map(contactMap, {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+        });
+    }
+console.log(contactMap);
+
+/*
 	function initMap() {
-
         // Create a new StyledMapType object, passing it an array of styles,
         // and the name to be displayed on the map type control.
         var styled = new google.maps.StyledMapType(
@@ -31,7 +40,7 @@
               {
                 featureType: 'landscape.natural',
                 elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
+                stylers: [{color: 'bf42f4'}]
               },
               {
                 featureType: 'poi',
@@ -111,7 +120,7 @@
               {
                 featureType: 'water',
                 elementType: 'geometry.fill',
-                stylers: [{color: '#b9d3c2'}]
+                stylers: [{color: '#6f44b5'}]
               },
               {
                 featureType: 'water',
@@ -138,5 +147,5 @@
       }
 
 
-
+*/
 })();

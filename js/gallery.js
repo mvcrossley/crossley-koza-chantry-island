@@ -89,7 +89,7 @@
 			//console.log(bigPhoto.id);
 
 			httpRequest.onreadystatechange = switchPhoto;				
-			httpRequest.open('GET', 'admin/phpscripts/galleryAJAX.php?gallery_image='+this.id); //Passing in a url through a get protocol
+			httpRequest.open('GET', 'admin/phpscripts/galleryJSON.php?gallery_image='+this.id); //Passing in a url through a get protocol
 			httpRequest.send();
 		}
 

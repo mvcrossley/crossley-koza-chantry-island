@@ -10,20 +10,6 @@
         $att = "gallery_att";
         $getPhotos = getAll($tbl);
 ?>
-
-
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chantry Island | Gallery</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/gallery.css">
-    <script src="https://use.fontawesome.com/1cf98e5d3e.js"></script>
-  </head>
   
   <body>
     <?php include("includes/header.html");?>
@@ -80,5 +66,6 @@
             </p>
         </div>
     </section>
-
+    
+    <script src="js/gallery.js"></script>  
     <?php include("includes/footer.html");?>
