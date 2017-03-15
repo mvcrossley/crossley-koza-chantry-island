@@ -1,151 +1,97 @@
 (function(){
 
+    var map = new google.maps.Map(document.querySelector('#map'));
+    var marker;
+    var geocoder = new google.maps.Geocoder(); //from https://developers.google.com/maps/documentation/javascript/
+    var geocodeButton = document.querySelector(".geocode");
 
-var map;
-var contactMap = document.querySelector('#contactMap');
+        //directions service - draw a route on a map
+    var directionService = new google.maps.DirectionsService();
+    var locations=[];
+    var directionsDisplay;
 
+    function iniMap(position) {
+        locations[0] = { lat: position.coords.latitude, lng: position.coords.longitude }; /*locations is an array that stores locations*/
 
-    function initMap() {
-        map = new google.maps.Map(contactMap, {
-              center: {lat: -34.397, lng: 150.644},
-              zoom: 8
+        directionsDisplay = new google.maps.DirectionsRenderer();
+        directionsDisplay.setMap(map);//tells it to show itself on "map" map, as defined below in codeAddress
+
+        //Map is centered over Marine Hertiage Society
+        map.setCenter({ lat: 44.500026, lng: -81.373138 });
+        map.setZoom(14);
+
+        //Chantry Island Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.491419, lng: -81.404225 },
+            map: map,
+            title: "Chantry Island"
+        });
+        //Marine Heritage Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.500026, lng: -81.373138 },
+            map: map,
+            title: "Marine Heritage Society"
         });
     }
-console.log(contactMap);
 
-/*
-	function initMap() {
-        // Create a new StyledMapType object, passing it an array of styles,
-        // and the name to be displayed on the map type control.
-        var styled = new google.maps.StyledMapType(
-            [
-              {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
-              {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
-              {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
-              {
-                featureType: 'administrative',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#c9b2a6'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#dcd2be'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#ae9e90'}]
-              },
-              {
-                featureType: 'landscape.natural',
-                elementType: 'geometry',
-                stylers: [{color: 'bf42f4'}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#93817c'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#a5b076'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#447530'}]
-              },
-              {
-                featureType: 'road',
-                elementType: 'geometry',
-                stylers: [{color: '#f5f1e6'}]
-              },
-              {
-                featureType: 'road.arterial',
-                elementType: 'geometry',
-                stylers: [{color: '#fdfcf8'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry',
-                stylers: [{color: '#f8c967'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#e9bc62'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry',
-                stylers: [{color: '#e98d58'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#db8555'}]
-              },
-              {
-                featureType: 'road.local',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#806b63'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#8f7d77'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.stroke',
-                stylers: [{color: '#ebe3cd'}]
-              },
-              {
-                featureType: 'transit.station',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#6f44b5'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#92998d'}]
-              }
-            ],
-            {name: 'Styled Map'});
+    //geocoding api => find and address on a map
 
-        // Create a map object, and include the MapTypeId to add
-        // to the map type control.
-        var map = new google.maps.Map(document.getElementById('contactMap'), {
-          center: {lat: 55.647, lng: 37.581},
-          zoom: 11,
-          mapTypeControlOptions: {
-            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-                    'styled_map']
-          }
+    function codeAddress(){
+        var address = document.querySelector('.address').value;
+
+        geocoder.geocode( {'address' : address}, function(results,status){
+            if (status === google.maps.GeocoderStatus.OK){//making sure it loads
+                locations[1] = { lat: results[0].geometry.location.lat(), /*create second location*/ lng: results[0].geometry.location.lng() };
+                map.setCenter(results[0].geometry.location);
+
+                if(marker){
+                    marker.setMap(null);
+                    marker = new google.maps.Marker({
+                        map: map, //map name
+                        position: results[0].geometry.location
+                    });
+                }
+
+            calcRoute(results[0].geometry.location);//make up function calcRoute and pass data through
+
+            } else {
+                console.log('Geocoder was not successful for the following reason:',status);
+            }
         });
-
-        //Associate the styled map with the MapTypeId and set it to display.
-        map.mapTypes.set('styled_map', styled);
-        map.setMapTypeId('styled_map');
-      }
+        //debugger;
+        console.log('address');
+    }
 
 
-*/
+    function calcRoute(codedLoc) {
+        var request = {
+            origin: locations[0],
+            destination: locations[1],
+            travelMode: 'DRIVING'
+        };
+
+        directionService.route(request, function(response,status){
+            if(status==='OK'){
+                directionsDisplay.setDirections(response);
+            }
+        });
+    }
+
+
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(iniMap, handleError);
+    }else{ //give some kind of error message to the user
+        console.log('Your browser does not have a geolocation');
+    }
+
+    function handleError(e){
+        console.log(e);
+    }
+
+    //geocodeButton.addEventListener ('click', codeAddress, false);
+
+    //iniMap();//fires map function
 })();
