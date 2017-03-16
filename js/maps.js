@@ -173,7 +173,7 @@
                 stylers: [{color: '#89adef'}]
               },
             ],
-            {name: 'Styled Map'});
+            {name: 'Chantry Tours and Area'});
 
         map.mapTypes.set('styled_map', styled);
         map.setMapTypeId('styled_map');
