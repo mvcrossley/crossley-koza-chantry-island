@@ -191,7 +191,6 @@
                                 lng: results[0].geometry.location.lng() };
 
                 map.setCenter(results[0].geometry.location);
-
                 if(marker){
                     marker.setMap(null);
                     marker = new google.maps.Marker({
@@ -235,4 +234,4 @@
     directionButton.addEventListener ('click', getDirections, false);
 
     //initMap();//fires map function
-})();
+})(); 
