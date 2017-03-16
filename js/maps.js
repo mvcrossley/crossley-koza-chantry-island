@@ -133,14 +133,29 @@
                 stylers: [{color: '#a8606b'}]
               },
               {
+                featureType: 'poi.sports_complex',
+                elementType: 'geometry',
+                stylers: [{color: '#a8606b'}]
+              },
+              {
+                featureType: 'poi.business',
+                elementType: 'geometry',
+                stylers: [{color: '#475a84'}]
+              },
+              {
+                featureType: 'landscape.man_made',
+                elementType: 'geometry',
+                stylers: [{color: '#475a84'}]
+              },
+              {
+                featureType: 'poi.medical',
+                elementType: 'geometry',
+                stylers: [{color: '#475a84'}]
+              },
+              {
                 featureType: 'road.highway',
                 elementType: 'geometry',
                 stylers: [{color: '#f8c967'}]
-              },
-              {
-                featureType: 'road.local',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#475a84'}]
               },
               {
                 featureType: 'road.local',
