@@ -3,6 +3,7 @@
     var map = new google.maps.Map(document.querySelector('#map'));
     var marker;
     var directionButton = document.querySelector("#get-directions");
+    var geocoder = new google.maps.Geocoder();
 
         //directions service - draw a route on a map
     var directionService = new google.maps.DirectionsService();
@@ -81,33 +82,8 @@
         });
     }
 
-    /*function getDirections(position){
-        directionsDisplay = new google.maps.DirectionsRenderer();
-       
-        var request = {
-            origin: 'London,ON'//locations[1],
-            destination: //locations[0],
-            travelMode: 'DRIVING'
-        };
-        
-        directionsDisplay.setMap(map);
-        directionService.route(request, function(result,status){
-            if(status==='OK'){
-                directionsDisplay.setDirections(result);
-            }
-        });
-
-        /*marker = new google.maps.Marker({
-            position: { lat: position.coords.latitude, lng: position.coords.longitude },
-            //position: { lat: 44.500026, lng: -81.373138 },
-            map: map,
-            title: "Marine Heritage Society"
-        });
-    }*/
-
     if (navigator.geolocation) {
-        //navigator.geolocation.getCurrentPosition(initMap, handleError);
-        navigator.geolocation.getCurrentPosition(getDirections, handleError);
+        navigator.geolocation.getCurrentPosition(initMap, handleError);
     }else{ //give some kind of error message to the user
         console.log('Your browser does not have a geolocation');
     }
@@ -115,8 +91,6 @@
     function handleError(e){
         console.log(e);
     }
-
-
 
     directionButton.addEventListener ('click', getDirections, false);
 
