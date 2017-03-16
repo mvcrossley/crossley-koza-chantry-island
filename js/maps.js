@@ -80,6 +80,7 @@
             map: map,
             icon: 'images/map_icons/hotel_icon.png',
             title: "A Knight In Southampton Bed And Breakfast"
+
         });
         //Southampton Market Marker
         marker = new google.maps.Marker({
@@ -89,6 +90,7 @@
             icon: 'images/map_icons/shop_icon.png',
             title: "Southampton Market"
         });
+
         //Southampton Olive Oil Company Marker
         marker = new google.maps.Marker({
             //position: { lat: position.coords.latitude, lng: position.coords.longitude },
@@ -234,4 +236,6 @@
     directionButton.addEventListener ('click', getDirections, false);
 
     //initMap();//fires map function
+
 })(); 
+
