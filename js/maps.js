@@ -1,6 +1,10 @@
 (function(){
 
-    var map = new google.maps.Map(document.querySelector('#map'));
+    var map = new google.maps.Map(document.querySelector('#map'), {
+          center: {lat: 44.500026, lng: -81.373138},
+          zoom: 12,
+          mapTypeControlOptions: { mapTypeIds: ['styled_map'] }
+        });
     var marker;
     var geocoder = new google.maps.Geocoder(); //from https://developers.google.com/maps/documentation/javascript/
     var geocodeButton = document.querySelector(".geocode");
@@ -34,7 +38,7 @@
             position: { lat: 44.500026, lng: -81.373138 },
             map: map,
             icon: 'images/map_icons/base_icon.png',
-            title: "Marine Heritage Society"
+            title: "Marine Heritage Society and Tour Base"
         });
         //Tour Dock Marker
         marker = new google.maps.Marker({
@@ -100,6 +104,64 @@
             icon: 'images/map_icons/beach_icon.png',
             title: "Southampton Beach"
         });
+
+        //Editing the colors of the map itself
+
+        var styled = new google.maps.StyledMapType(
+            [
+              {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
+              {elementType: 'labels.text.fill', stylers: [{color: '#475a84'}]},
+              {elementType: 'labels.text.stroke', stylers: [{color: '#f3f7ff'}]},
+              {
+                featureType: 'landscape.natural',
+                elementType: 'geometry',
+                stylers: [{color: '#ce9199'}]
+              },
+              {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{color: '#f5f1e6'}]
+              },
+              {
+                featureType: 'poi.attraction',
+                elementType: 'geometry',
+                stylers: [{color: '#a8606b'}]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{color: '#a8606b'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{color: '#f8c967'}]
+              },
+              {
+                featureType: 'road.local',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#475a84'}]
+              },
+              {
+                featureType: 'road.local',
+                elementType: 'geometry',
+                stylers: [{color: '#f3f7ff'}]
+              },
+              {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [{color: '#f3f7ff'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'geometry.fill',
+                stylers: [{color: '#89adef'}]
+              },
+            ],
+            {name: 'Styled Map'});
+
+        map.mapTypes.set('styled_map', styled);
+        map.setMapTypeId('styled_map');
     }
 
     //geocoding api => find and address on a map
