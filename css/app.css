@@ -687,6 +687,20 @@ a{
     height: 300px;
 }
 
+#address-box{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#address-box input{
+    border-radius: 20px;
+    height: 40px;
+    width: 250px;
+    font-size: 1.1em;
+    padding: 5px;
+    text-align: center;
+}
+
 #get-directions p{
     text-align: center;
     margin-top: 20px;
