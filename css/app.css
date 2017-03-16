@@ -687,6 +687,19 @@ a{
     height: 300px;
 }
 
+#get-directions p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#get-directions p a{
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;    
+    background-color: #a1202f;
+}
+
 #contactInfo{
     padding: 60px 0;
 }
