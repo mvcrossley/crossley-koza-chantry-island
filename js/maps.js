@@ -63,8 +63,6 @@
                 console.log('Geocoder was not successful for the following reason:',status);
             }
         });
-        //debugger;
-        console.log('address');
     }
 
 
