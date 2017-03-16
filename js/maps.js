@@ -3,7 +3,7 @@
     var map = new google.maps.Map(document.querySelector('#map'), {
           center: {lat: 44.500026, lng: -81.373138},
           zoom: 12,
-          mapTypeControlOptions: { mapTypeIds: ['styled_map'] }
+          mapTypeControlOptions: { mapTypeIds: ['styled_map', 'satellite'] }
         });
     var marker;
     var directionButton = document.querySelector("#get-directions");
