@@ -25,6 +25,7 @@
             //position: { lat: position.coords.latitude, lng: position.coords.longitude },
             position: { lat: 44.491419, lng: -81.404225 },
             map: map,
+            icon: 'images/map_icons/island_icon.png',
             title: "Chantry Island"
         });
         //Marine Heritage Marker
@@ -32,7 +33,72 @@
             //position: { lat: position.coords.latitude, lng: position.coords.longitude },
             position: { lat: 44.500026, lng: -81.373138 },
             map: map,
+            icon: 'images/map_icons/base_icon.png',
             title: "Marine Heritage Society"
+        });
+        //Tour Dock Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.500301, lng: -81.373385 },
+            map: map,
+            icon: 'images/map_icons/dock_icon.png',
+            title: "The Dock"
+        });
+        //Gerry's Fast Food Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.489783, lng: -81.385875 },
+            map: map,
+            icon: 'images/map_icons/food_icon.png',
+            title: "Gerry's Fast Food"
+        });
+        //Outlaw Brew co. Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.495913, lng: -81.371554 },
+            map: map,
+            icon: 'images/map_icons/food_icon.png',
+            title: "Outlaw Brew Co."
+        });
+        //Chantry Breezes BnB Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.496782, lng: -81.374770 },
+            map: map,
+            icon: 'images/map_icons/hotel_icon.png',
+            title: "Chantry Breezes Bed and Breakfast"
+        });
+        //A Knight In Southampton Bed And Breakfast Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.494679, lng: -81.372352 },
+            map: map,
+            icon: 'images/map_icons/hotel_icon.png',
+            title: "A Knight In Southampton Bed And Breakfast"
+        });
+        //Southampton Market Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.491299, lng: -81.374899 },
+            map: map,
+            icon: 'images/map_icons/shop_icon.png',
+            title: "Southampton Market"
+        });
+        //Southampton Olive Oil Company Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.495987, lng: -81.372341 },
+            map: map,
+            icon: 'images/map_icons/shop_icon.png',
+            title: "Southampton Olive Oil Company"
+        });
+        //Southampton Beach Marker
+        marker = new google.maps.Marker({
+            //position: { lat: position.coords.latitude, lng: position.coords.longitude },
+            position: { lat: 44.497278, lng: -81.376435 },
+            map: map,
+            icon: 'images/map_icons/beach_icon.png',
+            title: "Southampton Beach"
         });
     }
 
