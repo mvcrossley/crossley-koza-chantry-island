@@ -1,3 +1,39 @@
+/*Admin Includes Start Here*/
+.adminHeader{
+	height: 150px;
+	background-color: #a1202f;
+	margin-bottom: 50px;
+}
+
+.adminFooter{
+	background-color: #475a84;
+	height: 75px;
+	width: 100%;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.adminfootlogo{
+	height: 65px;
+	vertical-align: center;
+	float: left;
+	margin-top: 5px;
+}
+
+.backtomain{
+	float: right;
+	margin-top: 20px;
+	margin-right: 15px;
+	color: white;
+	font-family: 'latolight';
+}
+
+.backtomain:hover{
+	color: #9FF;
+}
+/*Admin Includes End Here*/
+
+
 .adminban{
 	height: 100px;
 	background-color: #222;
@@ -5,4 +41,16 @@
 
 .titlepanel{
 	background-color: #333;
+}
+
+.logForm
+{
+	width: 500px;
+}
+
+.logbut{
+	width: auto;
+	height: 25px;
+	background-color: white;
+	border-radius: 30px;
 }

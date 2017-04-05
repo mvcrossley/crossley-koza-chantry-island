@@ -13,10 +13,8 @@
 		if($username != "" && $password != ""){
 			$result = logIn($username, $password, $ip);
 			$message = $result;
-			//echo "Log-in successful!";
 		}else{
-			//echo "Some Information Missing. Review form.";
-			$message = "Please fill out the required fields.";
+			$message = "There is some information missing. Please fill out the required fields.";
 		}
 	}
 
@@ -29,9 +27,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Island - Log In</title>
-    <link rel="stylesheet" href="../css/foundation.css">
-    <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   
   <body>
@@ -40,8 +39,8 @@
 	<h1>Log In to your Admin Island Account</h1>
 
 	<?php if(!empty($message)) {echo $message;}	?>
-		<form action="admin_login.php" method="post">
-			<div class="logform">
+		<form class="logForm" action="admin_login.php" method="post">
+			<div>
 				<label>Username:</label><br>
 				<input type="text" name="username" value=""><br>
 			
