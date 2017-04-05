@@ -23,11 +23,12 @@
 		$message = $result;
 	}
 ?>
+
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome Company Name</title>
+<title>Admin Island - Edit User</title>
 <link rel="stylesheet" href="css/main.css"/>
 </head>
 

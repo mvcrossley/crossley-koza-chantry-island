@@ -1,25 +1,21 @@
 <?php
 	ini_set('display_errors', 1);
-	error_reporting(E_ALL); //for mac
+	error_reporting(E_ALL);
 
-	$ip = $_SERVER["REMOTE_ADDR"]; //grabs ip address for extra secure login
-
-	
-	//echo $ip; //wamp will show ::1 as ip
+	$ip = $_SERVER["REMOTE_ADDR"];
 
 	require_once("phpscripts/init.php");
 
 	if(isset($_POST['submit'])) {
-		//echo "Congrats, you clicked it!";
-		$username = trim($_POST['username']); //trim takes white space off beginning or end in case user copies or pastes
+		$username = trim($_POST['username']);//trimming any white space
 		$password = trim($_POST['password']);
 
-		if($username != "" && $password != "") {//make sure username and password is NOT equal to nothing, double & required
+		if($username != "" && $password != ""){
 			$result = logIn($username, $password, $ip);
 			$message = $result;
-			//echo "success!";
+			//echo "Log-in successful!";
 		}else{
-			//echo "Please fill out the required fields.";
+			//echo "Some Information Missing. Review form.";
 			$message = "Please fill out the required fields.";
 		}
 	}
@@ -32,20 +28,20 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chantry Island | Gallery</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <title>Admin Island - Log In</title>
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="css/main.css">
 
   </head>
   
   <body>
     <?php include("includes/header.html");?>
 
-	<h1>Admin Login</h1>
+	<h1>Log In to your Admin Island Account</h1>
 
 	<?php if(!empty($message)) {echo $message;}	?>
 		<form action="admin_login.php" method="post">
-			<div class="upForm">
+			<div class="logform">
 				<label>Username:</label><br>
 				<input type="text" name="username" value=""><br>
 			
@@ -53,7 +49,7 @@
 				<input type="password" name="password" value="">
 			</div>
 
-			<div class="loginbutton">
+			<div class="logbut">
 				<input type="submit" name="submit" value="Go!">
 			</div>
 
