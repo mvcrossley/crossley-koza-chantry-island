@@ -11,7 +11,6 @@
 		$result = createuser($fullname, $username, $email);
 		$message = $result;
 		}
-	}
 ?>
 
 

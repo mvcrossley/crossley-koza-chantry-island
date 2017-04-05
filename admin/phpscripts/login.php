@@ -14,7 +14,6 @@
 			$found_user = mysqli_fetch_array($user_set, MYSQLI_ASSOC);		
 
 			$id = $found_user['user_id']; 
-			//$time = $found_user['user_time'];
 
 			$_SESSION['users_creds'] = $id;
 			$_SESSION['user_fullname'] = $found_user['user_fullname'];

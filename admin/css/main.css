@@ -2,7 +2,21 @@
 .adminHeader{
 	height: 150px;
 	background-color: #a1202f;
+}
+
+.adminnav{
 	margin-bottom: 50px;
+	height: 75px;
+	background-color: #a1202f;
+}
+
+.adminnav ul li{
+	float: right;
+	display: inline;
+}
+
+.adminnav ul li a{
+	color: black;
 }
 
 .adminFooter{
@@ -53,4 +67,12 @@
 	height: 25px;
 	background-color: white;
 	border-radius: 30px;
+}
+
+/*User Select Start Here*/
+
+.users li{
+	text-decoration: none;
+	font-size: 1.2em;
+	list-style: none;
 }
