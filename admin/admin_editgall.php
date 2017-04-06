@@ -6,16 +6,16 @@
 	error_reporting(E_ALL);
 
 	$id = $_GET['id'];
-	$popForm = getUser($id);
+	$popForm = getPhoto($id);
 
 	if(isset($_POST['submit'])){
-		$fullname = trim($_POST['fullname']);
-		$username = trim($_POST['username']);
-		$password = trim($_POST['password']);
-		$email = trim($_POST['email']);
+		$file = $_FILES['file']['name'];
+		$thumb = $_FILES['thumb']['name'];
+		$desc = trim($_POST['desc']);
+		$att = trim($_POST['att']);
 
 
-		$result = editUser($id, $username, $password, $email, $fullname);			
+		$result = editPhoto($id, $file, $thumb, $desc, $att);			
 		$message = $result;
 	}
 ?>
@@ -26,7 +26,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Island - Edit User</title>
+<title>Admin Island - Edit Photo</title>
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
@@ -38,18 +38,18 @@
 
 	<div class="welcome row expanded">
 		<div class="small-12 columns">
-		<h1>Edit User Account</h1>
+		<h1>Edit Gallery Photo</h1>
 			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-			<?php echo"<form action=\"admin_edituser.php?id={$id}\" method=\"post\">" ?>
+			<?php echo"<form action=\"admin_editgall.php?id={$id}\" method=\"post\">" ?>
 				<div class="editform">
-					<label>Full Name</label><br>
-					<input type="text" name="fullname" value="<?php echo $popForm['user_fullname']; ?>"><br>
-					<label>Username</label><br>
-					<input type="text" name="username" value="<?php echo $popForm['user_name']; ?>"><br>
-					<label>Password</label><br>
-					<input type="text" name="password" value="<?php echo $popForm['user_pass']; ?>"><br>
-					<label>Email</label><br>
-					<input type="text" name="email" value="<?php echo $popForm['user_email']; ?>">
+					<label>File</label><br>
+					<input type="file" name="file" value="<?php echo $popForm['gallery_name']; ?>"><br>
+					<label>Thumbnail</label><br>
+					<input type="file" name="thumb" value="<?php echo $popForm['gallery_thumb']; ?>"><br>
+					<label>Description</label><br>
+					<textarea rows="6" cols="50" name="desc" value=""><?php echo $popForm['gallery_desc'];?></textarea><br>
+					<label>Attribution</label><br>
+					<input type="text" name="att" value="<?php echo $popForm['gallery_att']; ?>">
 				</div><br><br>
 
 				<input class="redBut center" type="submit" name="submit" value="Save Changes">

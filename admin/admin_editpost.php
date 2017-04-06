@@ -39,8 +39,8 @@
 	<div class="welcome row expanded">
 		<div class="small-12 columns">
 		<h1>Edit User Account</h1>
-			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-			<?php echo"<form action=\"admin_edituser.php?id={$id}\" method=\"post\">" ?>
+			<?php if(!empty($message)){echo $message;}?>
+			<form action="admin_edituser.php" method="post">
 				<div class="editform">
 					<label>Full Name</label><br>
 					<input type="text" name="fullname" value="<?php echo $popForm['user_fullname']; ?>"><br>

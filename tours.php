@@ -1,7 +1,16 @@
+<?php
+  require_once("admin/phpscripts/init.php");
+
+  //Grabbing the price
+  $id = '1';
+  $getPrice = getRate($id);
+
+  //Grabbing the schedule
+?>
 
   <body>
     <?php include("includes/header.html");?>
-<h1 class="hide">Tours Page</h1>
+    <h1 class="hide">Tours Page</h1>
     <section id="tourHeader" class="sameLook row expanded">
     <h2 class="hide">Tour with Us</h2>
 
@@ -46,9 +55,9 @@
     <section id="tourRates" class="row sameLook">
       <h2 class="blue center">Tour Rates</h2>
         <p>
-          <span>$30.00 per person (includes HST). Same price for children and adults.</span><br>
+          <span>$<?php echo $getPrice['price_rate']; ?> per person (includes HST). Same price for children and adults.</span><br>
           Special group rates available.<br>
-          MasterCard, Visa, Debit accepted.<br>
+          <?php echo $getPrice['price_tender'];?><br>
         </p>
         <p>
           Call: <a href="tel:519-797-5862">+519-797-5862 </a><br>
@@ -68,6 +77,7 @@
               <th>Dates</th>
               <th>Times</th>
             </tr>
+            <!--Start Echo, for loop-->
             <tr>
               <td>May</td>
               <td>27-28</td>

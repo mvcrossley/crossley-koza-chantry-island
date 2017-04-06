@@ -5,17 +5,14 @@
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 
-	$id = $_GET['id'];
-	$popForm = getUser($id);
+	$id = 1;
+	$popForm = getRate($id);
 
 	if(isset($_POST['submit'])){
-		$fullname = trim($_POST['fullname']);
-		$username = trim($_POST['username']);
-		$password = trim($_POST['password']);
-		$email = trim($_POST['email']);
+		$price = trim($_POST['price']);
+		$tender = trim($_POST['tender']);
 
-
-		$result = editUser($id, $username, $password, $email, $fullname);			
+		$result = editRate($id, $price, $tender);			
 		$message = $result;
 	}
 ?>
@@ -38,18 +35,14 @@
 
 	<div class="welcome row expanded">
 		<div class="small-12 columns">
-		<h1>Edit User Account</h1>
+		<h1>Edit Tour Pricing</h1>
 			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-			<?php echo"<form action=\"admin_edituser.php?id={$id}\" method=\"post\">" ?>
+			<form action="admin_editrates.php" method="post">
 				<div class="editform">
-					<label>Full Name</label><br>
-					<input type="text" name="fullname" value="<?php echo $popForm['user_fullname']; ?>"><br>
-					<label>Username</label><br>
-					<input type="text" name="username" value="<?php echo $popForm['user_name']; ?>"><br>
-					<label>Password</label><br>
-					<input type="text" name="password" value="<?php echo $popForm['user_pass']; ?>"><br>
-					<label>Email</label><br>
-					<input type="text" name="email" value="<?php echo $popForm['user_email']; ?>">
+					<label>Price</label><br>
+					<input type="text" name="price" value="<?php echo $popForm['price_rate']; ?>"><br>
+					<label>Valid Tenders</label><br>
+					<input type="text" name="tender" value="<?php echo $popForm['price_tender']; ?>"><br>
 				</div><br><br>
 
 				<input class="redBut center" type="submit" name="submit" value="Save Changes">
