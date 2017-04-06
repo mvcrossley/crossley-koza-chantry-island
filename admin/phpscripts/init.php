@@ -5,5 +5,5 @@
 	require_once('user.php');
 	require_once('rates.php');
 	require_once('sched.php');
-	
+	require_once('news.php');
 ?>

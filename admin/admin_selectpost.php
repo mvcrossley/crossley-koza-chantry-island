@@ -4,11 +4,9 @@
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 
-	$tbl = "tbl_user";
-    $id = "user_id";
-    $username = "user_name";
-    $getusers = getAll($tbl);
-
+	$tbl = "tbl_news";
+    $id = "news_id";
+    $getPosts = getAll($tbl);
 ?>
 
 <!doctype html>
@@ -17,7 +15,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Island - Select User</title>
+<title>Admin Island - Select Article</title>
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
@@ -29,16 +27,16 @@
 	<?php include("includes/menu.html");?>
 
 	<div class="welcome row expanded">
-		<h1>Choose an Account to Edit:</h1>
+		<h1>Choose an Article to Edit</h1>
 		<div class="small-12 columns">
 			<ul class="userlist">
 				<?php
-			        if(!is_string($getusers)){
-				        while($row = mysqli_fetch_array($getusers)){
-				        echo "<li class=\"center users\"><a href=\"admin_edituser.php?id={$row['user_id']}\">{$row['user_fullname']}</a></li>";
+	                if(!is_string($getPosts)){
+	                    while($row = mysqli_fetch_array($getPosts)){
+				        echo "<li class=\"center users\"><a href=\"admin_editpost.php?id={$row['news_id']}\">{$row['news_title']} - {$row['news_date']}</a></li>";
 				        }
-			        } 
-			    ?>
+	                } 
+            	?>
 			</ul>
 		</div>
 	</div>

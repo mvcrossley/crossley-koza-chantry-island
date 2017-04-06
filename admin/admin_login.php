@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/bffe9fd51f.js"></script>
   </head>
   
   <body>

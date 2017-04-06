@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
+<script src="https://use.fontawesome.com/bffe9fd51f.js"></script>
 </head>
 
 <body>
@@ -40,14 +41,14 @@
 		<div class="small-12 columns">
 		<h1>Edit Gallery Photo</h1>
 			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-			<?php echo"<form action=\"admin_editgall.php?id={$id}\" method=\"post\">" ?>
+			<?php echo"<form action=\"admin_editgall.php?id={$id}\" method=\"post\" enctype=\"multipart/form-data\">"?>
 				<div class="editform">
 					<label>File</label><br>
 					<input type="file" name="file" value="<?php echo $popForm['gallery_name']; ?>"><br>
 					<label>Thumbnail</label><br>
 					<input type="file" name="thumb" value="<?php echo $popForm['gallery_thumb']; ?>"><br>
 					<label>Description</label><br>
-					<textarea rows="6" cols="50" name="desc" value=""><?php echo $popForm['gallery_desc'];?></textarea><br>
+					<textarea rows="10" cols="50" name="desc" value=""><?php echo $popForm['gallery_desc'];?></textarea><br>
 					<label>Attribution</label><br>
 					<input type="text" name="att" value="<?php echo $popForm['gallery_att']; ?>">
 				</div><br><br>

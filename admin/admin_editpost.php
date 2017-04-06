@@ -6,16 +6,15 @@
 	error_reporting(E_ALL);
 
 	$id = $_GET['id'];
-	$popForm = getUser($id);
+	$popForm = getPost($id);
 
 	if(isset($_POST['submit'])){
-		$fullname = trim($_POST['fullname']);
-		$username = trim($_POST['username']);
-		$password = trim($_POST['password']);
-		$email = trim($_POST['email']);
+		$img = trim($_POST['img']);
+		$title = trim($_POST['title']);
+		$date = trim($_POST['date']);
+		$text = trim($_POST['text']);
 
-
-		$result = editUser($id, $username, $password, $email, $fullname);			
+		$result = editUser($id, $img, $title, $date, $text);			
 		$message = $result;
 	}
 ?>
@@ -30,6 +29,7 @@
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
+<script src="https://use.fontawesome.com/bffe9fd51f.js"></script>
 </head>
 
 <body>
@@ -40,16 +40,16 @@
 		<div class="small-12 columns">
 		<h1>Edit User Account</h1>
 			<?php if(!empty($message)){echo $message;}?>
-			<form action="admin_edituser.php" method="post">
+			<?php echo"<form action=\"admin_editpost.php?id={$id}\" method=\"post\" enctype=\"multipart/form-data\">" ?>
 				<div class="editform">
-					<label>Full Name</label><br>
-					<input type="text" name="fullname" value="<?php echo $popForm['user_fullname']; ?>"><br>
-					<label>Username</label><br>
-					<input type="text" name="username" value="<?php echo $popForm['user_name']; ?>"><br>
-					<label>Password</label><br>
-					<input type="text" name="password" value="<?php echo $popForm['user_pass']; ?>"><br>
-					<label>Email</label><br>
-					<input type="text" name="email" value="<?php echo $popForm['user_email']; ?>">
+					<label>Article Image</label><br>
+					<input type="file" name="img" value="<?php echo $popForm['news_img']; ?>"><br>
+					<label>Article Title</label><br>
+					<input type="text" name="title" value="<?php echo $popForm['news_title']; ?>"><br>
+					<label>Date Posted</label><br>
+					<input type="text" name="date" value="<?php echo $popForm['news_date']; ?>"><br>
+					<label>Article Body</label><br>
+					<textarea name="text" row="10" cols="50" value=""><?php echo $popForm['news_text'];?></textarea><br>
 				</div><br><br>
 
 				<input class="redBut center" type="submit" name="submit" value="Save Changes">
