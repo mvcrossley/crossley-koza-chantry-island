@@ -1,6 +1,6 @@
 <?php
 	require_once('phpscripts/init.php');
-
+	confirm_logged_in();
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 
@@ -28,8 +28,9 @@
 		<div class="small-12 columns">
 			<ul class="userlist">
 				<li class="center"><a href="admin_editrates.php">Edit Tour Prices</a></li>
-				<li class="center"><a href="admin_selectgall.php">Edit Gallery</a></li>
 				<li class="center"><a href="admin_selectmonth.php">Edit Tour Schedule</a></li>
+				<li class="center"><a href="admin_selectgall.php">Edit Gallery</a></li>
+				<li class="center"><a href="admin_addgall.php">Add Gallery Image</a></li>
 				<li class="center"><a href="admin_selectpost.php">Edit a News Article</a></li>
 				<li class="center"><a href="admin_createpost.php">Post a News Article</a></li>
 			</ul>
