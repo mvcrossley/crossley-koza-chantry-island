@@ -6,16 +6,14 @@
 	error_reporting(E_ALL);
 
 	$id = $_GET['id'];
-	$popForm = getUser($id);
+	$popForm = getSched($id);
 
 	if(isset($_POST['submit'])){
-		$fullname = trim($_POST['fullname']);
-		$username = trim($_POST['username']);
-		$password = trim($_POST['password']);
-		$email = trim($_POST['email']);
+		$month = trim($_POST['month']);
+		$day = trim($_POST['day']);
+		$time = trim($_POST['time']);
 
-
-		$result = editUser($id, $username, $password, $email, $fullname);			
+		$result = editSched($id, $month, $day, $time);			
 		$message = $result;
 	}
 ?>
@@ -38,18 +36,16 @@
 
 	<div class="welcome row expanded">
 		<div class="small-12 columns">
-		<h1>Edit User Account</h1>
+		<h1>Edit Tour Schedule</h1>
 			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-			<?php echo"<form action=\"admin_edituser.php?id={$id}\" method=\"post\">" ?>
+			<?php echo"<form action=\"admin_editsched.php?id={$id}\" method=\"post\">" ?>
 				<div class="editform">
-					<label>Full Name</label><br>
-					<input type="text" name="fullname" value="<?php echo $popForm['user_fullname']; ?>"><br>
-					<label>Username</label><br>
-					<input type="text" name="username" value="<?php echo $popForm['user_name']; ?>"><br>
-					<label>Password</label><br>
-					<input type="text" name="password" value="<?php echo $popForm['user_pass']; ?>"><br>
-					<label>Email</label><br>
-					<input type="text" name="email" value="<?php echo $popForm['user_email']; ?>">
+					<label>Month</label>
+					<input type="text" name="month" value="<?php echo $popForm['sched_month']; ?>"><br>
+					<label>Days</label>
+					<input type="text" name="day" value="<?php echo $popForm['sched_day']; ?>"><br>
+					<label>Times</label>
+					<input type="text" name="time" value="<?php echo $popForm['sched_time']; ?>"><br>
 				</div><br><br>
 
 				<input class="redBut center" type="submit" name="submit" value="Save Changes">

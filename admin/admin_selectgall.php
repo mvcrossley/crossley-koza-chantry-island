@@ -4,11 +4,10 @@
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 
-	$tbl = "tbl_user";
-    $id = "user_id";
-    $username = "user_name";
-    $getusers = getAll($tbl);
-
+	$tbl = "tbl_gallery";
+    $id = "gallery_id";
+    $thumb = "gallery_name";
+    $getPhotos = getAll($tbl);
 ?>
 
 <!doctype html>
@@ -28,16 +27,16 @@
 	<?php include("includes/menu.html");?>
 
 	<div class="welcome row expanded">
-		<h1>Choose an Account to Edit:</h1>
+		<h1>Choose an Image to Edit:</h1>
 		<div class="small-12 columns">
 			<ul class="userlist">
 				<?php
-			        if(!is_string($getusers)){
-				        while($row = mysqli_fetch_array($getusers)){
-				        echo "<li class=\"center users\"><a href=\"admin_edituser.php?id={$row['user_id']}\">{$row['user_fullname']}</a></li>";
-				        }
-			        } 
-			    ?>
+	                if(!is_string($getPhotos)){
+	                    while($row = mysqli_fetch_array($getPhotos)){
+	                        echo    "<a href=\"admin_editgall.php?id={$row['gallery_id']}\"><img id=\"{$row['gallery_id']}\" class=\"galThumb\" src=\"../images/thumbs/{$row['gallery_thumb']}\" alt=\"{$row['gallery_desc']}\"></a>";
+	                    }
+	                } 
+            	?>
 			</ul>
 		</div>
 	</div>

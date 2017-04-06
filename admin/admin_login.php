@@ -1,8 +1,7 @@
 <?php
 	ini_set('display_errors', 1);
 	error_reporting(E_ALL);
-
-	$ip = $_SERVER["REMOTE_ADDR"];
+	//$ip = $_SERVER["REMOTE_ADDR"];
 
 	require_once("phpscripts/init.php");
 
@@ -11,7 +10,7 @@
 		$password = trim($_POST['password']);
 
 		if($username != "" && $password != ""){
-			$result = logIn($username, $password, $ip);
+			$result = logIn($username, $password);
 			$message = $result;
 		}else{
 			$message = "There is some information missing. Please fill out the required fields.";

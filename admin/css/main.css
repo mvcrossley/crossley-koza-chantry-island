@@ -1,22 +1,55 @@
+/*Catch-all Styles Start Here*/
+
+form{
+	width: 400px;
+	margin: 0 auto;
+}
+
+h1{
+	margin-top: 75px;
+}
+
+input{
+ 	margin-top: 0px;
+ }
+
+ br{
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ }
+
+/*Catch-all Styles End Here*/
+
 /*Admin Includes Start Here*/
 .adminHeader{
-	height: 150px;
+	height: 100px;
 	background-color: #a1202f;
 }
 
-.adminnav{
-	margin-bottom: 50px;
-	height: 75px;
+.adminmenu{
+	height: 40px;
 	background-color: #a1202f;
+	overflow: hidden;
 }
 
-.adminnav ul li{
+.adminmenu ul{
 	float: right;
-	display: inline;
 }
 
-.adminnav ul li a{
-	color: black;
+.adminmenu ul li{
+	display: inline;
+	margin-right: 30px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.adminmenu ul li a{
+	font-size: 1.1em;
+	color: white;
+}
+
+.adminmenu ul li a:hover{
+	color: #999;
 }
 
 .adminFooter{
@@ -48,14 +81,16 @@
 /*Admin Includes End Here*/
 
 
-.adminban{
-	height: 100px;
-	background-color: #222;
+/*Admin Main Menu Starts Here*/
+.welcome{
+	height: 490px;
+	font-color: white;
+	background-image: url("../images/island2.jpg");
 }
+/*Admin Main Menu Ends Here*/
 
-.titlepanel{
-	background-color: #333;
-}
+
+
 
 .logForm
 {
@@ -68,11 +103,11 @@
 	background-color: white;
 	border-radius: 30px;
 }
-
 /*User Select Start Here*/
 
-.users li{
+.userlist{
 	text-decoration: none;
+	list-style-type: none;
 	font-size: 1.2em;
-	list-style: none;
+	margin-bottom: 20px;
 }
