@@ -1,4 +1,4 @@
-<?php // do not put the caller file in the init.php
+<?php
 
 	require_once('init.php');
 	
@@ -9,7 +9,11 @@
 		}else{
 			echo "caller ID was passed incorrectly";
 		}
-
+	}
+	function logged_out() //destroys session until next login, prevents further access
+	{
+		session_destroy();
+		redirect_to("../admin_login.php");
 	}
 
 
