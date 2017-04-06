@@ -8,24 +8,49 @@
 	}
 
 	function editPhoto($id, $file, $thumb, $desc, $att){
+		include("connect.php");
+		
+		$photoName = $_FILES['file']['name'];
+		$fileType = $_FILES['file']['type'];
+		$fileName = $_FILES['file']['tmp_name'];
+		$fileSize = $_FILES['file']['size'];
+		$ext = pathinfo($photoName, PATHINFO_EXTENSION);
+		$thumbName = $photoName."_TH.".$ext;
+
+
 		if(!empty($file)){//echo "Working";
-
-			$fileType = $_FILES['file']['type'];
-
 			if($fileType == "image/jpg" || $fileType == "image/jpeg" || $fileType == "image/png"){
-				include("connect.php");
-				$updatestring = "UPDATE tbl_gallery SET gallery_name='{$file}',gallery_thumb='{$thumb}',gallery_desc='{$desc}',gallery_att='{$att}' WHERE gallery_id={$id}";
-				$updatequery = mysqli_query($link, $updatestring);
 
-				if($updatequery){
-					$message = "Changes saved successfully.";
-					return $message;
-				} else {
-					$message = "Could not edit photo. Try again. (1)";
-					return $message;
+				$targetpath= "../images/gallery/{$file}";
+
+				if(move_uploaded_file($fileName, $targetpath)){
+					$orig = "../images/gallery/{$file}";
+					$th_copy = "../images/thumbs/{$thumb}";
+
+					if(!copy($orig, $th_copy)){
+						echo "Failed to copy";
+					}
+
+					//FILE SIZE FOR GALLERY THUMBNAILS
+					$wmin = 150;
+					$hmin = 150;
+					$wmax = 150;
+					$hmax = 150;
+					thumbResize($fileType, $th_copy,$wmin,$hmin,$wmax,$hmax); //Send to resize file
+					
+					$updatestring = "UPDATE tbl_gallery SET gallery_name='{$file}', gallery_thumb='{$thumb}', gallery_desc='{$desc}',gallery_att='{$att}' WHERE gallery_id={$id}";
+					$updatequery = mysqli_query($link, $updatestring);
+
+					if($updatequery){
+						$message = "Changes saved successfully.";
+						return $message;
+					} else {
+						$message = "Could not edit photo. Try again. (1)";
+						return $message;
+					}
+
+					mysqli_close($link);
 				}
-
-				mysqli_close($link);
 			}else{
 				$error = "The image you selected was not a JPG or PNG file type. Please try again.";
 				return $error;
