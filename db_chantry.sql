@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2017 at 05:08 PM
+-- Generation Time: Apr 06, 2017 at 07:34 AM
 -- Server version: 5.7.11
--- PHP Version: 7.0.4
+-- PHP Version: 5.6.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -66,6 +66,129 @@ INSERT INTO `tbl_gallery` (`gallery_id`, `gallery_name`, `gallery_thumb`, `galle
 (25, 'rose.jpg', 'rose_TH.jpg', 'One of many beautiful flowers inhabiting the island\'s gardens.', 'Vicki Tomori'),
 (26, 'tourboat.jpg', 'tourboat_TH.jpg', 'A crowded tour on a sunny day.', 'Wayne MacDonald');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_news`
+--
+
+CREATE TABLE `tbl_news` (
+  `news_id` int(10) UNSIGNED NOT NULL,
+  `news_img` varchar(150) NOT NULL,
+  `news_title` varchar(150) NOT NULL,
+  `news_date` varchar(150) NOT NULL,
+  `news_text` varchar(300) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_news`
+--
+
+INSERT INTO `tbl_news` (`news_id`, `news_img`, `news_title`, `news_date`, `news_text`) VALUES
+(1, 'news1.jpg', 'Boat House Southampton', 'Feb 3rd, 2017', 'Work on the Tilbury continues as the winter slowly approaches conclusion'),
+(2, 'news2.jpg', 'Doug Johnson Proudly Displays the Famous Saying.', 'Jan 18th, 2017', ''),
+(3, 'news3.jpg', 'Boat House Southampton', 'Dec 2nd, 2016', 'The Peerless II outside the Boathouse in southampton. Photo courtesy Eric Rogers.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_price`
+--
+
+CREATE TABLE `tbl_price` (
+  `price_id` int(10) UNSIGNED NOT NULL,
+  `price_rate` varchar(15) NOT NULL,
+  `price_tender` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_price`
+--
+
+INSERT INTO `tbl_price` (`price_id`, `price_rate`, `price_tender`) VALUES
+(1, '30.00', 'MasterCard, Visa, and Debit accepted.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_sched`
+--
+
+CREATE TABLE `tbl_sched` (
+  `sched_id` smallint(5) UNSIGNED NOT NULL,
+  `sched_month` varchar(15) NOT NULL,
+  `sched_day` varchar(100) NOT NULL,
+  `sched_time` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_sched`
+--
+
+INSERT INTO `tbl_sched` (`sched_id`, `sched_month`, `sched_day`, `sched_time`) VALUES
+(1, 'May', '27-29', '1:00pm, 3:00pm'),
+(2, 'June', '3-4, 10-11, 17-18, 24-25', '1:00pm, 3:00pm'),
+(3, 'July (Weekdays)', '3-7, 10-14, 17-21, 24-28, 31', '1:00pm, 3:00pm'),
+(4, 'July (Weekends)', '1-2. 8-9, 15-16, 22-23, 29-30', '9:30am, 1:00pm, 3:00pm'),
+(5, 'August', '1-31', '9:30am, 1:00pm, 3:00pm'),
+(6, 'September', '1-4', '1:00pm, 3:00pm');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_user`
+--
+
+CREATE TABLE `tbl_user` (
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `user_name` varchar(150) NOT NULL,
+  `user_pass` varchar(150) NOT NULL,
+  `user_email` varchar(150) NOT NULL,
+  `user_fullname` varchar(150) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_email`, `user_fullname`) VALUES
+(1, 'admin', 'admin', 'mou.lee101@gmail.com', 'Main Admin'),
+(2, '', '', '', 'Nice hat, Jim!'),
+(3, 'lakoza', 'admin', 'mou.lee101@gmail.com', 'Lauren Koza'),
+(4, 'dave', 'morly', 'mou.lee101@gmail.com', 'Stewart Maclain');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_vol`
+--
+
+CREATE TABLE `tbl_vol` (
+  `vol_id` int(10) UNSIGNED NOT NULL,
+  `vol_name` varchar(100) NOT NULL,
+  `vol_pos` varchar(150) NOT NULL,
+  `vol_img` varchar(150) NOT NULL DEFAULT 'vol_img.jpg'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_vol`
+--
+
+INSERT INTO `tbl_vol` (`vol_id`, `vol_name`, `vol_pos`, `vol_img`) VALUES
+(1, 'Don Nicholson ', '- Chairman', 'vol_img.jpg'),
+(2, 'Pat O\'Connor ', '- Chairman', 'vol_img.jpg'),
+(3, 'John Rigby ', '- Treasurer', 'vol_img.jpg'),
+(4, 'Stan Young ', '- Secretary', 'vol_img.jpg'),
+(5, 'Rick Smith ', '- Past Chairman', 'vol_img.jpg'),
+(6, 'Ali Kelly ', '- Volunteer', 'vol_img.jpg'),
+(7, 'Jane Kramer ', '- Volunteer', 'vol_img.jpg'),
+(8, 'Vicki Tomori ', '- Volunteer', 'vol_img.jpg'),
+(9, 'Dan Holmes ', '- Volunteer', 'vol_img.jpg'),
+(10, 'Dave Wenn ', '- Volunteer', 'vol_img.jpg'),
+(11, 'Ed Braun ', '- Volunteer', 'vol_img.jpg'),
+(12, 'John Willetts ', '- Volunteer', 'vol_img.jpg'),
+(13, 'Peter Williamson ', '- Observer', 'vol_img.jpg');
+
 --
 -- Indexes for dumped tables
 --
@@ -77,6 +200,36 @@ ALTER TABLE `tbl_gallery`
   ADD PRIMARY KEY (`gallery_id`);
 
 --
+-- Indexes for table `tbl_news`
+--
+ALTER TABLE `tbl_news`
+  ADD PRIMARY KEY (`news_id`);
+
+--
+-- Indexes for table `tbl_price`
+--
+ALTER TABLE `tbl_price`
+  ADD PRIMARY KEY (`price_id`);
+
+--
+-- Indexes for table `tbl_sched`
+--
+ALTER TABLE `tbl_sched`
+  ADD PRIMARY KEY (`sched_id`);
+
+--
+-- Indexes for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- Indexes for table `tbl_vol`
+--
+ALTER TABLE `tbl_vol`
+  ADD PRIMARY KEY (`vol_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -85,6 +238,31 @@ ALTER TABLE `tbl_gallery`
 --
 ALTER TABLE `tbl_gallery`
   MODIFY `gallery_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+--
+-- AUTO_INCREMENT for table `tbl_news`
+--
+ALTER TABLE `tbl_news`
+  MODIFY `news_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_price`
+--
+ALTER TABLE `tbl_price`
+  MODIFY `price_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_sched`
+--
+ALTER TABLE `tbl_sched`
+  MODIFY `sched_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `tbl_vol`
+--
+ALTER TABLE `tbl_vol`
+  MODIFY `vol_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
