@@ -10,12 +10,11 @@
 
 	if(isset($_POST['submit'])){
 		$file = $_FILES['file']['name'];
-		$thumb = $_FILES['thumb']['name'];
+		$thumb = "TH_{$file}";
 		$desc = trim($_POST['desc']);
 		$att = trim($_POST['att']);
 
-
-		$result = editPhoto($id, $file, $thumb, $desc, $att);			
+		$result = editPhoto($id, $file, $thumb, $desc, $att);
 		$message = $result;
 	}
 ?>
@@ -46,8 +45,6 @@
 					<label>File</label><br>
 					<input type="file" name="file" value="<?php echo $popForm['gallery_name']; ?>"><br>
 					<label>Thumbnail</label><br>
-					<input type="file" name="thumb" value="<?php echo $popForm['gallery_thumb']; ?>"><br>
-					<label>Description</label><br>
 					<textarea rows="10" cols="50" name="desc" value=""><?php echo $popForm['gallery_desc'];?></textarea><br>
 					<label>Attribution</label><br>
 					<input type="text" name="att" value="<?php echo $popForm['gallery_att']; ?>">
