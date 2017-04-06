@@ -10,9 +10,7 @@
         $att = "gallery_att";
         $getPhotos = getAll($tbl);
 ?>
-  
-  <body>
-    <?php include("includes/header.html");?>
+<?php include("includes/header.html");?>
 
     <h1 class="hide">Gallery Page</h1>
     <section id="gallerybanner" class="sameLook row expanded">
@@ -29,6 +27,7 @@
 
 
     <section id="galleryPics" class="row expanded">
+    <h3 class="hide">Gallery Lightbox</h3>
         <div id="galLightbox">
             <div id="lightboxExit">
                 <a><p><i class="fa fa-times" aria-hidden="true"></i></p></a>
@@ -37,7 +36,7 @@
                 <img src="images/gallery/base.jpg" alt="this is the base image">
             </div>
             <div id="lightboxDesc">
-                <p>Photo by: <span id="lphotoCreds"><span></p>
+                <p>Photo by: <span id="lphotoCreds"></span></p>
                 <p><span id="lphotoDesc">This is the photo description</span></p>
             </div>
             <div id="lightboxCtrls">
@@ -59,7 +58,7 @@
     </section>
 
     <section class="credits row expanded">
-    <h1 class="hide">Photographers</h1>
+    <h2 class="hide">Photographers</h2>
         <div class="small-12 columns">
             <p class="center">
                 Banner Photo: Nancy Calder
