@@ -13,8 +13,9 @@
   $getSched = getAll($tbl);
 ?>
 
+<?php include("includes/header.html");?>
+
   <body>
-    <?php include("includes/header.html");?>
     <h1 class="hide">Tours Page</h1>
     <section id="tourHeader" class="sameLook row expanded">
     <h2 class="hide">Tour with Us</h2>

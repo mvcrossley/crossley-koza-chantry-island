@@ -1,6 +1,7 @@
- 
+<?php include("includes/header.html");?>
+
   <body>
-    <?php include("includes/header.html");?>
+    
 <h1 class="hide">Donation Page</h1>
     <section id="donateBanner" class="sameLook row expanded">
     <h2 class="hide">Donation Page Banner</h2>

@@ -10,10 +10,9 @@
         $att = "gallery_att";
         $getPhotos = getAll($tbl);
 ?>
-  
-  <body>
-    <?php include("includes/header.html");?>
 
+<?php include("includes/header.html");?>
+  <body>
     <h1 class="hide">Gallery Page</h1>
     <section id="gallerybanner" class="sameLook row expanded">
     <h2 class="hide">Gallery Page Banner</h2>

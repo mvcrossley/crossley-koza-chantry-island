@@ -19,8 +19,9 @@
         $getPost = getAll($tbl);
 ?>
 
+<?php include("includes/header.html");?>
+
 <body>
-    <?php include("includes/header.html");?>
 
     <h1 class="hide">About Page</h1>
     <section id="aboutbanner" class="sameLook row expanded">

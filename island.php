@@ -1,5 +1,6 @@
+<?php include("includes/header.html");?>
+
 <body>
-    <?php include("includes/header.html");?>
 <h1 class="hide">About the Island Page</h1>
      <section id="islandBanner" class="sameLook row expanded">
       <h2 class="hide">An Intro to The Island</h2>
