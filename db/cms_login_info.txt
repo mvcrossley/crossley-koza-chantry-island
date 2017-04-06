@@ -1,0 +1,10 @@
+CMS Login:
+
+Url:
+http://localhost/crossley-koza-chantry-island/admin/admin_login.php
+
+Username: 
+admin
+
+Password:
+admin
