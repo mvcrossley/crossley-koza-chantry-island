@@ -6,6 +6,7 @@
 		if(!isset($_SESSION['users_creds'])){
 			redirect_to('admin_login.php');
 		} else {
+
 		}
 	}
 

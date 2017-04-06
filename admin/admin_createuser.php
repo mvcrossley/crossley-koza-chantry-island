@@ -1,6 +1,6 @@
 <?php
 	require_once('phpscripts/init.php');
-	//confirm_logged_in(); //Confirms that the user has, indeed logged in, in order to access page.
+	confirm_logged_in();
 
 	if(isset($_POST['submit'])){
 		$fullname = trim($_POST['fullname']);

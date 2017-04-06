@@ -5,15 +5,15 @@
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 
-	$id = 1;
-	$popForm = getRate($id);
-
 	if(isset($_POST['submit'])){
-		$price = trim($_POST['price']);
-		$tender = trim($_POST['tender']);
+		$file = $_FILES['file']['name'];
+		$thumb = "TH_{$file}";
+		$desc = trim($_POST['desc']);
+		$att = trim($_POST['att']);
 
-		$result = editRate($id, $price, $tender);			
+		$result = addPhoto($file, $thumb, $desc, $att);
 		$message = $result;
+
 	}
 ?>
 
@@ -23,7 +23,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Island - Edit User</title>
+<title>Admin Island - Add Photo</title>
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
@@ -36,14 +36,16 @@
 
 	<div class="welcome row expanded">
 		<div class="small-12 columns">
-		<h1>Edit Tour Pricing</h1>
+		<h1>Add Gallery Photo</h1>
 			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-			<form action="admin_editrates.php" method="post">
+			<?php echo"<form action=\"admin_addgall.php\" method=\"post\" enctype=\"multipart/form-data\">"?>
 				<div class="editform">
-					<label>Price</label><br>
-					<input type="text" name="price" value="<?php echo $popForm['price_rate']; ?>"><br>
-					<label>Valid Tenders</label><br>
-					<input type="text" name="tender" value="<?php echo $popForm['price_tender']; ?>"><br>
+					<label>File</label><br>
+					<input type="file" name="file" value="<?php if(!empty($file)){echo $file;} ?>"><br>
+					<label>Description</label><br>
+					<textarea rows="10" cols="50" name="desc" value=""><?php if(!empty($desc)){echo $desc;} ?></textarea><br>
+					<label>Attribution</label><br>
+					<input type="text" name="att" value="<?php if(!empty($att)){echo $att;} ?>">
 				</div><br><br>
 
 				<input class="redBut center" type="submit" name="submit" value="Save Changes">
