@@ -42,7 +42,7 @@
         <div class="tourDetail medium-12 large-4 column">
         <img src="images/tour-icon-02.svg" alt="What to bring">
           <h3>What to bring</h3>
-          <p>Please bring footwear suitable for hiking is mandatory. For safety reasons, Flip-Flops are not allowed. Chantry Island is a Federal Migratory Bird Sanctuary, so NO PETS are allowed on the island.</p>
+          <p>Please bring footwear suitable for hiking. This is mandatory. For safety reasons, Flip-Flops are not allowed. Chantry Island is a Federal Migratory Bird Sanctuary, so NO PETS are allowed on the island.</p>
         </div>
         <div class="tourDetail medium-12 large-4 column">
         <img src="images/tour-icon-03.svg" alt="Where to go">
