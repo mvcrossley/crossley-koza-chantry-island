@@ -194,6 +194,10 @@ a{
     padding: 0;
 }
 
+#adminlogo{
+    width: 100px;
+}
+
 /*-------------------------------------------------------------------------------------MAIN NAV STARTS HERE-----*/
 
 .top-bar {
@@ -695,7 +699,7 @@ a{
 #address-box input{
     border-radius: 20px;
     height: 40px;
-    width: 250px;
+    width: 100%;
     font-size: 1.1em;
     padding: 5px;
     text-align: center;
