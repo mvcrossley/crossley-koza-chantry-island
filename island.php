@@ -1,5 +1,5 @@
-<body>
-    <?php include("includes/header.html");?>
+<?php include("includes/header.html");?>
+
 <h1 class="hide">About the Island Page</h1>
      <section id="islandBanner" class="sameLook row expanded">
       <h2 class="hide">An Intro to The Island</h2>
@@ -73,7 +73,7 @@
       </section>
 
       <section class="credits row expanded">
-      <h1 class="hide">Photographers</h1>
+      <h2 class="hide">Photographers</h2>
           <div class="small-12 columns">
               <p class="center">
                   Banner Photo: James Swartz, 

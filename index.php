@@ -1,5 +1,5 @@
-  <body>
-    <?php include("includes/header.html");?>
+  <?php include("includes/header.html");?>
+
     <h1 class="hide">Home Page</h1>
     <section id="homebanner" class="row expanded" data-interchange="[images/mobisland2.jpg, small], [images/tabisland2.jpg, medium], [images/island2.jpg, large]">
     <h2 class="hide">Welcome Banner</h2>
@@ -52,7 +52,7 @@
     </section>
       
     <section class="credits row expanded">
-    <h1 class="hide">Photographers</h1>
+    <h2 class="hide">Photographers</h2>
         <div class="small-12 columns">
             <p class="center">
                 Banner Photo: James Swartz,

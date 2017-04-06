@@ -18,10 +18,7 @@
         $text = "news_text";
         $getPost = getAll($tbl);
 ?>
-
-<body>
-    <?php include("includes/header.html");?>
-
+<?php include("includes/header.html");?>
     <h1 class="hide">About Page</h1>
     <section id="aboutbanner" class="sameLook row expanded">
     <h2 class="hide">About Page Banner</h2>
@@ -97,7 +94,7 @@
                   echo "<div class=\"nArticle small-12 column\">
                           <div class=\"articletext small-12 large-6 column\">
                             <h3>{$row['news_title']}</h3>
-                            <p><span>{$row['news_date']}</span></h3>
+                            <p><span>{$row['news_date']}</span></p>
                             <p>{$row['news_text']}</p>
                           </div>
                           <div class=\"articleimg small-12 large-6 column\">
@@ -111,7 +108,7 @@
     </section>
 
     <section class="credits row expanded">
-    <h1 class="hide">Photographers</h1>
+    <h2 class="hide">Photographers</h2>
         <div class="small-12 columns">
             <p class="center">
                 Banner Photo: Wayne MacDonald
