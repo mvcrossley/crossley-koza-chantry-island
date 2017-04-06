@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
+<script src="https://use.fontawesome.com/bffe9fd51f.js"></script>
 </head>
 
 <body>
@@ -23,14 +24,14 @@
 	<?php include("includes/menu.html");?>
 
 	<div class="welcome row expanded">
-		<h1>Choose a Month to Edit:</h1>
+		<h1>What Content Would You Like to Edit?</h1>
 		<div class="small-12 columns">
 			<ul class="userlist">
 				<li class="center"><a href="admin_editrates.php">Edit Tour Prices</a></li>
 				<li class="center"><a href="admin_selectgall.php">Edit Gallery</a></li>
 				<li class="center"><a href="admin_selectmonth.php">Edit Tour Schedule</a></li>
-				<li class="center"><a href="admin_createpost.php">Make a News Post</a></li>
-				<li class="center"><a href="admin_editpost.php">Edit a News Post</a></li>
+				<li class="center"><a href="admin_selectpost.php">Edit a News Article</a></li>
+				<li class="center"><a href="admin_createpost.php">Post a News Article</a></li>
 			</ul>
 		</div>
 	</div>
