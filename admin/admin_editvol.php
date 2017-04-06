@@ -6,15 +6,14 @@
 	error_reporting(E_ALL);
 
 	$id = $_GET['id'];
-	$popForm = getPost($id);
+	$popForm = getVol($id);
 
 	if(isset($_POST['submit'])){
+		$name = trim($_POST['name']);
+		$pos = trim($_POST['pos']);
 		$img = trim($_POST['img']);
-		$title = trim($_POST['title']);
-		$date = trim($_POST['date']);
-		$text = trim($_POST['text']);
 
-		$result = editUser($id, $img, $title, $date, $text);			
+		$result = editVol($id, $name, $pos, $img);			
 		$message = $result;
 	}
 ?>
@@ -25,7 +24,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Island - Edit Article</title>
+<title>Admin Island - Edit Volunteer</title>
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
@@ -38,18 +37,16 @@
 
 	<div class="welcome row expanded">
 		<div class="small-12 columns">
-		<h1>Edit User Account</h1>
-			<?php if(!empty($message)){echo $message;}?>
-			<?php echo"<form action=\"admin_editpost.php?id={$id}\" method=\"post\" enctype=\"multipart/form-data\">" ?>
+		<h1>Edit Volunteer</h1>
+			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
+			<?php echo"<form action=\"admin_editvol.php?id={$id}\" method=\"post\">" ?>
 				<div class="editform">
-					<label>Article Image</label><br>
-					<input type="file" name="img" value="<?php echo $popForm['news_img']; ?>"><br>
-					<label>Article Title</label><br>
-					<input type="text" name="title" value="<?php echo $popForm['news_title']; ?>"><br>
-					<label>Date Posted</label><br>
-					<input type="text" name="date" value="<?php echo $popForm['news_date']; ?>"><br>
-					<label>Article Body</label><br>
-					<textarea name="text" row="10" cols="50" value=""><?php echo $popForm['news_text'];?></textarea><br>
+					<label>Volunteer Name</label><br>
+					<input type="text" name="fullname" value="<?php echo $popForm['vol_name']; ?>"><br>
+					<label>Volunteer Position</label><br>
+					<input type="text" name="username" value="<?php echo $popForm['vol_pos']; ?>"><br>
+					<label>Volunteer Portrait</label><br>
+					<input type="file" name="img" value="<?php echo $popForm['vol_img']; ?>"><br>
 				</div><br><br>
 
 				<input class="redBut center" type="submit" name="submit" value="Save Changes">
