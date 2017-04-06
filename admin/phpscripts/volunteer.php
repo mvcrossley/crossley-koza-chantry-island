@@ -28,8 +28,6 @@
 			$message = "Could not edit user. Try again.";
 			return $message;
 		}
-
-
 		mysqli_close($link);
 	}
 

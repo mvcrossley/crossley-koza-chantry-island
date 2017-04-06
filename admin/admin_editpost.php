@@ -38,7 +38,7 @@
 
 	<div class="welcome row expanded">
 		<div class="small-12 columns">
-		<h1>Edit User Account</h1>
+		<h1>Edit a News Article</h1>
 			<?php if(!empty($message)){echo $message;}?>
 			<?php echo"<form action=\"admin_editpost.php?id={$id}\" method=\"post\" enctype=\"multipart/form-data\">" ?>
 				<div class="editform">

@@ -1,7 +1,20 @@
- 
-  <body>
+ <?php
+    ini_set('display_errors',1);
+    error_reporting(E_ALL);
+    
+    require_once('admin/phpscripts/init.php');
+
+        $tbl = "tbl_vol";
+        $id = "vol_id";
+        $name = "vol_name";
+        $pos = "vol_pos";
+        $getVol = getAll($tbl);
+?>
+
+<body>
     <?php include("includes/header.html");?>
-<h1 class="hide">About Page</h1>
+
+    <h1 class="hide">About Page</h1>
     <section id="aboutbanner" class="sameLook row expanded">
     <h2 class="hide">About Page Banner</h2>
         <div class="sideImage small-12 medium-6 large-7 float-left columns" data-interchange="[images/mobdonbanner.jpg, small], [images/tabdonbanner.jpg, medium], [images/deskdonbanner.jpg, large]">
@@ -24,42 +37,15 @@
 
     <section class="row">
     <h2 class="hide">A list of all of our volunteers</h2>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Don Nicholson - Chairman</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Pat O'Connor - Vice Chairman</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>John Rigby - Treasurer</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Stan Young - Secretary</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Rick Smith - Past Chairman</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Ali Kelly</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Jane Kramer</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Vicki Tomori</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Dan Holmes</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Dave Wenn</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>Ed Braun</p>
-      </div>
-      <div class="volunteers center small-8 medium-4 large-3 columns">
-          <p>John Willetts</p>
-      </div>
+      <?php
+        if(!is_string($getVol)){
+          while($row = mysqli_fetch_array($getVol)){
+            echo    "<div  class=\"volunteers center small-8 medium-4 large-3 columns end\">
+            <p>{$row['vol_name']}{$row['vol_pos']}</p>
+            </div>";
+          }
+        } 
+      ?>
       <div class="volunteers center small-8 medium-4 large-3 end columns">
           <p>Peter Williamson - Observer</p>
       </div>

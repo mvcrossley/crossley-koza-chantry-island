@@ -39,7 +39,7 @@
 		<div class="small-12 columns">
 		<h1>Edit Volunteer</h1>
 			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-			<?php echo"<form action=\"admin_editvol.php?id={$id}\" method=\"post\">" ?>
+			<?php echo"<form action=\"admin_editvol.php?id={$id}\" method=\"post\" enctype=\"multipart/form-data\">" ?>
 				<div class="editform">
 					<label>Volunteer Name</label><br>
 					<input type="text" name="fullname" value="<?php echo $popForm['vol_name']; ?>"><br>
