@@ -39,7 +39,7 @@
 	<h1>Log In to your Admin Island Account</h1>
 
 	<?php if(!empty($message)) {echo $message;}	?>
-		<form class="logForm" action="admin_login.php" method="post">
+		<form class="welcome" action="admin_login.php" method="post">
 			<div>
 				<label>Username:</label><br>
 				<input type="text" name="username" value=""><br>
@@ -49,7 +49,7 @@
 			</div>
 
 			<div class="logbut">
-				<input type="submit" name="submit" value="Go!">
+				<input class="redBut" type="submit" name="submit" value="Go!">
 			</div>
 
 		</form>

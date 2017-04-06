@@ -5,7 +5,12 @@
   $id = '1';
   $getPrice = getRate($id);
 
-  //Grabbing the schedule
+  $tbl = "tbl_sched";
+  $id = "sched_id";
+  $month = "sched_month";
+  $day = "sched_day";
+  $time = "sched_time";
+  $getSched = getAll($tbl);
 ?>
 
   <body>
@@ -42,7 +47,7 @@
         <div class="tourDetail medium-12 large-4 column">
         <img src="images/tour-icon-02.svg" alt="What to bring">
           <h3>What to bring</h3>
-          <p>Please bring footwear suitable for hiking is mandatory. For safety reasons, Flip-Flops are not allowed. Chantry Island is a Federal Migratory Bird Sanctuary, so NO PETS are allowed on the island.</p>
+          <p>Please bring footwear suitable for hiking. This is mandatory. For safety reasons, Flip-Flops are not allowed. Chantry Island is a Federal Migratory Bird Sanctuary, so NO PETS are allowed on the island.</p>
         </div>
         <div class="tourDetail medium-12 large-4 column">
         <img src="images/tour-icon-03.svg" alt="Where to go">
@@ -77,37 +82,18 @@
               <th>Dates</th>
               <th>Times</th>
             </tr>
-            <!--Start Echo, for loop-->
-            <tr>
-              <td>May</td>
-              <td>27-28</td>
-              <td>1:00pm, 3:00pm</td>
-            </tr>
-            <tr>
-              <td>June</td>
-              <td>3-4, 10-11, 17-18, 24-25</td>
-              <td>1:00pm, 3:00pm</td>        
-            </tr>
-            <tr>
-              <td>July (Weekdays Only)</td>
-              <td>3-7, 10-14, 17-21, 24-28, 31</td>
-              <td>1:00pm, 3:00pm</td>        
-            </tr>
-            <tr>
-              <td>July (Weekends Only)</td>
-              <td>1-2. 8-9, 15-16, 22-23, 29-30</td>
-              <td>9:30am, 1:00pm, 3:00pm</td>        
-            </tr>
-            <tr>
-              <td>August</td>
-              <td>1-31</td>
-              <td>9:30am, 1:00pm, 3:00pm</td>
-            </tr>
-            <tr>
-              <td>September</td>
-              <td>1-4</td>
-              <td>1:00pm, 3:00pm</td>
-            </tr>
+            <?php
+              if(!is_string($getSched)){
+                while($row = mysqli_fetch_array($getSched)){
+                  echo "<tr>
+                    <td>{$row['sched_month']}</td>
+                    <td>{$row['sched_day']}</td>
+                    <td>{$row['sched_time']}</td>
+                  </tr>";
+                }
+              } 
+            ?>
+ 
           </table>
         </div>
 

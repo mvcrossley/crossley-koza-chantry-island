@@ -8,4 +8,5 @@
 	require_once('sched.php');
 	require_once('news.php');
 	require_once('thumbnail.php');
+	require_once('volunteer.php');
 ?>

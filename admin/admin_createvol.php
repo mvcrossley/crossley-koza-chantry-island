@@ -1,14 +1,13 @@
 <?php
 	require_once('phpscripts/init.php');
-	confirm_logged_in();
+	//confirm_logged_in(); //Confirms that the user has, indeed logged in, in order to access page.
 
 	if(isset($_POST['submit'])){
-		$fullname = trim($_POST['fullname']);
-		$username = trim($_POST['username']);
-		$password = trim($_POST['password']);
-		$email = trim($_POST['email']);
+		$name = trim($_POST['name']);
+		$pos = trim($_POST['pos']);
+		$img = trim($_POST['img']);
 
-		$result = createuser($username, $password, $email, $fullname);
+		$result = createvol($name, $pos, $img);
 		$message = $result;
 		}
 ?>
@@ -21,7 +20,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Island - Create News Article</title>
+<title>Admin Island - Create a User</title>
 <link rel="stylesheet" href="../css/foundation.css">
 <link rel="stylesheet" href="../css/app.css">
 <link rel="stylesheet" href="css/main.css">
@@ -32,23 +31,21 @@
 	<?php include("includes/header.html");?>
 	<?php include("includes/menu.html");?>
 
-	<h1>Post a News Article</h1>
+	<h1>Create Volunteer</h1>
 		<p class="center"><?php if(!empty($message)){echo $message;}?></p>
-		<form action="admin_createuser.php" method="post" enctype="multipart/form-data">
+		<form action="admin_createvol.php" method="post" enctype="multipart/form-data">
 			<div class="createForm">
-				<label>Article Image</label><br>
-				<input type="file" name="img" value=""><br>
-				<label>Title</label><br>
-				<input type="text" name="username" value=""><br>
-				<label>Date</label><br>
-				<input type="text" name="password" value=""><br>
-				<label>Text</label><br>
-				<textarea name="text" value="" row="6" cols="60"></textarea><br>
+				<label>Volunteer Name</label><br>
+				<input type="text" name="name" value=""><br>
+				<label>Volunteer Position</label><br>
+				<input type="text" name="pos" value=""><br>
+				<label>Volunteer Portrait</label><br>
+				<input type="file" name="img" value="<?php echo $popForm['vol_img']; ?>"><br>
 				<br><br>
 			</div>
 
 			<div>
-				<input class="redBut" type="submit" name="submit" value="Post Story">
+				<input class="redBut" type="submit" name="submit" value="Create Volunteer">
 			</div>
 
 		</form>
