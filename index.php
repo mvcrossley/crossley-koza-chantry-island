@@ -35,7 +35,7 @@
         <div id="heritage" class="small-12 medium-6 float-left large-5 columns">
             <h2 class="red center">The Marine Heritage Society</h2>
             <p>Get to know us and what we do! Stay up to date on news, events, volunteers, and important dates!</p>
-            <div class="center"><a href="about.php" class="blueBut white center">Learn More</a></div>
+            <div class="center"><a href="volunteers.php" class="blueBut white center">Learn More</a></div>
         </div>
     </section>
 
@@ -63,4 +63,4 @@
         </div>
     </section>
 
-    <?php include("includes/footer.html");?>
+    <?php include("includes/footer.php");?>

@@ -1,4 +1,24 @@
+<?php 
+	require_once("admin/phpscripts/init.php");
 
+	if(isset($_POST['name'])) {
+		$name = $_POST['name'];
+		$phone = $_POST['phone'];
+		$honeypot = $_POST['address'];
+		$email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$msg = $_POST['msg'];
+		$direct = "thankyou.php";
+			if($honeypot==="") {
+				//echo "Email sent";
+				sendEmail($name,$phone,$email,$subject,$msg,$direct);
+			} else {
+				echo "Nice try, robot!";
+			}
+	} else {
+		//echo "Don't be lazy, fill out the form";
+	}
+?>
   <section id="contactFooter" class="row expanded">
     <div class="row">
     <h2 class="hide">Contact</h2>
