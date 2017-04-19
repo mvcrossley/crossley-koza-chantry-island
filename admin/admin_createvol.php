@@ -5,7 +5,7 @@
 	if(isset($_POST['submit'])){
 		$name = trim($_POST['name']);
 		$pos = trim($_POST['pos']);
-		$img = trim($_POST['img']);
+		$img = $_FILES['img']['name'];
 
 		$result = createvol($name, $pos, $img);
 		$message = $result;
@@ -31,7 +31,7 @@
 	<?php include("includes/header.html");?>
 	<?php include("includes/menu.html");?>
 
-	<h1>Create Volunteer</h1>
+	<h1>Add a Volunteer</h1>
 		<p class="center"><?php if(!empty($message)){echo $message;}?></p>
 		<form action="admin_createvol.php" method="post" enctype="multipart/form-data">
 			<div class="createForm">
@@ -40,7 +40,7 @@
 				<label>Volunteer Position</label><br>
 				<input type="text" name="pos" value=""><br>
 				<label>Volunteer Portrait</label><br>
-				<input type="file" name="img" value="<?php echo $popForm['vol_img']; ?>"><br>
+				<input type="file" name="img" value=""><br>
 				<br><br>
 			</div>
 

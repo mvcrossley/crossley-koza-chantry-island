@@ -34,6 +34,7 @@
 				<li class="center"><a href="admin_selectpost.php">Edit a News Article</a></li>
 				<li class="center"><a href="admin_createpost.php">Post a News Article</a></li>
 				<li class="center"><a href="admin_selectvol.php">Edit a Volunteer</a></li>
+				<li class="center"><a href="admin_createvol.php">Add a Volunteer</a></li>
 			</ul>
 		</div>
 	</div>
