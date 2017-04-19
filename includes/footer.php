@@ -1,5 +1,5 @@
 <?php 
-	require_once("admin/phpscripts/init.php");
+	//require_once("admin/phpscripts/init.php");
 
 	if(isset($_POST['name'])) {
 		$name = $_POST['name'];

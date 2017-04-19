@@ -2,7 +2,7 @@
 	function createVol($name, $pos, $img){
 		require_once("connect.php");
 		$userstring="INSERT INTO tbl_vol VALUES(NULL,'{$name}','{$pos}','{$img}')";
-		echo $userstring;
+		//echo $userstring;
 
 		$userquery = mysqli_query($link, $userstring);
 		if($userquery) {

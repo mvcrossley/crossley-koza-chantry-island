@@ -40,7 +40,7 @@
 			<p class="center"><?php if(!empty($message)){echo $message;}?></p>
 			<form action="admin_editrates.php" method="post">
 				<div class="editform">
-					<label>Price</label><br>
+					<label>Price *(please do not include a dollar sign)</label><br>
 					<input type="text" name="price" value="<?php echo $popForm['price_rate']; ?>"><br>
 					<label>Valid Tenders</label><br>
 					<input type="text" name="tender" value="<?php echo $popForm['price_tender']; ?>"><br>
