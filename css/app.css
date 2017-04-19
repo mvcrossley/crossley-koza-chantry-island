@@ -261,6 +261,28 @@ a{
     transition: .2s ease-in;
 }
 
+/*--------------------------------------------------THANKYOU STARTS HERE-----*/
+
+#thankyou{
+    text-align: center;
+    padding: 60px 10px;
+}
+
+#thankyou h2{
+    text-align: center;
+}
+
+#thankyou p{
+    text-align: center;
+}
+
+#thankyou a{
+    display: block;
+    margin: 50px auto;
+    color: #fff;
+}
+
+
 /*--------------------------------------------------HOME STARTS HERE-----*/
 
 #homebanner {
@@ -869,6 +891,13 @@ a{
         font-size: 1em;
     }
     
+
+/*------------------------------THANK YOU-------------------*/
+
+#thankyou{
+    padding: 100px 10px;
+}
+
 /*------------------------------HOME-------------------*/
 
     #mainbanner h2 {
@@ -1005,14 +1034,14 @@ a{
     #desklogo {
 
         width: 200px;
-        margin-left: 10%;
+        margin-left: 5%;
         position: absolute;
     }
 
     #mainNav
     {
         height: 100px;
-        margin-right: 10%;
+        margin-right: 5%;
     }
 
     #mainNav ul {
@@ -1146,4 +1175,16 @@ a{
         color: #a1202f;
         transition: .2s ease-in;
   }
+}
+
+/*Medium to Large Screen Transition*//*1160/16*/
+@media screen and (min-width: 72.5em){
+    #desklogo{
+        margin-left: 10%;
+    }
+
+    #mainNav{
+        margin-right: 10%;
+    }
+
 }
