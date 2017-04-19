@@ -1055,15 +1055,15 @@ a{
 
     #desklogo {
 
-        width: 200px;
-        margin-left: 5%;
+        width: 150px;
+        margin-left: 1%;
         position: absolute;
     }
 
     #mainNav
     {
         height: 100px;
-        margin-right: 5%;
+        margin-right: 1%;
     }
 
     #mainNav ul {
@@ -1188,7 +1188,7 @@ a{
         text-align: center;
         color: #000;
         display: block;
-        padding: 25px 30px;
+        padding: 25px 20px;
         transition: .2s ease-in;
     }
 
@@ -1199,9 +1199,23 @@ a{
   }
 }
 
-/*Medium to Large Screen Transition*//*1160/16*/
-@media screen and (min-width: 72.5em){
+/*Large to xLarge Screen Transition*//*1216/16*/
+@media screen and (min-width: 76em){
     #desklogo{
+        width: 200px;
+        margin-left: 5%;
+    }
+
+    #mainNav{
+        margin-right: 5%;
+    }
+
+}
+
+/*xLarge to xxLarge Screen Transition*//*1312/16*/
+@media screen and (min-width: 82em){
+    #desklogo{
+        width: 200px;
         margin-left: 10%;
     }
 
