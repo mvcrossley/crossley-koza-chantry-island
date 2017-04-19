@@ -552,6 +552,17 @@ a{
     font-size: 1em;
 }
 
+#tourVideo{
+    padding: 10px;
+    text-align: center;
+}
+
+#tourVideo video{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
 #tourDetails{
     margin: 100px auto;
 }
