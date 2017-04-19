@@ -40,7 +40,7 @@
                 <p><span id="lphotoDesc">This is the photo description</span></p>
             </div>
             <div id="lightboxCtrls">
-                <p><a class="ctrl-btn" id="galprev"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous </a> | <a class="ctrl-btn" id="galnext">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
+                <p><a class="ctrl-btn" id="galprev"><i class="fa fa-2x fa-arrow-left" aria-hidden="true"></i> Previous </a> | <a class="ctrl-btn" id="galnext">Next <i class="fa fa-2x fa-arrow-right" aria-hidden="true"></i></a></p>
             </div>
         </div>
 

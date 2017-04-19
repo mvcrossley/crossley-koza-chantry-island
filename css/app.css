@@ -334,7 +334,6 @@ a{
     width: 80px;
 }
 
-/*MORAGH START*/
 
 #ourvolunteers
 {
@@ -350,12 +349,6 @@ a{
     text-align: center;
 }
 
-/*MORAGH END*/
-
-
-
-
-/*LAUREN START*/
 
 #volVids{
     margin: 100px auto;
@@ -480,6 +473,7 @@ a{
     font-size: 1.8em;
     margin-top: 60px;
 }
+
 #gallerybanner p {
     margin-top: 30px;
     font-size: 1em;
@@ -496,6 +490,15 @@ a{
 #thumbs div{
     padding: 5px;  
     text-align: center;
+}
+
+#galLightbox{
+    z-index: 3;
+}
+
+#lightboxCtrls p i{
+    position: relative;
+    top: 5px;
 }
 
 /*-------------------------------------------------TOUR STARTS HERE------*/
@@ -953,7 +956,15 @@ a{
     margin-left: 0px;
 }
 
+/*----------------------GALLERY---------------*/
 
+    #lightboxCtrls p{
+        font-size: 1.1em;
+    }
+
+    #lightboxCtrls p i{
+        padding: 15px;
+    }
 /*----------------------CONTACT---------------*/
     #geography h2{
         margin-top: 0;
