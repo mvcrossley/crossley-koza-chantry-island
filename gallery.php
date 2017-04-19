@@ -67,4 +67,4 @@
     </section>
     
     <script src="js/gallery.js"></script>  
-    <?php include("includes/footer.html");?>
+    <?php include("includes/footer.php");?>

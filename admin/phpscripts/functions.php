@@ -22,6 +22,15 @@
 	mysqli_close($link);
 	}
 
+	function sendEmail($name,$phone,$email,$subject,$msg,$direct){
+		$to = "chantryisland@bmts.com";
+		$subj = $subject;
+		$from = "Reply-To: {$email}";
+		$body = "Name: {$name}\r\nPhone Number: {$phone}\n\nMessage: {$msg}";
+		mail($to, $subj, $body, $from);
+		redirect_to($direct);
+	}
+
 	function addPhoto($file, $thumb, $desc, $att){
 		include("connect.php");
 		
