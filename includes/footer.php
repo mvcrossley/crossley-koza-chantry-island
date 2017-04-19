@@ -1,5 +1,5 @@
 <?php 
-	require_once("admin/phpscripts/init.php");
+	//require_once("admin/phpscripts/init.php");
 
 	if(isset($_POST['name'])) {
 		$name = $_POST['name'];
@@ -68,7 +68,7 @@
 		    <div id="contactForm" >
 		    	
 			    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-					<div class="column small-12 medium-6 formRows">
+					<div class="column small-12 formRows">
 						<label>Name:</label>
 						<input type="text" name="name" required> 
 					</div>
